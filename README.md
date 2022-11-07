@@ -1,3 +1,27 @@
+
+### List of changes 
+#### RTL support 
+You must use the `ar` layout for full RTL notes. It also supports mixed content. 
+
+#### Table Of Content 
+I used the following project for the table of content generation: [jekyll-table-of-contents](https://github.com/ghiculescu/jekyll-table-of-contents)
+#### Hash Tags page
+* Add a page that contains all the used hashtags (in YMAL) and the tagged pages. 
+* Tags with url to the specific tag. 
+* Inspired by: [nickcharlton.net](https://nickcharlton.net/tags.html) 
+#### Local Graph view 
+#### Links previews 
+* Link previews work on all the internal links and the local graph view.
+* can scroll Link previews.
+#### Easy deployment through GitHub in three steps
+* I used the following GitHub action: [](https://github.com/jeffreytse/jekyll-deploy-action) 
+
+#### Callouts  & RTL Callouts 
+* Small hack to use Callouts. 
+* Available types: note, abstract, info, tip, success, question, warning, failure, danger, bug, example, quote.
+* The used CSS files from[ admonitions obsidian plugin](https://github.com/valentine195/obsidian-admonition). "
+
+---
 [![Netlify Status](https://api.netlify.com/api/v1/badges/8cfa8785-8df8-4aad-ad35-8f1c790b8baf/deploy-status)](https://app.netlify.com/sites/digital-garden-jekyll-template/deploys)
 
 # Digital garden Jekyll template

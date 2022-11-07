@@ -79,7 +79,6 @@ class BidirectionalLinksGenerator < Jekyll::Generator
       notes_linking_to_current_note = all_notes.filter do |e|
         e.content.include?(current_note.url)
       end
-
       # Nodes: Graph
       graph_nodes << {
         id: note_id_from_note(current_note),

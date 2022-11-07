@@ -1,0 +1,19 @@
+.admonition-title.rtl {
+    border-left: 0rem;
+    padding: 0.4rem 2rem 0.4rem 0.6rem;
+}
+
+
+.admonition.rtl {
+    border-left: 0rem;
+    border-right-style: solid;
+    border-right-width: 4px;
+}
+
+
+.admonition-title::before.rtl {
+    left: 0rem;
+    right: 0.2rem;
+    border-right-style: solid;
+    border-right-width: 4px;
+}

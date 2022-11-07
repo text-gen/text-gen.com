@@ -1,0 +1,90 @@
+---
+layout: default
+---
+
+<article>
+    <div>
+      <h1>{{ page.title }}</h1>
+      <time datetime="{{ page.last_modified_at | date_to_xmlschema }}">{% if page.type != 'pages' %}
+        آخر تحديث لصفحة 
+        {% assign m = page.date | date: "%-m" %}
+{{ page.date | date: "%-d" }}
+{% case m %}
+  {% when '1' %}جانفي 
+  {% when '2' %}فيفري 
+  {% when '3' %}مارس
+  {% when '4' %}أفريل
+  {% when '5' %}ماي
+  {% when '6' %}جوان
+  {% when '7' %}جويليا
+  {% when '8' %}أوت
+  {% when '9' %}سبتمبر
+  {% when '10' %}أوكتوبر
+  {% when '11' %}نوفمبر
+  {% when '12' %}ديسمبر
+{% endcase %}
+{{ page.date | date: "%Y" }}
+        {% endif %}
+      </time>
+    </div>
+  
+    <div id="notes-entry-container">
+      <content>
+        <div class="tags" dir="rtl">
+          {% for tag in page.tags %}<a href='/tags.html#{{tag}}' class="tag" >{{ tag }}</a>{% if forloop.last == false %}, {% endif %}{% endfor %}
+        </div>
+                 {{ content }}
+      </content>
+  
+      <side style="font-size: 0.9em">
+        <h3 style="margin-bottom: 1em">الفهرس</h3>
+        <div id="toc"></div>
+
+        <div id="localgraph">
+          <h3 style="margin-bottom: 1em">Local Graph</h3>
+        <div>
+          {% include local_graph.html %}
+        </div>
+        </div>
+
+        <div id="mentions">
+          <h3 style="margin-bottom: 1em">الإشتهادات بهذه الملاحظة</h3>
+          {% if page.backlinks.size > 0 %}
+          <div style="display: grid; grid-gap: 1em; grid-template-columns: repeat(1fr);">
+          {% for backlink in page.backlinks %}
+            <div class="backlink-box">
+            <a class="internal-link" href="{{ site.baseurl }}{{ backlink.url }}{%- if site.use_html_extension -%}.html{%- endif -%}">{{ backlink.title }}</a><br>
+            <div style="font-size: 0.9em">{{ backlink.excerpt | strip_html | truncatewords: 20 }}</div>
+            </div>
+          {% endfor %}
+          </div>
+          {% else %}
+    
+          <div style="font-size: 0.9em">
+            <p>
+              ليس هناك ملاحظات مرتبطة بهذه الملاحظة
+            </p>
+          </div>
+          {% endif %}
+        </div>
+        
+        
+      </side>
+    </div>
+  </article>
+  
+  <hr>
+  
+  <p>كل الملاحظات الموجودة في حديقتي الرقمية تظهر في هذا Graph.</p>
+
+<!-- {% include notes_graph.html %} -->
+<script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"></script>
+<script src="{{ base.url | prepend: site.url }}/assets/js/toc.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+      $('#toc').toc();
+  });
+</script>

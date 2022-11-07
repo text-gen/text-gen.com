@@ -1,4 +1,6 @@
 <!-- That file is not particularly elegant. This will need a refactor at some point. -->
+
+
 <style>
   content a.internal-link {
     border-color: #8b88e6;
@@ -13,11 +15,12 @@
     overflow: hidden;
     position: absolute;
     width: 400px;
-    height: 250px;
+    height: 500px;
     font-size: 0.8em;
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
     opacity: 0;
     transition: opacity 100ms;
+    overflow-y: scroll;
   }
 
   #tooltip-wrapper:after {
@@ -63,20 +66,21 @@
   }
 
   function showTooltip(event) {
+    console.log(event)
     var elem = event.target;
     var elem_props = elem.getClientRects()[elem.getClientRects().length - 1];
     var top = window.pageYOffset || document.documentElement.scrollTop
 
-    if (event.target.host === window.location.host) {
-      if (!linkHistories[event.target.href]) {
-        iframe.src = event.target.href
+    if (true) {
+      if (!linkHistories[event.target.getAttribute("href")]) {
+        iframe.src = event.target.getAttribute("href")
         iframe.onload = function() {
           tooltipContentHtml = ''
           tooltipContentHtml += '<div style="font-weight: bold;">' + iframe.contentWindow.document.querySelector('h1').innerHTML + '</div>'
           tooltipContentHtml += iframe.contentWindow.document.querySelector('content').innerHTML
 
           tooltipContent.innerHTML = tooltipContentHtml
-          linkHistories[event.target.href] = tooltipContentHtml
+          linkHistories[event.target.getAttribute("href")] = tooltipContentHtml
 
           tooltipWrapper.style.display = 'block';
           setTimeout(function() {
@@ -84,7 +88,7 @@
           }, 1)
         } 
       } else {
-        tooltipContent.innerHTML = linkHistories[event.target.href]
+        tooltipContent.innerHTML = linkHistories[event.target.getAttribute("href")]
         tooltipWrapper.style.display = 'block';
         setTimeout(function() {
           tooltipWrapper.style.opacity = 1;
@@ -108,6 +112,7 @@
   }
 
   function setupListeners(linkElement) {
+    console.log(linkElement)
     linkElement.addEventListener('mouseleave', function(_event) {
       hideTooltip();
     });
@@ -135,6 +140,8 @@
       clearTimeout(contentTimeout);
     });
   }
+  console.log( document.querySelectorAll('{{ include.wrapperQuerySelector }}'))
 
-  document.querySelectorAll('{{ include.wrapperQuerySelector }} a').forEach(setupListeners);
+  d3.select(window).on("load", ()=>document.querySelectorAll('{{ include.wrapperQuerySelector }}').forEach(setupListeners));
+  
 </script>
