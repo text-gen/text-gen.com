@@ -2,9 +2,67 @@
 title: Your first seed
 ---
 
+
+### The list of new options in this repo includes: 
+#### RTL support 
+You must use the `ar` layout for full RTL notes. It also supports mixed content. 
+##### مرحبا 
+أهلا بكم أعزائي .
+
+#### Table Of Content 
+I used the following project for the table of content generation: [jekyll-table-of-contents](https://github.com/ghiculescu/jekyll-table-of-contents)
+
+#### Hash Tags page
+* Add a page that contains all the used hashtags (in YMAL) and the tagged pages. 
+* Tags with url to the specific tag. 
+* Inspired by: [nickcharlton.net](https://nickcharlton.net/tags.html) 
+
+#### Local Graph view 
+
+#### Links previews 
+* Link previews work on all the internal links and the local graph view.
+* can scroll Link previews.
+
+#### Easy deployment through GitHub in three steps
+* I used the following GitHub action: [](https://github.com/jeffreytse/jekyll-deploy-action) 
+
+#### Callouts 
+* Small hack to use Callouts. 
+* Available types: note, abstract, info, tip, success, question, warning, failure, danger, bug, example, quote.
+* The used CSS files from[ admonitions obsidian plugin](https://github.com/valentine195/obsidian-admonition). "
+
+{% raw %}
+```
+  {% include admonitions.html type="example" title="Example" content="content" %}
+```
+{% endraw %}
+
+
+{% include admonitions.html type="example" title="Example" content="content" %}
+
+{% include admonitions.html type="success" title="Success" content="content" %}
+
+{% include admonitions.html type="warning" title="Warning" content="content" %}
+
+#### RTL Callouts 
+
+{% raw %}
+```
+  {% include admonitions-rtl.html type="example" title="Example" content="content" %}
+```
+{% endraw %}
+
+{% include admonitions-rtl.html type="example" title="مثال" content="هذا مثال." %}
+
+{% include admonitions-rtl.html type="success" title="نجاح" content="هذا نجاح." %}
+
+{% include admonitions-rtl.html type="warning" title="تحذير" content="هذا تحذير" %}
+
+
 ### Welcome!
 
 This is your first note. You'll find it in the [`notes/`](https://github.com/maximevaillancourt/digital-garden-jekyll-template/tree/master/_notes) directory. 
+
 
 ### Link syntax
 

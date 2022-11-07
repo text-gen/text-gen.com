@@ -1,3 +1,4 @@
+
 <style>
   .links line {
     stroke: #ccc;
@@ -27,14 +28,20 @@
     transition: all 0.15s ease-out;
   }
 
-  #graph-wrapper {
+  #local-graph-wrapper {
     background: #fcfcfc;
     border-radius: 4px;
     height: auto;
   }
+
+  svg {
+    height: auto;
+    max-width: 100%;
+    vertical-align: center;
+  }
 </style>
 
-<div id="graph-wrapper">
+<div id="local-graph-wrapper">
   <script>
     var commentFlag = true;
     
@@ -42,7 +49,7 @@
     window.addEventListener("scroll", loadGraph);
 
     function loadGraph() {
-      if (!( document.getElementById("graph-wrapper").getBoundingClientRect().top <
+      if (!( document.getElementById("local-graph-wrapper").getBoundingClientRect().top <
              window.innerHeight * 1.5 &&
           commentFlag)){
         return;
@@ -59,6 +66,12 @@
         const graphData = {% include notes_graph.json %}
         let nodesData = graphData.nodes;
         let linksData = graphData.edges;
+        console.log({nodesData,linksData})
+        currentNodeid=nodesData.find(e=> window.location.pathname.includes(e.path)).id;
+        
+        linksData=linksData.filter(e=>e.source === currentNodeid ||e.target === currentNodeid);
+        nodesData=nodesData.filter(n=>linksData.findIndex(e=>(e.source ===n.id || e.target===n.id))!==-1 )
+        console.log({nodesData,linksData})
 
         const nodeSize = {};
 
@@ -166,11 +179,11 @@
           return true;
         };
 
-        const graphWrapper = document.getElementById('graph-wrapper')
+        const graphWrapper = document.getElementById('local-graph-wrapper')
         const element = document.createElementNS("http://www.w3.org/2000/svg", "svg");
         element.setAttribute("width", graphWrapper.getBoundingClientRect().width);
-        element.setAttribute("height", window.innerHeight * 0.8);
-        element.setAttribute("id","globalgraph");
+        element.setAttribute("height",graphWrapper.getBoundingClientRect().width);
+        element.setAttribute("id","localgraph-svg");
         graphWrapper.appendChild(element);
 
         const reportWindowSize = () => {
@@ -180,7 +193,7 @@
 
         window.onresize = reportWindowSize;
 
-        const svg = d3.select("#globalgraph");
+        const svg = d3.select("#localgraph-svg");
         const width = Number(svg.attr("width"));
         const height = Number(svg.attr("height"));
         let zoomLevel = 1;
@@ -198,7 +211,7 @@
               .distance(70)
           )
           .force("center", d3.forceCenter(width / 2, height / 2))
-          .force("collision", d3.forceCollide().radius(80))
+          .force("collision", d3.forceCollide().radius(50))
           .stop();
 
         const g = svg.append("g");
@@ -251,6 +264,7 @@
             .attr("r", (d) => {
               return nodeSize[d.id];
             })
+            .attr("xlink:href", (d)=>d.path) 
             .on("click", onClick)
             .on("mouseover", onMouseover)
             .on("mouseout", onMouseout)
@@ -267,6 +281,7 @@
             .append("text")
             .text((d) => shorten(d.label.replace(/_*/g, ""), MAX_LABEL_LENGTH))
             .attr("font-size", `${FONT_SIZE}px`)
+            .attr("xlink:href", (d)=>d.path) 
             .attr("text-anchor", "middle")
             .attr("alignment-baseline", "central")
             .on("click", onClick)
@@ -292,6 +307,8 @@
         const zoomHandler = d3.zoom().scaleExtent([0.2, 3]).on("zoom", resize);
 
         zoomHandler(svg);
+        
+       
         restart();
 
         function isCurrentPath(notePath) {
