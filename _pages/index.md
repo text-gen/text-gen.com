@@ -42,7 +42,7 @@ git clone https://github.com/username/username.github.io.git
 * Change the title of your digital garden
 	* Change the title value in `_config.yml`
 	* ![](assets/images/Pasted%20image%2020221107190222.png)
-* Write your notes using Markdown (follow [your-first-note](your-first-note.md))
+* Write your notes using Markdown (follow [your-first-note](your-first-note))
 	- You can paste images, and draw diagrams using Excalidraw in the notes.
 -  Push all the changes to github
 ```
