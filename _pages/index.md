@@ -6,7 +6,7 @@ permalink: /
 ---
 # Guide 
 
-To use this template you need to follow the three steps:  (Open the image in a new tap to able to zoom).
+To use this template you need to follow the three steps:  (Open the image in a new Tab to able to zoom).
 
 ![](assets/images/threeSteps.svg)
 
