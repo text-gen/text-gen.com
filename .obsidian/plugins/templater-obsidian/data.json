@@ -1,13 +1,13 @@
 {
   "command_timeout": 5,
-  "templates_folder": "",
+  "templates_folder": "templates",
   "templates_pairs": [
     [
       "",
       ""
     ]
   ],
-  "trigger_on_file_creation": false,
+  "trigger_on_file_creation": true,
   "auto_jump_to_cursor": false,
   "enable_system_commands": false,
   "shell_path": "",
@@ -15,8 +15,12 @@
   "enable_folder_templates": true,
   "folder_templates": [
     {
-      "folder": "",
-      "template": ""
+      "folder": "_notes",
+      "template": "templates/english.md"
+    },
+    {
+      "folder": "_pages",
+      "template": "templates/page.md"
     }
   ],
   "syntax_highlighting": true,

@@ -1,8 +1,13 @@
 {
   "newFileLocation": "folder",
   "newFileFolderPath": "_notes",
-  "useMarkdownLinks": true,
+  "useMarkdownLinks": false,
   "attachmentFolderPath": "assets/images",
   "alwaysUpdateLinks": true,
-  "newLinkFormat": "absolute"
+  "newLinkFormat": "shortest",
+  "showUnsupportedFiles": false,
+  "promptDelete": false,
+  "userIgnoreFilters": [
+    "_site/"
+  ]
 }

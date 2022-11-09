@@ -12,6 +12,9 @@ layout: default
 
   <div id="notes-entry-container">
     <content>
+      <div class="tags">
+        {% for tag in page.tags %}<a href='/tags.html#{{tag}}' class="tag" >{{ tag }}</a>{% if forloop.last == false %}, {% endif %}{% endfor %}
+      </div>
       {{ content }}
     </content>
 

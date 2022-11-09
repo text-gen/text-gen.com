@@ -1,6 +1,6 @@
 ---
 title: Consistency is key
-tags: ruby dz
+tags:
 ---
 
 Show up. Do the work. Be consistent.

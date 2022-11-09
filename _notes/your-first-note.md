@@ -1,14 +1,30 @@
 ---
 title: Your first seed
+tags: doc
 ---
 
 
 ### The list of new options in this repo includes: 
+
+
+##### Wikilinks for Images 
+
+#### Callouts
+* support obsidian format (not yet nested)
+* format markdown inside callouts
+
+#### Math Equations
+* Math equations are now supported. 
+
+$$
+c = \pm\sqrt{a^2 + b^2}
+$$
+
+
 #### RTL support 
 You must use the `ar` layout for full RTL notes. It also supports mixed content. 
 ##### مرحبا 
 أهلا بكم أعزائي .
-
 #### Table Of Content 
 I used the following project for the table of content generation: [jekyll-table-of-contents](https://github.com/ghiculescu/jekyll-table-of-contents)
 
@@ -27,36 +43,38 @@ I used the following project for the table of content generation: [jekyll-table-
 * I used the following GitHub action: [](https://github.com/jeffreytse/jekyll-deploy-action) 
 
 #### Callouts 
-* Small hack to use Callouts. 
 * Available types: note, abstract, info, tip, success, question, warning, failure, danger, bug, example, quote.
 * The used CSS files from[ admonitions obsidian plugin](https://github.com/valentine195/obsidian-admonition). "
-
-{% raw %}
-```
-  {% include admonitions.html type="example" title="Example" content="content" %}
-```
-{% endraw %}
+* Nested Callouts not yet supported. 
 
 
-{% include admonitions.html type="example" title="Example" content="content" %}
+> [!example] Example
+> This is an **example**.
+> 
 
-{% include admonitions.html type="success" title="Success" content="content" %}
+> [!success]
+> This is a success *message*
+> 
 
-{% include admonitions.html type="warning" title="Warning" content="content" %}
+> [!warning]
+> You need first see this [[guide]]
+> 
+
 
 #### RTL Callouts 
+* You need just to add `*` to make it RTL.  
 
-{% raw %}
-```
-  {% include admonitions-rtl.html type="example" title="Example" content="content" %}
-```
-{% endraw %}
+> [!example] مثال*
+> هذا مثال.
+> 
 
-{% include admonitions-rtl.html type="example" title="مثال" content="هذا مثال." %}
+> [!success] نجاح*
+> هذا نجاح
+> 
 
-{% include admonitions-rtl.html type="success" title="نجاح" content="هذا نجاح." %}
-
-{% include admonitions-rtl.html type="warning" title="تحذير" content="هذا تحذير" %}
+> [!warning] تحذير*
+> هذا تحذير
+> 
 
 
 ### Welcome!

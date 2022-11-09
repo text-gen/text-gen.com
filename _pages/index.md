@@ -2,53 +2,25 @@
 layout: page
 title: Home
 id: home
-permalink: /
+permalink: /index
 ---
-# Guide 
 
-To use this template you need to follow the three steps:  (Open the image in a new Tab to able to zoom).
+# Welcome! 🌱
 
-![](assets/images/threeSteps.svg)
-
-## Step 01: Generate a Repo on Github 
-
-
-![](assets/deployment%20of%20digital%20garden.gif)
-
-* [Generate](https://github.com/nhaouari/digital-garden-jekyll-template/generate) from the template. 
-* Use the following name: `username.github.io`
-* Wait until the initial commit workflow is completed. 
-* In Settings, choose Pages, choose gh-pages branch, and save. 
-
- {% include admonitions.html type="success" title=" Congratulations!" content=" You have a digital garden that should be available on  `username.github.io`" %}
+<p style="padding: 3em 1em; background: #f5f7ff; border-radius: 4px;">
+  Take a look at <span style="font-weight: bold">[[Your first note]]</span> to get started on your exploration.
+</p>
+<p style="padding: 3em 1em; background: #fffb3e2b; border-radius: 4px;">
+  Take a look at <span style="font-weight: bold">[[Guide]]</span> setup your digital garden with Obsidian.
+</p>
 
 
-## Step 02 Install local tools
-### Step 02.1 Install GIT
-To work locally on the repo and be able to update it, you need to install GIT and link it to your account. 
-[[Install GIT]]
+This digital garden template is free, open-source, and [available on GitHub here](https://github.com/maximevaillancourt/digital-garden-jekyll-template).
 
-### Step 02.2 Install & Configure Obsidian
-* Clone your repo  
-```sh
-git clone https://github.com/username/username.github.io.git
-```
-* Install [Obsidian](https://obsidian.md/)
-* Open username.github.io folder as a folder in Obsidian. 
-* The vault comes by default configured with the recommended plugins (Templater, Excalidraw, Git).  
-(For manual configuration follow the following link [[Configure a new vault TODO]]).
+The easiest way to get started is to read this [step-by-step guide explaining how to set this up from scratch](https://maximevaillancourt.com/blog/setting-up-your-own-digital-garden-with-jekyll).
 
-## Step 03 Digital Gardening  
-* Change the title of your digital garden
-	* Change the title value in `_config.yml`
-	* ![](assets/images/Pasted%20image%2020221107190222.png)
-* Write your notes using Markdown (follow [your-first-note](your-first-note))
-	- You can paste images, and draw diagrams using Excalidraw in the notes.
--  Push all the changes to github
-```
-CTRL+P to see obsidian commands  and then 
-Obsidian git: Commit all changes 
-Obsidian git: Push 
-```
-	* For more advance commands check the following link [[Obsidian Git Plugin Tutorial TODO]].
-* After couple of minutes, the modifications will be online 🚀.
+<style>
+  .wrapper {
+    max-width: 46em;
+  }
+</style>

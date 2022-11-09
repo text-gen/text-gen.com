@@ -8,29 +8,19 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e3557180c7fb9e6e",
+            "id": "d469a7d78d39f089",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_pages/index.md",
+                "file": "_notes/guide.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "78b6249152c0e008",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "assets/images/threeSteps.md"
-              }
-            }
-          },
-          {
-            "id": "0c4bea7d7acdb96d",
+            "id": "387ccb9300de1249",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -41,21 +31,8 @@
               }
             }
           }
-        ]
-      },
-      {
-        "id": "61d5171bc7416064",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "bffb4686ee53a5b3",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -121,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_pages/index.md",
+                "file": "_notes/Configure a new vault.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_pages/index.md",
+                "file": "_notes/Configure a new vault.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -161,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_pages/index.md"
+                "file": "_notes/Configure a new vault.md"
               }
             }
           }
@@ -172,17 +149,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "e3557180c7fb9e6e",
+  "active": "387ccb9300de1249",
   "lastOpenFiles": [
-    "assets/images/threeSteps.md",
-    "_pages/index.md",
+    "_notes/consistency.md",
+    "_notes/Obsidian.md",
+    "_notes/Git Plugin Tutorial.md",
+    "_notes/guide.md",
+    "_pages/tags.md",
     "_notes/Configure a new vault.md",
-    "assets/images/Pasted Image 20221107194302_630.png",
     "_notes/your-first-note.md",
-    "assets/images/index 2022-11-07 19.34.52.excalidraw.md",
-    "assets/images/index 2022-11-07 19.31.57.excalidraw.md",
-    "assets/images/index 2022-11-07 19.31.57.excalidraw.svg",
-    "assets/images/index 2022-11-07 19.10.09.excalidraw.svg.md",
-    "assets/images/index 2022-11-07 19.10.09.excalidraw.excalidraw"
+    "_notes/animals/tigers.md",
+    "_notes/animals/cats.md",
+    "_notes/move your body every day.md"
   ]
 }

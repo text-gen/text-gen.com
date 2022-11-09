@@ -1,5 +1,8 @@
 [
   "templater-obsidian",
   "obsidian-excalidraw-plugin",
-  "obsidian-git"
+  "obsidian-git",
+  "wikilinks-to-mdlinks-obsidian",
+  "dynamic-rtl",
+  "obsidian-rtl"
 ]
