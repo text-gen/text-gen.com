@@ -1,11 +1,13 @@
 title:               My digital garden
 include:             ['_pages']
-exclude:             ['_includes/notes_graph.json']
+exclude:             ['_includes/notes_graph.json','templates/*']
 # You may need to change the base URL depending on your deploy configuration.
 # Specifically, when using GitHub Pages, the baseurl should point to where GitHub
 # Pages deploys your repository (which is usually the repository name).
 baseurl:             ''
 
+# The default attchement path in Obsidian
+attachement_path: /assets/images
 # If you are using a host that cannot resolve URLs that do
 # not end with .html (such as Neocities), set this to 'true'.
 use_html_extension:  false

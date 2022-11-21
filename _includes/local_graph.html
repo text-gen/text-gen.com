@@ -38,6 +38,8 @@
     height: auto;
     max-width: 100%;
     vertical-align: center;
+    margin: 0 auto;
+    display: block;
   }
 </style>
 
@@ -48,7 +50,9 @@
     window.addEventListener("load", loadGraph);
     window.addEventListener("scroll", loadGraph);
 
+    
     function loadGraph() {
+
       if (!( document.getElementById("local-graph-wrapper").getBoundingClientRect().top <
              window.innerHeight * 1.5 &&
           commentFlag)){

@@ -14,13 +14,26 @@ class BidirectionalLinksGenerator < Jekyll::Generator
     # Convert all Wiki/Roam-style double-bracket link syntax to plain HTML
     # anchor tag elements (<a>) with "internal-link" CSS class
     all_docs.each do |current_note|
+        
+        #images 
+      current_note.content.gsub!(
+            /\!\[\[(.*?)(\||\])(.*)/i,
+            '![]('+site.config["attachement_path"]+'/\1)'
+        )
+      current_note.content.gsub!(
+          /#{site.config["attachement_path"]}#{site.config["attachement_path"]}/i,
+          site.config["attachement_path"]
+        )
+
       all_docs.each do |note_potentially_linked_to|
+
         note_title_regexp_pattern = Regexp.escape(
           File.basename(
             note_potentially_linked_to.basename,
             File.extname(note_potentially_linked_to.basename)
           )
         ).gsub('\_', '[ _]').gsub('\-', '[ -]').capitalize
+
 
         title_from_data = note_potentially_linked_to.data['title']
         if title_from_data
@@ -57,6 +70,9 @@ class BidirectionalLinksGenerator < Jekyll::Generator
           /\[\[(#{note_title_regexp_pattern})\]\]/i,
           anchor_tag
         )
+        
+    
+       
       end
 
       # At this point, all remaining double-bracket-wrapped words are
@@ -66,9 +82,9 @@ class BidirectionalLinksGenerator < Jekyll::Generator
         /\[\[([^\]]+)\]\]/i, # match on the remaining double-bracket links
         <<~HTML.delete("\n") # replace with this HTML (\\1 is what was inside the brackets)
           <span title='There is no note that matches this link.' class='invalid-link'>
-            <span class='invalid-link-brackets'>[[</span>
+            <span class='invalid-link-brackets'></span>
             \\1
-            <span class='invalid-link-brackets'>]]</span></span>
+            <span class='invalid-link-brackets'></span></span>
         HTML
       )
     end

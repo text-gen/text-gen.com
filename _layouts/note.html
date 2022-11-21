@@ -12,7 +12,17 @@ layout: default
 
   <div id="notes-entry-container">
     <content>
+      <div class="tags">
+        {% for tag in page.tags %}<a href='/tags.html#{{tag}}' class="tag" >{{ tag }}</a>{% if forloop.last == false %}, {% endif %}{% endfor %}
+      </div>
       {{ content }}
+      <script src="https://utteranc.es/client.js"
+repo="NoureddineHaouari/NoureddineHaouari.github.io"
+issue-term="pathname"
+theme="github-light"
+crossorigin="anonymous"
+async>
+</script>
     </content>
 
     <side style="font-size: 0.9em">
@@ -50,9 +60,7 @@ layout: default
   </div>
 </article>
 
-<hr>
 
-<p>Here are all the notes in this garden, along with their links, visualized as a graph.</p>
 
 <!-- {% include notes_graph.html %} -->
 <script

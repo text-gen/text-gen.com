@@ -4,10 +4,14 @@
   <body>
     <nav>{% include nav.html %}</nav>
     <div dir="auto" class="wrapper">
-      <main>{{ content }}</main>
+      <main>
+        {{ content }}
+      </main>
+
       <footer>{% include footer.html %}</footer>
     </div>
 
     {% include link-previews.html wrapperQuerySelector="content a,#localgraph circle,#mentions a" %}
+
   </body>
 </html>

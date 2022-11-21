@@ -14,12 +14,15 @@
     border-radius: 4px;
     overflow: hidden;
     position: absolute;
-    width: 400px;
-    height: 500px;
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    max-height: 300px;
     font-size: 0.8em;
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
     opacity: 0;
     transition: opacity 100ms;
+    unicode-bidi: plaintext;
     overflow-y: scroll;
   }
 
@@ -30,8 +33,8 @@
 		bottom: 0;
 		left: 0;
 		pointer-events: none;
-		background-image: linear-gradient(to bottom, rgba(255,255,255, 0), rgba(255,255,255, 1) 90%);
 		width: 100%;
+    unicode-bidi: plaintext;
 		height: 75px;
   }
 </style>
@@ -66,17 +69,15 @@
   }
 
   function showTooltip(event) {
-    console.log(event)
     var elem = event.target;
     var elem_props = elem.getClientRects()[elem.getClientRects().length - 1];
     var top = window.pageYOffset || document.documentElement.scrollTop
-
-    if (true) {
+    if (event.target.getAttribute("href").indexOf("http")===-1 || event.target.getAttribute("href").indexOf(window.location.host)!==-1) {
       if (!linkHistories[event.target.getAttribute("href")]) {
-        iframe.src = event.target.getAttribute("href")
+       iframe.src = event.target.getAttribute("href")
         iframe.onload = function() {
           tooltipContentHtml = ''
-          tooltipContentHtml += '<div style="font-weight: bold;">' + iframe.contentWindow.document.querySelector('h1').innerHTML + '</div>'
+          tooltipContentHtml += '<div style="font-weight: bold; unicode-bidi: plaintext;">' + iframe.contentWindow.document.querySelector('h1').innerHTML + '</div>'
           tooltipContentHtml += iframe.contentWindow.document.querySelector('content').innerHTML
 
           tooltipContent.innerHTML = tooltipContentHtml
@@ -95,8 +96,13 @@
         }, 1)
       }
 
+      function getInnerWidth(elem) {
+        var style = window.getComputedStyle(elem);
+        return elem.offsetWidth - parseFloat(style.paddingLeft) - parseFloat(style.paddingRight) - parseFloat(style.borderLeft) - parseFloat(style.borderRight) - parseFloat(style.marginLeft) - parseFloat(style.marginRight);
+    }
 
       tooltipWrapper.style.left = elem_props.left - (tooltipWrapper.offsetWidth / 2) + (elem_props.width / 2) + "px";
+     
       if ((window.innerHeight - elem_props.top) < (tooltipWrapper.offsetHeight)) {
           tooltipWrapper.style.top = elem_props.top + top - tooltipWrapper.offsetHeight - 10 + "px";
       } else if ((window.innerHeight - elem_props.top) > (tooltipWrapper.offsetHeight)) {
@@ -110,9 +116,64 @@
       }
     }
   }
+  function loadSVG(){
+    document.querySelectorAll("object").forEach(obj=>{fetch(obj.data).then(e=>e.text()).then(svg=>obj.outerHTML=svg)})
+    const svgImgs = document.querySelectorAll("img[src*=svg]");
+    if(svgImgs.length>0) {
+      svgImgs.forEach(img=>{
+        fetch(img.src)
+        .then(e=>e.text())
+        .then(text=>
+          {
+            img.outerHTML=text.replaceAll(/href="\[\[(.*?)\]\]"/g,function(match, offset, str) {
+            console.log({match,offset,str})
+            return `href="${offset.replaceAll(" ","-")}"`;
+          });
+        
+          }
+        )
+        .error((error) => {
+          console.error(error);
+        })
+        .finally(() => {
+          document.querySelectorAll('{{ include.wrapperQuerySelector }}').forEach(setupListeners);
+        });
+        })
+    } else {
+      document.querySelectorAll('{{ include.wrapperQuerySelector }}').forEach(setupListeners);
+    }
+  }
+
+  //https://stackoverflow.com/a/67977146
+  function onLongPress(element, callback) {
+    var timeoutId;
+
+    element.addEventListener('touchstart', function(e) {
+        timeoutId = setTimeout(function() {
+            timeoutId = null;
+            e.stopPropagation();
+            callback(e);
+        }, 500);
+    });
+
+    element.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+    });
+
+    /*element.addEventListener('touchend', function () {
+        if (timeoutId) clearTimeout(timeoutId);
+    });
+    */
+    /*element.addEventListener('touchmove', function () {
+        if (timeoutId) clearTimeout(timeoutId);
+    });
+    */
+}
+
+
 
   function setupListeners(linkElement) {
-    console.log(linkElement)
+
     linkElement.addEventListener('mouseleave', function(_event) {
       hideTooltip();
     });
@@ -121,13 +182,11 @@
       hideTooltip();
     });
 
-    linkElement.addEventListener('touchend', function(_event) {
-      hideTooltip();
-    });
-
-    tooltipWrapper.addEventListener('touchend', function(_event) {
-      hideTooltip();
-    });
+    onLongPress(linkElement,(event)=>{
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+      showTooltip(event);
+    })
 
     linkElement.addEventListener('mouseenter', function(event) {
       clearTimeout(opacityTimeout);
@@ -135,6 +194,7 @@
       showTooltip(event);
     });
 
+    
     tooltipWrapper.addEventListener('mouseenter', function(event) {
       clearTimeout(opacityTimeout);
       clearTimeout(contentTimeout);
@@ -142,6 +202,8 @@
   }
   console.log( document.querySelectorAll('{{ include.wrapperQuerySelector }}'))
 
-  d3.select(window).on("load", ()=>document.querySelectorAll('{{ include.wrapperQuerySelector }}').forEach(setupListeners));
+  d3.select(window).on("load", ()=>{
+    loadSVG();
+});
   
 </script>
