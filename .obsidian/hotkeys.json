@@ -1,0 +1,11 @@
+{
+  "templater-obsidian:templates/english.md": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "B"
+    }
+  ]
+}

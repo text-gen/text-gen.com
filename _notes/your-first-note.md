@@ -8,7 +8,6 @@ title: Your first seed
 You must use the `ar` layout for full RTL notes. It also supports mixed content. 
 ##### مرحبا 
 أهلا بكم أعزائي .
-
 #### Table Of Content 
 I used the following project for the table of content generation: [jekyll-table-of-contents](https://github.com/ghiculescu/jekyll-table-of-contents)
 

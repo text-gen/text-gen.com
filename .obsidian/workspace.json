@@ -1,0 +1,165 @@
+{
+  "main": {
+    "id": "473b79d01a51b88d",
+    "type": "split",
+    "children": [
+      {
+        "id": "66cf7cca3a130afe",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d469a7d78d39f089",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_notes/guide.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "387ccb9300de1249",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_notes/Configure a new vault.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b8cd65a6a1bc7882",
+    "type": "split",
+    "children": [
+      {
+        "id": "d05e95f8d6a3ff73",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e7fa6499734bb0e1",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "b000ce8cacb1ca2e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "205ee4117959bad9",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 440.5
+  },
+  "right": {
+    "id": "56e29672c2b0272d",
+    "type": "split",
+    "children": [
+      {
+        "id": "79ca3f7bb61f10ce",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "03e5ae8daba6b846",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "_notes/Configure a new vault.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "b17125ba945b1c84",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "_notes/Configure a new vault.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "43f92e4deb669be4",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "0fcf8f23a78c0c06",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "_notes/Configure a new vault.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "active": "387ccb9300de1249",
+  "lastOpenFiles": [
+    "_notes/consistency.md",
+    "_notes/Obsidian.md",
+    "_notes/Git Plugin Tutorial.md",
+    "_notes/guide.md",
+    "_pages/tags.md",
+    "_notes/Configure a new vault.md",
+    "_notes/your-first-note.md",
+    "_notes/animals/tigers.md",
+    "_notes/animals/cats.md",
+    "_notes/move your body every day.md"
+  ]
+}
