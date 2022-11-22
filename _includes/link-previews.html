@@ -131,7 +131,7 @@
               img.outerHTML=text.replaceAll(/href="\[\[(.*?)\]\]"/g,function(match, offset, str) {
                   console.log(" - "+img.src,text)
                   console.log({match,offset,str})
-                return `href="${offset.replaceAll(" ","-")}"`;
+                return `href="${offset.toLowerCase().replaceAll(" ","-")}"`;
               });
           
             }
