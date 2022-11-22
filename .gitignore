@@ -12,3 +12,4 @@ _site/
 _includes/notes_graph.json
 
 # Obsidian config
+.obsidian

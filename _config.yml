@@ -1,6 +1,6 @@
-title:               My digital garden
+title:               Text Generator Plugin
 include:             ['_pages']
-exclude:             ['_includes/notes_graph.json','templates/*']
+exclude:             ['_includes/notes_graph.json','templates/*','*.excalidraw.md']
 # You may need to change the base URL depending on your deploy configuration.
 # Specifically, when using GitHub Pages, the baseurl should point to where GitHub
 # Pages deploys your repository (which is usually the repository name).

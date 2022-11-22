@@ -82,7 +82,6 @@ h3,
 h4,
 h5,
 h6 {
-  line-height: 1.3;
   margin-bottom: 0;
   padding-bottom: 0;
   unicode-bidi: plaintext;
@@ -290,7 +289,16 @@ content > table {
     border: 1px solid;
     font-weight: bold;
     color: #8b88e6;
-}
+    }
 }
 
+p > img[src*=svg] {
+  width:85% !important;
+  height:100% !important;
+}
+p > svg {
+  width:85% !important;
+  height:100% !important;
+  user-select: none;
+}
 

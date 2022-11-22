@@ -117,28 +117,31 @@
     }
   }
   function loadSVG(){
-    document.querySelectorAll("object").forEach(obj=>{fetch(obj.data).then(e=>e.text()).then(svg=>obj.outerHTML=svg)})
+    //document.querySelectorAll("object").forEach(obj=>{fetch(obj.data).then(e=>e.text()).then(svg=>obj.outerHTML=svg)})
     const svgImgs = document.querySelectorAll("img[src*=svg]");
+    console.log(svgImgs);
     if(svgImgs.length>0) {
-      svgImgs.forEach(img=>{
+      Promise.all(
+        Array.from(svgImgs).map(img=> 
         fetch(img.src)
         .then(e=>e.text())
         .then(text=>
-          {
-            img.outerHTML=text.replaceAll(/href="\[\[(.*?)\]\]"/g,function(match, offset, str) {
-            console.log({match,offset,str})
-            return `href="${offset.replaceAll(" ","-")}"`;
-          });
-        
-          }
+            { 
+
+              img.outerHTML=text.replaceAll(/href="\[\[(.*?)\]\]"/g,function(match, offset, str) {
+                  console.log(" - "+img.src,text)
+                  console.log({match,offset,str})
+                return `href="${offset.replaceAll(" ","-")}"`;
+              });
+          
+            }
+          ) 
         )
-        .error((error) => {
-          console.error(error);
-        })
-        .finally(() => {
+      )
+        .then(() => {
+          console.log("***")
           document.querySelectorAll('{{ include.wrapperQuerySelector }}').forEach(setupListeners);
         });
-        })
     } else {
       document.querySelectorAll('{{ include.wrapperQuerySelector }}').forEach(setupListeners);
     }

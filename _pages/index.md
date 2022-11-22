@@ -4,19 +4,35 @@ title: Home
 id: home
 permalink: /
 ---
+## Text-Generator! 
 
-# Welcome! 🌱
+> [!note] What is Text-Generator ?
+> It is an open source plugin for [[Obsidian]] allows **Generating Text** using [[Generative Artificial Intelligence]] such as [[Jasper]], [[copyai]], [[rytr]].  
+>  
 
-<p style="padding: 3em 1em; background: #f5f7ff; border-radius: 4px;">
-  Take a look at <span style="font-weight: bold">[[Your first note]]</span> to get started on your exploration.
-</p>
+> [!tip] Support Text Generator Project
+> Please consider donating to the **Text Generator project** to help us continue developing and maintaining this software. Your support is greatly appreciated!  [Buy Me a Coffee](https://www.buymeacoffee.com/haouarine)
 
-This digital garden template is free, open-source, and [available on GitHub here](https://github.com/maximevaillancourt/digital-garden-jekyll-template).
+<a href="https://www.buymeacoffee.com/gbraad" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
 
-The easiest way to get started is to read this [step-by-step guide explaining how to set this up from scratch](https://maximevaillancourt.com/blog/setting-up-your-own-digital-garden-with-jekyll).
+# Outline
 
-<style>
-  .wrapper {
-    max-width: 46em;
-  }
-</style>
+* # [[Why Text Generator is a Better AI Writing Option]]
+* # [[Get Started]]
+* # [[Considered Context]]
+* # [[Commands]]
+* # [[Frontmatter Configuration]]
+* # [[Templates]]
+* # [[Share a New Template Package]]
+
+
+# Special Thanks
+
+Thank you to [Plugin Developer Docs](https://marcus.se.net/obsidian-plugin-docs/) and the following open source plugins for providing code that helps in developing this plugin:
+- [Obsidian-plugins-galore](https://github.com/plugins-galore/obsidian-plugins-galore)
+- [quickadd](https://github.com/chhoumann/quickadd)
+
+
+
+
+
