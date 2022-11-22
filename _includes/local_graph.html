@@ -70,12 +70,12 @@
         const graphData = {% include notes_graph.json %}
         let nodesData = graphData.nodes;
         let linksData = graphData.edges;
-        console.log({nodesData,linksData})
+        //console.log({nodesData,linksData})
         currentNodeid=nodesData.find(e=> window.location.pathname.includes(e.path)).id;
         
         linksData=linksData.filter(e=>e.source === currentNodeid ||e.target === currentNodeid);
         nodesData=nodesData.filter(n=>linksData.findIndex(e=>(e.source ===n.id || e.target===n.id))!==-1 )
-        console.log({nodesData,linksData})
+        //console.log({nodesData,linksData})
 
         const nodeSize = {};
 

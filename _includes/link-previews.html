@@ -126,8 +126,8 @@
         .then(text=>
             { 
               img.outerHTML=text.replaceAll(/href="\[\[(.*?)\]\]"/g,function(match, offset, str) {
-                  console.log(" - "+img.src,text)
-                  console.log({match,offset,str})
+                  //console.log(" - "+img.src,text)
+                  //console.log({match,offset,str})
                 return `href="${offset.toLowerCase().replaceAll(" ","-")}"`;
               });
           
@@ -200,7 +200,7 @@
       clearTimeout(contentTimeout);
     });
   }
-  console.log( document.querySelectorAll('{{ include.wrapperQuerySelector }}'))
+  //console.log( document.querySelectorAll('{{ include.wrapperQuerySelector }}'))
 
   d3.select(window).on("load", ()=>{
     loadSVG();
