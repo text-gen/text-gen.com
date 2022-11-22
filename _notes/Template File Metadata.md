@@ -18,13 +18,13 @@ PromptInfo:
 ---
 ```
 
-**PromptInfo** is a metadata that contains information about the prompt and must be in header of each template. 
+**PromptInfo** is metadata that contains information about the prompt and must be in the header of each template. 
 
 It contains the following fields: 
-* **promptId**: a unique string to identify the prompt, it is used as the id for each prompt in the UI.
-* **name**: a name to identify the prompt, it should be short and clear.
+* **promptId**: a unique string to identify the prompt. It is used as the id for each prompt in the UI.
+* **name**: a name to identify the prompt. It should be short and precise.
 * **description**: a description to explain what this prompt does and how to use it, you can put anything here, but simple and concise is better.
-* **author**: an author name or username to credit who wrote this prompt, if you are not the original author then you can put your name here or leave empty if you want to be anonymous (this field is optional).
+* **author**: an author name or username to credit who wrote this prompt.
 * **required_values**: the required values for the template.
-* **tags**: some keywords that describe this prompt, this can be used to filter prompts based on their tags (this field is optional).
-* **version**: the version of this prompt, follow [semantic versioning](https://semver.org/) (this field is optional).
+* **tags**: Some tags that describe this prompt. This information is used in filtering prompts.
+* **version**: the version of this prompt, follow [semantic versioning](https://semver.org/).

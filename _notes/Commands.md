@@ -26,5 +26,3 @@ For more information about see [[Templates]].
 * ### [[Generate and Create a New File From Template]]
 
 
-
-

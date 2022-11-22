@@ -5,10 +5,12 @@ layout: note
 ---
 
 > [!note] Generate and Create a New File From Template
-> Use template and run the prompt and insert the result in the new document.  
+> Use a template, run the prompt, and insert the result in a new document.  
 > **Default HotKey**:  `Ctrl + Shift + Q`.
 
 
 > [!warning] MAC users
-> You need to choose another Hotkey. I'm open for your suggestions [here](https://github.com/nhaouari/obsidian-textgenerator-plugin/issues/23).
+> It would be best if you chose another hotkey. I'm open to your suggestions [here](https://github.com/nhaouari/obsidian-textgenerator-plugin/issues/23).
+
+
 

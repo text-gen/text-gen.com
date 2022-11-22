@@ -3,6 +3,6 @@ title: PKM
 
 tags: 
 layout: note 
-aliases: ["Personal Knowlage Management"]
+aliases: ["Personal Knowledge Management"]
 ---
 [Personal Knowledge Management](https://en.wikipedia.org/wiki/Personal_knowledge_management)

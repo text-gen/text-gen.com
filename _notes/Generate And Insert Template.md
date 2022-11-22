@@ -5,10 +5,9 @@ layout: note
 ---
 
 > [!note] Generate And Insert Template
-> Use template and run the prompt and insert the result in the active document.  
-> **Default HotKey**:  `Ctrl + Q`.
-
+> Use a template, run the prompt, and insert the result in the active document.  
+> **Default Hotkey**:  `Ctrl + Q`.
 
 > [!warning] MAC users
-> You need to choose another Hotkey. I'm open for your suggestions [here](https://github.com/nhaouari/obsidian-textgenerator-plugin/issues/23).
-
+> It would be best if you chose another hotkey. I'm open to your suggestions [here](https://github.com/nhaouari/obsidian-textgenerator-plugin/issues/23).
+> 

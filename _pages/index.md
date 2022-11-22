@@ -7,7 +7,7 @@ permalink: /
 ## Text-Generator! 
 
 > [!note] What is Text-Generator ?
-> It is an open source plugin for [[Obsidian]] allows **Generating Text** using [[Generative Artificial Intelligence]] such as [[Jasper]], [[copyai]], [[rytr]].  
+> It is an open-source plugin for [[Obsidian]] that allows **Generating Text** using [[Generative Artificial Intelligence]] such as [[Jasper]], [[copyai]], [[rytr]].  
 >  
 
 > [!tip] Support Text Generator Project
@@ -26,7 +26,7 @@ permalink: /
 
 # Special Thanks
 
-Thank you to [Plugin Developer Docs](https://marcus.se.net/obsidian-plugin-docs/) and the following open source plugins for providing code that helps in developing this plugin:
+Thank you to [Plugin Developer Docs](https://marcus.se.net/obsidian-plugin-docs/) and the following open-source plugins for providing code that helps in developing this plugin:
 - [Obsidian-plugins-galore](https://github.com/plugins-galore/obsidian-plugins-galore)
 - [quickadd](https://github.com/chhoumann/quickadd)
 
