@@ -10,4 +10,4 @@ layout: note
 
 > [!warning] MAC users
 > It would be best if you chose another hotkey. I'm open to your suggestions [here](https://github.com/nhaouari/obsidian-textgenerator-plugin/issues/23).
-> 
+

@@ -13,7 +13,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_notes/Templates.md",
+                "file": "_notes/Generate And Insert Template.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3c15ecd23b5d6e91",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_notes/Get Open AI Access Token.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3dc337a1df36b43b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_notes/Get Open AI Access Token.md",
                 "mode": "source",
                 "source": false
               }
@@ -148,22 +172,6 @@
             }
           }
         ]
-      },
-      {
-        "id": "b63d1a7fa753f7f8",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "fcbe96ec74dd8068",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "assets/images/publshing a release.excalidraw"
-              }
-            }
-          }
-        ]
       }
     ],
     "direction": "vertical"
@@ -229,7 +237,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Templates.md",
+                "file": "_notes/Generate And Insert Template.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -246,7 +254,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_notes/Templates.md",
+                "file": "_notes/Generate And Insert Template.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -269,7 +277,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Templates.md"
+                "file": "_notes/Generate And Insert Template.md"
               }
             }
           }
@@ -277,19 +285,20 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "active": "b9f4c5527922bf5b",
   "lastOpenFiles": [
-    "_notes/Frontmatter Configuration.md",
     "_notes/Commands.md",
-    "_notes/Configure a new vault.md",
-    "_notes/Obsidian.md",
+    "_pages/index.md",
     "_notes/Share a New Template Package.md",
-    "_notes/Context available for templates.md",
     "_notes/Templates.md",
-    "_notes/Configure API Key.md",
-    "_notes/AI Writer.md",
-    "_notes/Generative Artificial Intelligence.md"
+    "_notes/Context available for templates.md",
+    "_notes/Template File Metadata.md",
+    "_notes/Frontmatter Configuration.md",
+    "_notes/Generate and Create a New File From Template.md",
+    "_notes/Generate And Insert Template.md",
+    "_notes/Create a New File From Template.md"
   ]
 }

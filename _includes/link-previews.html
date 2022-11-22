@@ -79,10 +79,8 @@
           tooltipContentHtml = ''
           tooltipContentHtml += '<div style="font-weight: bold; unicode-bidi: plaintext;">' + iframe.contentWindow.document.querySelector('h1').innerHTML + '</div>'
           tooltipContentHtml += iframe.contentWindow.document.querySelector('content').innerHTML
-
           tooltipContent.innerHTML = tooltipContentHtml
           linkHistories[event.target.getAttribute("href")] = tooltipContentHtml
-
           tooltipWrapper.style.display = 'block';
           setTimeout(function() {
             tooltipWrapper.style.opacity = 1;
@@ -119,7 +117,7 @@
   function loadSVG(){
     //document.querySelectorAll("object").forEach(obj=>{fetch(obj.data).then(e=>e.text()).then(svg=>obj.outerHTML=svg)})
     const svgImgs = document.querySelectorAll("img[src*=svg]");
-    console.log(svgImgs);
+    //console.log(svgImgs);
     if(svgImgs.length>0) {
       Promise.all(
         Array.from(svgImgs).map(img=> 
@@ -127,7 +125,6 @@
         .then(e=>e.text())
         .then(text=>
             { 
-
               img.outerHTML=text.replaceAll(/href="\[\[(.*?)\]\]"/g,function(match, offset, str) {
                   console.log(" - "+img.src,text)
                   console.log({match,offset,str})
@@ -139,7 +136,7 @@
         )
       )
         .then(() => {
-          console.log("***")
+          //console.log("***")
           document.querySelectorAll('{{ include.wrapperQuerySelector }}').forEach(setupListeners);
         });
     } else {
