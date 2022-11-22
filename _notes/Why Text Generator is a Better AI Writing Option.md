@@ -12,7 +12,7 @@ There are many benefits to using a **Text Generator Plugin**, including the foll
 * **Flexible and Focused context**: The context of what you're writing is straightforward to include using Obsidian wiki links and all the available options in Text Generator Plugin [[Considered Context]]. 
 * **Template Engine**: You can create templates to make repetitive tasks more manageable. 
 * [[Share a New Template Package|Community Templates]] makes sharing templates for writing or generating easier. 
-* **Highly Flexible Configuration**:  Using [[Frontmatter Configuration]] you can use different services such as [[Get Open AI Access Token|OpenAI]], [[HugginFace]]. 
+* **Highly Flexible Configuration**:  Using [[Frontmatter Configuration]] you can use different services such as [[Get OpenAI Access Token|OpenAI]], [[HugginFace]]. 
 
 
 ## What is the difference between using Text Generator and other AI Writers? 
