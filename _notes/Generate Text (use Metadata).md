@@ -3,7 +3,10 @@ title: Generate Text (use Metadata)
 tags: 
 layout: note 
 ---
-You can append the **frontmatter/metadata** information of the document to [[Considered Context]]  by using "**Generate Text (use Metadata)**," which might ensure higher efficiency (see [[How the cost is calculated]]). 
+> [!note] Generate Text (use Metadata)
+> "**Generate Text (use Metadata)**" generates a text based on *the selected text and the metadata in the frontmatter*  and insert it on the current cursor position. See  [[Considered Context]] for more details.  
+> 
+> **Default Hotkey**:  `Ctrl + Alt + j`.
 
 Let's take as an example the following document.
 
@@ -27,4 +30,9 @@ Affordable and Powerful AI Text Assistante Helper"
 keywords: AI Text Assistante Helper, text assistant helper, Jasper 
 Write conclusion  
 ```
+
+The metadata here can be seen as global context that you can append to the selected text to get more accurate results without send the full content which optimize your cost (see [[How the cost is calculated]]).  
+
+### Tips
 * It is more practical to use [[Hotkeys in Obsidian]].
+* The generated text will have a max size of ([[max_tokens configuration|max_tokens]]) using default settings.

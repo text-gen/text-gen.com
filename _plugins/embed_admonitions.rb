@@ -35,7 +35,7 @@ class AdmonitionsEmbedGenerator < Jekyll::Generator
           #{title}
           </div>
           <p class="#{contentClass}">
-          #{parser.convert(content.gsub!(/^>\s*/m,""))}
+          #{parser.convert(content.gsub!(/^>\s*/m,"\n"))}
           </p>
           </div>
         HTML
