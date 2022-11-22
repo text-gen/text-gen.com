@@ -8,7 +8,7 @@ class AdmonitionsEmbedGenerator < Jekyll::Generator
 
     all_docs.each do |current_note|
       current_note.content.gsub!(
-        />\s\[\!(.*?)](.*?)\n(.*?)\n[^>]/m) {|match|
+        />\s*\[\!(.*?)](.*?)\n(.*?)\n[^>]/m) {|match|
         type=$1
         title=$2
         content=$3
@@ -35,7 +35,7 @@ class AdmonitionsEmbedGenerator < Jekyll::Generator
           #{title}
           </div>
           <p class="#{contentClass}">
-          #{parser.convert(content.gsub!(">",""))}
+          #{parser.convert(content.gsub!(/^>\s*/m,""))}
           </p>
           </div>
         HTML
