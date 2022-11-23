@@ -1,11 +1,11 @@
 ---
 layout: page
-title: About
+title: Text Generator
 permalink: /about
 ---
 
 
-> [!note] What is Text-Generator ?
+> [!note] What is Text Generator ?
 > It is an open source plugin for [[Obsidian]] allows **Generating Text** using [[Generative Artificial Intelligence]] such as [[Jasper]], [[copyai]], [[rytr]].  
 >  
 

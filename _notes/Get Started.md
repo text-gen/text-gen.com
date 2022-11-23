@@ -5,15 +5,9 @@ layout: note
 ---
 ## Get Started 
 ![[getStarted.excalidraw.svg]]
-- **Step 01**- First, you must have an account with the OpenAI platform. To do this, go to [OpenAI](https://openai.com/) and create an account.
 
-- **Step 02**- To use OpenAI's API, you need to get an access token from them, so they can keep track of your usage on their end and prevent system abuse. You create this key by following the steps explained here [[Get OpenAI Access Token]]. 
-
-- **Step 03**- To allow **Text Generator Plugin** to use your OpenAI Account, You need to [[Configure API Key]] 
-
-- **Step 04**- Now, start using **Text Generator Plugin** by using the basic commands [[Generate Text]] and [[Generate Text (use Metadata)]] from [[Commands]]. 
-
-
-
-
-
+Once you have [[Obsidian]] installed,
+1. Go to [OpenAI](https://beta.openai.com/signup) and create an account.
+2. [[Get OpenAI Access Token]]. 
+3. [[Configure API Key]] in  **Text Generator Plugin**. 
+4. Generate text using the basic commands [[Generate Text]] and [[Generate Text (use Metadata)]] from [[Commands]]. 

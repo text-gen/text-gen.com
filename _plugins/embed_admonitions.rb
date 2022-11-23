@@ -7,12 +7,14 @@ class AdmonitionsEmbedGenerator < Jekyll::Generator
     parser = Jekyll::Converters::Markdown.new(site.config)
 
     all_docs.each do |current_note|
+     # puts(current_note.content)
       current_note.content.gsub!(
-        />\s*\[\!(.*?)](.*?)\n(.*?)\n[^>]/m) {|match|
+        /^>\s*\[\!(.*?)\](.*?)(\r?\n\r?.*?)\r?\n\r?[^>]\z?/m) {|match|
+        puts("---")
         type=$1
         title=$2
         content=$3
-        
+        puts(type,title,content  )
         admonitionClass= "admonition admonition-#{type}"
         titleClass= "admonition-title"
         contentClass= "admonition-content"
@@ -31,12 +33,12 @@ class AdmonitionsEmbedGenerator < Jekyll::Generator
 
         <<~HTML
           <div dir="#{dir}" class="#{admonitionClass}">
-          <div class="#{titleClass}" >
-          #{title}
-          </div>
-          <p class="#{contentClass}">
-          #{parser.convert(content.gsub!(/^>\s*/m,"\n"))}
-          </p>
+            <div class="#{titleClass}" >
+            #{title}
+            </div>
+            <p class="#{contentClass}">
+            #{parser.convert(content.gsub!(/^>\s*/m,"\n"))}
+            </p>
           </div>
         HTML
 

@@ -7,7 +7,7 @@ layout: note
 > [!note] Obsidian
 > **Obsidian** is a note-taking application that uses Markdown files stored in a local folder. The product is popular because it is extensible. There are many community-built plugins that help users configure the application to support their specific workflow.
 
-## Interessting Links
+## Interesting Links
 * [https://obsidian.md/](https://obsidian.md/)
 * [https://forum.obsidian.md/](https://forum.obsidian.md/)
 * [Discord](https://discord.gg/obsidianmd)

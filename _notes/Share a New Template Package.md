@@ -49,7 +49,7 @@ layout: note
 
 ## Step 02: Adding your package to Text Generator Database
 ### 01-Fork  [main repo](https://github.com/text-gen/text-generator-packages)
-### 02- Add your package to the end of `community-packages.json`, ### 03- make that your packageId is unique. 
+### 02- Add your package to the end of `community-packages.json`, ### 03- Make that your packageId is unique. 
 ```json
 [
 

@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Home
+title: Text Generator Plugin! Free Alternative to Copy.ai, Jasper and Rytr
 id: home
 permalink: /
 ---
-## Text-Generator!
+## Text Generator Plugin! Free Alternative to Copy.ai, Jasper and Rytr
 > [!note] What is Text-Generator ?
-> It is an open-source plugin for [[Obsidian]] that allows **Generating Text** using [[Generative Artificial Intelligence]] such as [[Jasper]], [[copyai]], [[rytr]].
+>  [[Text Generator]] is an AI Assistant Tool that brings the power of [Generative Artificial Intelligence](app://obsidian.md/Generative%20Artificial%20Intelligence) to the power of  knowledge creation and organization in [[Obsidian]].  For example, you can use [[Text Generator]] to generate ideas, attractive titles, summaries, outlines, and even whole paragraphs based on your input content. *The possibilities are endless!*
 
 > [!tip] Support Text Generator Project
 > Please consider donating to the **Text Generator project** to help us continue developing and maintaining this software. Your support is greatly appreciated! [Buy Me a Coffee](https://www.buymeacoffee.com/haouarine)
