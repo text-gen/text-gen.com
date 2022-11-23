@@ -8,8 +8,14 @@ layout: note
 
 The included information is configurable in the settings of the plugin. See [[Considered Context]].
 
+### title
+The `title` of the document.  
+
+### selection 
+`selection` is the selected text according to the method explained in [[Considered Context]].
+
 ### context 
-includes YAML Varaibles, Title*, StaredHeadings*, Selection
+includes YAML Varaibles, Title*, StaredHeadings*, Selection {{}}
 
 ![[context.excalidraw.svg]]
 ### frontmatter
