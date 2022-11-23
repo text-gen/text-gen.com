@@ -153,7 +153,7 @@
             timeoutId = null;
             e.stopPropagation();
             callback(e);
-        }, 500);
+        }, 2000);
     });
 
     element.addEventListener('contextmenu', function(e) {
@@ -170,8 +170,6 @@
     */
 }
 
-
-
   function setupListeners(linkElement) {
 
     linkElement.addEventListener('mouseleave', function(_event) {
@@ -182,11 +180,11 @@
       hideTooltip();
     });
 
-    onLongPress(linkElement,(event)=>{
+    /*onLongPress(linkElement,(event)=>{
       clearTimeout(opacityTimeout);
       clearTimeout(contentTimeout);
       showTooltip(event);
-    })
+    })*/
 
     linkElement.addEventListener('mouseenter', function(event) {
       clearTimeout(opacityTimeout);
