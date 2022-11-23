@@ -9,4 +9,4 @@ layout: note
 > 
 > **Default Hotkey**:  `Ctrl + j`.
 
-* The generated text will have a max size of ([[max_tokens configuration|max_tokens]]) using default settings.
+* The generated text will have a max size of ([[Set Max Content Size|max_tokens]]) using default settings.

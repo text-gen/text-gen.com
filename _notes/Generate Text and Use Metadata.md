@@ -35,4 +35,4 @@ The metadata here can be seen as global context that you can append to the selec
 
 ### Tips
 * It is more practical to use [[Hotkeys in Obsidian]].
-* The generated text will have a max size of ([[max_tokens configuration|max_tokens]]) using default settings.
+* The generated text will have a max size of ([[Set Max Content Size|max_tokens]]) using default settings.

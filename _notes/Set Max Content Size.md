@@ -1,5 +1,5 @@
 ---
-title: max_tokens configuration
+title: Set Max Content Size
 tags: 
 layout: note 
 ---
