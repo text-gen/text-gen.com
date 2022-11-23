@@ -10,11 +10,11 @@ class AdmonitionsEmbedGenerator < Jekyll::Generator
      # puts(current_note.content)
       current_note.content.gsub!(
         /^>\s*\[\!(.*?)\](.*?)(\r?\n\r?.*?)\r?\n\r?[^>]\z?/m) {|match|
-        puts("---")
+        #puts("---")
         type=$1
         title=$2
         content=$3
-        puts(type,title,content  )
+        #puts(type,title,content  )
         admonitionClass= "admonition admonition-#{type}"
         titleClass= "admonition-title"
         contentClass= "admonition-content"
