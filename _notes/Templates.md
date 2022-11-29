@@ -20,9 +20,14 @@ The default folder for `textgenerator/prompts`. You can change this path from th
 > 
 
 ## Write a new Template
+### Create the template file
+#### Using Create Template 
+* From your active document, run [[Create a Template]]. 
+#### From scratch
 * Create a file in **Templates Folder**. 
 * Add [[Template File Metadata]].
-* Use [[Context available for templates]] to prepare the template. 
+### Build the template
+* Use [[Context available for templates]] to prepare the template.  For more information about the template engine, please see [handlebarsjs](https://handlebarsjs.com/)
 * The template will be accessible through [[Commands|Template commads]]
 
 ## [[Share a New Template Package]]

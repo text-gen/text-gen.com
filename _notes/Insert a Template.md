@@ -1,5 +1,5 @@
 ---
-title: Insert Template
+title: Insert a Template
 tags: 
 layout: note 
 ---

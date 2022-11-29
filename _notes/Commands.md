@@ -3,9 +3,6 @@ title: Commands
 tags: doc
 layout: note 
 ---
-
-![[Commands.svg]]
-
 ## Basic Commands 
 The simplest commands are : **"Generate Text!"** and **"Generate Text (use Metadata).**"
 * ### [[Generate Text]]
@@ -18,13 +15,16 @@ The simplest commands are : **"Generate Text!"** and **"Generate Text (use Metad
 ## Template commands
 For more information about see [[Templates]].
 * ### [[Template Package Manager]]
-* ### [[Insert Template]]
+* ### [[Create a Template]]
+* ### [[Insert a Template]]
 * ### [[Create a New File From Template]]
 * ### [[Generate And Insert Template]]
 * ### [[Generate and Create a New File From Template]]
+
 
 
 ## Prerequisites
 * [[Configure API Key]] (if you're using OpenAI). 
 * [[Considered Context]].  
 * [[Hotkeys in Obsidian]]
+![[Commands.svg]]

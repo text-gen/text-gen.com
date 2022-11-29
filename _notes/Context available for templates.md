@@ -27,7 +27,7 @@ It is an object that contains all the headings with their content.
 ![[HeadingsTemplate.excalidraw.svg]]
 
 ### children
-It is an array that includes the cited notes. You can access it through `{{children[0]}}` 
+It is an array that includes the cited notes. You can access it through `children`.
 
 ![[childrenNotes.excalidraw.svg]]
 

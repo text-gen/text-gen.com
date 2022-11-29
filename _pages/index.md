@@ -17,6 +17,8 @@ permalink: /
 
 ## Topics
 * ### [[Get Started]]
+* ### [[What's New]]
+* ### [[FAQ]]
 * ### [[Text Generator Features]]
 * ### [[Considered Context]]
 * ### [[Commands]]
