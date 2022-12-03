@@ -3,6 +3,5 @@ title: Configure API Key
 tags: 
 layout: note 
 ---
-
-To use [[Get OpenAI Access Token|OpenAi]], you need to set the API Key in the setting of Text Generator Plugin.
+After [[installing the Text Generator Plugin]] in [[Obsidian]] and  enabling  it,  you  need to configure the API Key ([[Get OpenAI Access Token|OpenAi]]):
 ![[Pasted image 20221122142457.png]]
