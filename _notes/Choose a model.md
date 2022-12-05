@@ -5,7 +5,7 @@ layout: note
 ---
 > [!note] Choosing the model that you want
 > This command facilitates choosing OpenAI models. [More information about Open AI models](https://beta.openai.com/docs/models/overview)
-> **Default Hotkey**: `Ctrl/Command + Alt + 2`.    
+> **Default Hotkey**: `Alt + 2`.    
 > *This value could be overwritten if it is specified in [[Frontmatter Configuration| Frontmatter]]* .
 
 
