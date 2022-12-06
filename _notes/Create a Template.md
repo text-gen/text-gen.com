@@ -1,4 +1,6 @@
----
+-   The Template Package Manager is now working on mobile devices.
+-   Removed Template packages are now stored in a trash folder inside the Prompts path.
+-   Many issues have been fixed.---
 title: Create a Template
 tags: 
 layout: note 

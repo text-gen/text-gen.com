@@ -34,4 +34,9 @@ The default folder for `textgenerator/prompts`. You can change this path from th
 * Use [[Context available for templates]] to prepare the template.  For more information about the template engine, please see [handlebarsjs](https://handlebarsjs.com/).
 * The template will be accessible through [[Commands|Template commads]].
 
+### Helper Functions
+* These are functions that help in dealing with the variables. in addition to [Built-in Helpers](https://handlebarsjs.com/guide/builtin-helpers.html) in  [Handlebars](https://handlebarsjs.com/): 
+	* [[substring]]
+
+
 ## [[Share a New Template Package]]

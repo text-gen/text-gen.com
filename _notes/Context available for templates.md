@@ -35,3 +35,5 @@ It is an array that includes the cited notes. You can access it through `childre
 `mentions` is an object that includes two arrays: **linked** and **unlinked**.  
 Each array contains the paragraphs where document is mentioned. 
 
+### highlights
+It is an array that includes obsidian ==highlights== .  You can access it through `highlights`.

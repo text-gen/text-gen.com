@@ -8,7 +8,7 @@ layout: note
 > **Default Hotkey**:  `Alt + 3`. 
 
 > [!warning]
-> The **Template Package Manager** needs to be fixed on mobile devices.
+> ~~The **Template Package Manager** needs to be fixed on mobile devices.~~ It works since V 0.1.6
 > 
 
 

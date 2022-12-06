@@ -51,5 +51,5 @@ Starting from version 0.1.0, [[Templates]] are supported in **Text Generator Plu
 
 Ensure the information is available on the template for you to use in the Plugin's settings.
 
-![[Pasted image 20221121182509.png]]
+![[Pasted image 20221206193818.png]]
 More information about their usage is in [[Templates]]. 
