@@ -8,8 +8,8 @@ layout: note
 
 
 > [!warning]
-> -   Please beware that increasing the value of parameter `n` in GPT for text generation might significantly increase the cost of usage.
-> -   Rate limitation in OpenAI API [rate-limits](https://platform.openai.com/docs/guides/rate-limits/overview)
+> *Please beware that increasing the value of parameter `n` in GPT for text generation might significantly increase the cost of usage.
+> *Rate limitation in OpenAI API [rate-limits](https://platform.openai.com/docs/guides/rate-limits/overview)
 
 ![Pasted image 20230308022636.png](https://user-images.githubusercontent.com/9850722/222774001-8da26c8c-df75-4d0d-a69d-5fcac04c7f2b.gif)
 # Enable Auto-Suggest
@@ -33,7 +33,5 @@ You can set the number of suggestions shown in the dropdown. Please beware that 
 * ***Stop Phrase*** :  
 You can set stop phrase for Auto-suggest in this field. If stop phrase is found in the generated text the generated text will stop. 
 
-> [!note] *Stop Phrase*
-*Stop Phrase* is a way to signal to the model generating the text when you want it to stop generating text. It could be a character like a space or period, or even a line break. This can be useful in auto suggestion when you want to complete by **words** (using space ` ` as a stop phrase), **sentences** (using dot `.` as a stop phrase), or **paragraphs** (using line break `\n` as a stop phrase).
-
-
+> [!note] Stop Phrase
+> **Stop Phrase** is a way to signal to the model generating the text when you want it to stop generating text. It could be a character like a space or period, or even a line break. This can be useful in auto suggestion when you want to complete by **words** (using space ` ` as a stop phrase), **sentences** (using dot `.` as a stop phrase), or **paragraphs** (using line break `\n` as a stop phrase).
