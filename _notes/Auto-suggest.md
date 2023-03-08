@@ -4,7 +4,7 @@ tags:
 layout: note 
 ---
 > [!note]
-> **Auto-suggest** is the new option of Text Generator that allows you to get suggestions as you type. These suggestions can be words or phrases or even paragraphs that you can use to complete your text. Which gives you more options to choose from and makes the process of writing your text much faster and controlable.
+> Auto-suggest is the new option of Text Generator that allows you to get suggestions as you type. These suggestions can be words or phrases or even paragraphs that you can use to complete your text. Which gives you more options to choose from and makes the process of writing your text much faster and controlable.
 
 
 > [!warning]

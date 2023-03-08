@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_notes/What's New.md",
+                "file": "_notes/Generate And Insert Template.md",
                 "mode": "source",
                 "source": false
               }
@@ -190,7 +190,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/What's New.md",
+                "file": "_notes/Generate And Insert Template.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -207,7 +207,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_notes/What's New.md",
+                "file": "_notes/Generate And Insert Template.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -230,7 +230,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/What's New.md"
+                "file": "_notes/Generate And Insert Template.md"
               }
             }
           }
@@ -259,11 +259,15 @@
   },
   "active": "e2e5bd5330f1fc4e",
   "lastOpenFiles": [
+    "_notes/Generate Text and Use Metadata.md",
+    "_notes/Choose a model.md",
+    "_notes/Considered Context.md",
     "_notes/Template File Metadata.md",
+    "_notes/Auto-suggest.md",
+    "_notes/Create a Template.md",
     "_notes/What's New.md",
     "_notes/Generate & Copy To Clipboard.md",
     "_notes/Get Started.md",
-    "_notes/Auto-suggest.md",
     "_notes/Bloom Configuration.md",
     "_notes/AI Writer.md",
     "_pages/index.md",
@@ -271,19 +275,15 @@
     "assets/images/Pasted image 20230308112116.png",
     "assets/images/Pasted image 20230308111908.png",
     "_notes/Templates.md",
-    "_notes/Considered Context.md",
     "_notes/Commands.md",
-    "_notes/Choose a model.md",
     "_notes/Set Max Content Size.md",
     "_notes/Frontmatter Configuration.md",
     "assets/images/Pasted image 20230308023923.png",
     "_notes/Generate Text.md",
-    "_notes/Generate Text and Use Metadata.md",
     "_notes/Generate and Create a New File From Template.md",
     "_notes/Generate And Insert Template.md",
     "_notes/Create a New File From Template.md",
     "_notes/Insert a Template.md",
-    "_notes/Create a Template.md",
     "_notes/Template Package Manager.md",
     "_notes/Share a New Template Package.md",
     "assets/images/Pasted image 20230308023111.png",
