@@ -31,9 +31,9 @@ It contains the following fields:
 * **tags**: Some tags that describe this prompt. This information is used in filtering prompts.
 * **version**: the version of this prompt, follow [semantic versioning](https://semver.org/).
 * **commands**: This is used to convert templates to commands to be able to assign hotkey for each command (you need to reload the plugin to see the changes)
-		* `generate` : complie the template and generate the content through gpt-3 and insert the result in the **active note**.
-		* `generate&create`: complie the template and generate the content through gpt-3 and insert the result in the **new note**.
-		* `insert`: complie the template and insert the result in the active note without  gpt-3  insert the result in the **active note**..
-		* `insert&create`: complie the template and insert the result in the active note without  gpt-3  insert the result in the **new note**..
-		* `model`: show the template as form of inputs and insert the result in the **active note**.
-		* `clipboard`:  complie the template and generate the content through gpt-3 and write the result in the clipboard.
+	* `generate` : complie the template and generate the content through gpt-3 and insert the result in the **active note**.
+	* `generate&create`: complie the template and generate the content through gpt-3 and insert the result in the **new note**.
+	* `insert`: complie the template and insert the result in the active note without  gpt-3  insert the result in the **active note**..
+	* `insert&create`: complie the template and insert the result in the active note without  gpt-3  insert the result in the **new note**..
+	* `model`: show the template as form of inputs and insert the result in the **active note**.
+	* `clipboard`:  complie the template and generate the content through gpt-3 and write the result in the clipboard.

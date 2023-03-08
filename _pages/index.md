@@ -25,6 +25,7 @@ permalink: /
 * ### [[Frontmatter Configuration]]
 * ### [[Templates]]
 * ### [[Share a New Template Package]]
+* ### [[Auto-suggest]]
 
 ## Special Thanks
 Thank you to [Plugin Developer Docs](https://marcus.se.net/obsidian-plugin-docs/) and the following open-source plugins for providing code that helps in developing this plugin:
