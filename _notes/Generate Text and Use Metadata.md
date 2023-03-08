@@ -10,8 +10,6 @@ layout: note
 
 Let's take as an example the following document.
 
-> [!warning]
-> If you want to copy and past the code in Obsidian, use (CTRL + SHIFT + V) or (⌘+ SHIFT + V for MAC users) to avoid formating issues.
 
 ```
 ---

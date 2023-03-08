@@ -8,43 +8,79 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b9f4c5527922bf5b",
+            "id": "b569ed58d2297214",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_notes/Generate And Insert Template.md",
+                "file": "_notes/Templates.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "3c15ecd23b5d6e91",
+            "id": "a39acaab6860304b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_notes/Get Open AI Access Token.md",
+                "file": "_notes/Considered Context.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "3dc337a1df36b43b",
+            "id": "ca582b9f864d6017",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_notes/Get Open AI Access Token.md",
+                "file": "_notes/Generate & Copy To Clipboard.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "92b4a7ef48cc0b86",
+            "id": "fc686b40d9098953",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_notes/Generate and Create a New File From Template.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "421e17e9d48ac913",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_notes/Generate and Create a New File From Template.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "75d32ffa65e26a39",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_notes/Commands.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8c6fc5873f5c8554",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -52,126 +88,31 @@
             }
           },
           {
-            "id": "7bd29cb3c21a2109",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
-          },
-          {
-            "id": "950cd77faea5be32",
+            "id": "989ec206da662b8d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_notes/Template Package Manager.md",
+                "file": "_pages/index.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "3e067c49821b63d4",
+            "id": "f2e5ee7df7996aef",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_notes/max_tokens configuration.md",
+                "file": "_notes/Text Generator.md",
                 "mode": "source",
                 "source": false
               }
-            }
-          },
-          {
-            "id": "4a09d08d05f3e1b1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_notes/Choose a model.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "cd62def49b9627ac",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_notes/max_tokens configuration.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b7098ccde4e73bce",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_notes/max_tokens configuration.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fe941be50e7a8a68",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "assets/images/comparison.excalidraw.md"
-              }
-            }
-          },
-          {
-            "id": "de07bb0949672c19",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_notes/Bloom Configuration.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "26e07077f822f4b4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_notes/Dalle-2 Configuration.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "56d5d4f7ccca8bb3",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "assets/images/frontmatterTemplates.excalidraw.md"
-              }
-            }
-          },
-          {
-            "id": "73cfc3843a019c44",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -200,7 +141,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Community",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -237,7 +178,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Generate And Insert Template.md",
+                "file": "_notes/Considered Context.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -254,7 +195,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_notes/Generate And Insert Template.md",
+                "file": "_notes/Considered Context.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -277,7 +218,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Generate And Insert Template.md"
+                "file": "_notes/Considered Context.md"
               }
             }
           }
@@ -285,20 +226,57 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 426.5,
     "collapsed": true
   },
-  "active": "b9f4c5527922bf5b",
+  "left-ribbon": {
+    "hiddenItems": {
+      "templater-obsidian:Templater": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "publish:Publish changes": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "obsidian-textgenerator-plugin:Generate Text!": false,
+      "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false
+    }
+  },
+  "active": "a39acaab6860304b",
   "lastOpenFiles": [
-    "_notes/Commands.md",
     "_pages/index.md",
-    "_notes/Share a New Template Package.md",
+    "_notes/What's New.md",
+    "_notes/Get Started.md",
+    "_notes/Commands.md",
+    "_notes/Choose a model.md",
+    "_notes/Set Max Content Size.md",
     "_notes/Templates.md",
-    "_notes/Context available for templates.md",
-    "_notes/Template File Metadata.md",
     "_notes/Frontmatter Configuration.md",
+    "assets/images/Pasted image 20230308023923.png",
+    "_notes/Generate Text.md",
+    "_notes/Generate Text and Use Metadata.md",
+    "_notes/Generate & Copy To Clipboard.md",
     "_notes/Generate and Create a New File From Template.md",
     "_notes/Generate And Insert Template.md",
-    "_notes/Create a New File From Template.md"
+    "_notes/Create a New File From Template.md",
+    "_notes/Insert a Template.md",
+    "_notes/Create a Template.md",
+    "_notes/Template Package Manager.md",
+    "_notes/Share a New Template Package.md",
+    "assets/images/Pasted image 20230308023111.png",
+    "assets/images/Pasted image 20230308022747.png",
+    "assets/images/Pasted image 20230308022636.png",
+    "_notes/Template File Metadata.md",
+    "_notes/Context available for templates.md",
+    "index.md",
+    "_notes/index 1.md",
+    "_notes/Text Generator.md",
+    "_notes/Considered Context.md",
+    "_notes/Bloom Configuration.md",
+    "_notes/Untitled.md",
+    "_notes/Untitled.canvas"
   ]
 }

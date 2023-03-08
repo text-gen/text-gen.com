@@ -20,6 +20,7 @@ For more information about see [[Templates]].
 * ### [[Create a New File From Template]]
 * ### [[Generate And Insert Template]]
 * ### [[Generate and Create a New File From Template]]
+* ### [[Generate & Copy To Clipboard]]
 
 
 

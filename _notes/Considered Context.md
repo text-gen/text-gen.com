@@ -22,7 +22,7 @@ It can be :
 You can add the ``title`` for the considered context by enabling it from the plugin's settings. 
 ![[Pasted image 20221121175147.png]]
 
-## Adding the stared blocks 
+## Adding the starred blocks 
 If you want to include a specific section in a long article, you can add the heading content by adding an asterisk `*`  at the end of the heading. 
 
 * You need to enable the option in the settings.
