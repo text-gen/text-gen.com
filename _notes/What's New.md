@@ -3,6 +3,17 @@ title: What's New
 tags: 
 layout: note 
 ---
+
+## Version 0.2.17 
+
+### Changes
+
+-   Updated OpenAI API URL to [https://api.openai.com/v1/completions](https://api.openai.com/v1/completions).
+-   Added multiselect to the context "selections" as array for use in templates ([[Context available for templates]])
+-   Fixed bug in sent prompt with YMAL.
+
+If you encounter any issues, please don't hesitate to open an issue.
+
 ## Version 0.2.16 
 #### Features
 

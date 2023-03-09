@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_notes/Common Errors in OpenAI API code and their Possible Causes.md",
+                "file": "_notes/What's New.md",
                 "mode": "source",
                 "source": false
               }
@@ -190,7 +190,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Common Errors in OpenAI API code and their Possible Causes.md",
+                "file": "_notes/What's New.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -207,7 +207,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_notes/Common Errors in OpenAI API code and their Possible Causes.md",
+                "file": "_notes/What's New.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -230,7 +230,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Common Errors in OpenAI API code and their Possible Causes.md"
+                "file": "_notes/What's New.md"
               }
             }
           }
@@ -259,11 +259,12 @@
   },
   "active": "e2e5bd5330f1fc4e",
   "lastOpenFiles": [
+    "_notes/Context available for templates.md",
+    "_notes/Common Errors in OpenAI API code and their Possible Causes.md",
+    "_pages/index.md",
     "_site/common-errors-in-openai-api-code-and-their-possible-causes.html",
     "_site/openai-api-code-errors.html",
     "_notes/FAQ.md",
-    "_notes/Common Errors in OpenAI API code and their Possible Causes.md",
-    "_pages/index.md",
     "_notes/Auto-suggest.md",
     "_notes/Generate And Insert Template.md",
     "_site/auto-suggest.html",

@@ -14,6 +14,9 @@ The `title` of the document.
 ### selection 
 `selection` is the selected text according to the method explained in [[Considered Context]].
 
+### selections (new v0.2.17) 
+It is an array that includes the all selections. You can access it through `selections`.
+
 ### context 
 includes YAML Varaibles, Title*, StaredHeadings*, Selection {{}}
 
