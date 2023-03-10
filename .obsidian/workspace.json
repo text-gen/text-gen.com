@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_notes/What's New.md",
+                "file": "_notes/Common Errors in OpenAI API code and their Possible Causes.md",
                 "mode": "source",
                 "source": false
               }
@@ -190,7 +190,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/What's New.md",
+                "file": "_notes/Common Errors in OpenAI API code and their Possible Causes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -207,7 +207,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_notes/What's New.md",
+                "file": "_notes/Common Errors in OpenAI API code and their Possible Causes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -230,7 +230,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/What's New.md"
+                "file": "_notes/Common Errors in OpenAI API code and their Possible Causes.md"
               }
             }
           }
@@ -259,8 +259,10 @@
   },
   "active": "e2e5bd5330f1fc4e",
   "lastOpenFiles": [
-    "_notes/Context available for templates.md",
+    "_notes/Choose a model.md",
     "_notes/Common Errors in OpenAI API code and their Possible Causes.md",
+    "_notes/What's New.md",
+    "_notes/Context available for templates.md",
     "_pages/index.md",
     "_site/common-errors-in-openai-api-code-and-their-possible-causes.html",
     "_site/openai-api-code-errors.html",
@@ -278,11 +280,9 @@
     "_site/assets/images/Pasted image 20230308022747.png",
     "_site/assets/images/Pasted image 20230308022636.png",
     "_notes/Generate Text and Use Metadata.md",
-    "_notes/Choose a model.md",
     "_notes/Considered Context.md",
     "_notes/Template File Metadata.md",
     "_notes/Create a Template.md",
-    "_notes/What's New.md",
     "_notes/Generate & Copy To Clipboard.md",
     "_notes/Get Started.md",
     "_notes/Bloom Configuration.md",

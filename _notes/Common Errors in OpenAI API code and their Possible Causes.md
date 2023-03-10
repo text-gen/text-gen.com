@@ -3,8 +3,6 @@ title: Common Errors in OpenAI API code and their Possible Causes
 tags: openai
 layout: note 
 ---
-# Common Errors in OpenAI API code and their Possible Causes
-
 In this note, we will discuss some of the common errors that you may encounter while using the OpenAI API and their possible causes.
 
 ## Checking OpenAI Services Status
