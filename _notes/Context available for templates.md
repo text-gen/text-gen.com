@@ -8,7 +8,7 @@ layout: note
 
 
 > [!summary] Template engine
- For more information about the template engine, please see [handlebarsjs](https://handlebarsjs.com/)
+> For more information about the template engine, please see [handlebarsjs](https://handlebarsjs.com/)
 
 > [!warning] Template engine
 > The included information is optional in the settings of the plugin. See [[Considered Context]].

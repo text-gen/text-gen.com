@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_notes/Set Max Content Size.md",
+                "file": "_notes/Context available for templates.md",
                 "mode": "source",
                 "source": false
               }
@@ -194,8 +194,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -215,7 +214,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Set Max Content Size.md",
+                "file": "_notes/Context available for templates.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -232,7 +231,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_notes/Set Max Content Size.md",
+                "file": "_notes/Context available for templates.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -255,7 +254,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Set Max Content Size.md"
+                "file": "_notes/Context available for templates.md"
               }
             }
           }
@@ -284,6 +283,7 @@
   },
   "active": "2d5bccf71bcf190f",
   "lastOpenFiles": [
+    "_notes/Set Max Content Size.md",
     "_notes/Context available for templates.md",
     "_notes/Templates.md",
     "_notes/Commands.md",
@@ -315,7 +315,6 @@
     "_notes/Bloom Configuration.md",
     "_notes/AI Writer.md",
     "_pages/tags.md",
-    "_notes/Set Max Content Size.md",
     "_notes/Frontmatter Configuration.md",
     "assets/images/Pasted image 20230308023923.png",
     "_notes/Generate Text.md",
