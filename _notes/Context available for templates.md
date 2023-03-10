@@ -7,7 +7,7 @@ layout: note
 ## Context available for templates 
 
 
-> [!summary] Template engine
+> [!note] Template engine
 > For more information about the template engine, please see [handlebarsjs](https://handlebarsjs.com/)
 
 > [!warning] Template engine
