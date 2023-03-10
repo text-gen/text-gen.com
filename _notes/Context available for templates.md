@@ -6,7 +6,13 @@ layout: note
 
 ## Context available for templates 
 
-The included information is configurable in the settings of the plugin. See [[Considered Context]].
+
+> [!summary] Template engine
+ For more information about the template engine, please see [handlebarsjs](https://handlebarsjs.com/)
+
+> [!warning] Template engine
+> The included information is optional in the settings of the plugin. See [[Considered Context]].
+ 
 
 ### title
 The `title` of the document.  

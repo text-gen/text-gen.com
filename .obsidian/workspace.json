@@ -37,7 +37,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_notes/Common Errors in OpenAI API code and their Possible Causes.md",
+                "file": "_notes/Commands.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e11e5d4dfce00f67",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_notes/Templates.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2d5bccf71bcf190f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_notes/Set Max Content Size.md",
                 "mode": "source",
                 "source": false
               }
@@ -124,7 +148,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -153,7 +177,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Set Max Content Size",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -170,7 +194,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -190,7 +215,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Common Errors in OpenAI API code and their Possible Causes.md",
+                "file": "_notes/Set Max Content Size.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -207,7 +232,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_notes/Common Errors in OpenAI API code and their Possible Causes.md",
+                "file": "_notes/Set Max Content Size.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -230,7 +255,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Common Errors in OpenAI API code and their Possible Causes.md"
+                "file": "_notes/Set Max Content Size.md"
               }
             }
           }
@@ -257,12 +282,14 @@
       "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false
     }
   },
-  "active": "e2e5bd5330f1fc4e",
+  "active": "2d5bccf71bcf190f",
   "lastOpenFiles": [
-    "_notes/Choose a model.md",
-    "_notes/Common Errors in OpenAI API code and their Possible Causes.md",
-    "_notes/What's New.md",
     "_notes/Context available for templates.md",
+    "_notes/Templates.md",
+    "_notes/Commands.md",
+    "_notes/Common Errors in OpenAI API code and their Possible Causes.md",
+    "_notes/Choose a model.md",
+    "_notes/What's New.md",
     "_pages/index.md",
     "_site/common-errors-in-openai-api-code-and-their-possible-causes.html",
     "_site/openai-api-code-errors.html",
@@ -288,8 +315,6 @@
     "_notes/Bloom Configuration.md",
     "_notes/AI Writer.md",
     "_pages/tags.md",
-    "_notes/Templates.md",
-    "_notes/Commands.md",
     "_notes/Set Max Content Size.md",
     "_notes/Frontmatter Configuration.md",
     "assets/images/Pasted image 20230308023923.png",
