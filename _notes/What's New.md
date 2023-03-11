@@ -3,6 +3,27 @@ title: What's New
 tags: 
 layout: note 
 ---
+## Version 0.2.20
+
+### New Features
+
+-   Improved selection for better user experience.
+-   Added an option to display AI-generated content in callouts, allowing for more dynamic and engaging presentations.
+
+### Contributors
+
+-   **[jackallard17](https://github.com/jackallard17)**: Contributed the new feature to show AI content in callouts. Thank you for your contribution!
+![[Pasted image 20230311230543.png]]
+![[Pasted image 20230311230554.png]]
+## Version 0.2.18
+
+### Bug Fixes
+
+-   Fixed a bug ([#125](https://github.com/nhaouari/obsidian-textgenerator-plugin/issues/125)) that was causing issues with note title generation.
+-   Added the headings and frontmatter of children in the considered content of templates (by **[pheelwell](https://github.com/pheelwell)**).
+
+### Contributors
+We would like to thank **[pheelwell](https://github.com/pheelwell)** for their valuable contribution to this release.
 
 ## Version 0.2.17 
 

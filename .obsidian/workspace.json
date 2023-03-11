@@ -8,147 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b569ed58d2297214",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_notes/Templates.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a39acaab6860304b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_pages/index.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e2e5bd5330f1fc4e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_notes/Commands.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e11e5d4dfce00f67",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_notes/Templates.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "2d5bccf71bcf190f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_notes/Context available for templates.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ca582b9f864d6017",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_notes/Generate & Copy To Clipboard.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fc686b40d9098953",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_notes/Generate and Create a New File From Template.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "421e17e9d48ac913",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_notes/Generate and Create a New File From Template.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "75d32ffa65e26a39",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_notes/Commands.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8c6fc5873f5c8554",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "989ec206da662b8d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_pages/index.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f2e5ee7df7996aef",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_notes/Text Generator.md",
+                "file": "_notes/What's New.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -198,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 440.5
+    "width": 440.5,
+    "collapsed": true
   },
   "right": {
     "id": "56e29672c2b0272d",
@@ -214,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Context available for templates.md",
+                "file": "_notes/What's New.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -231,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_notes/Context available for templates.md",
+                "file": "_notes/What's New.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -254,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Context available for templates.md"
+                "file": "_notes/What's New.md"
               }
             }
           }
@@ -283,8 +155,12 @@
   },
   "active": "2d5bccf71bcf190f",
   "lastOpenFiles": [
-    "_notes/Set Max Content Size.md",
+    "_site/assets/images/Pasted image 20230311230554.png",
+    "assets/images/Pasted image 20230311230554.png",
+    "_site/assets/images/Pasted image 20230311230543.png",
+    "assets/images/Pasted image 20230311230543.png",
     "_notes/Context available for templates.md",
+    "_notes/Set Max Content Size.md",
     "_notes/Templates.md",
     "_notes/Commands.md",
     "_notes/Common Errors in OpenAI API code and their Possible Causes.md",
@@ -305,7 +181,6 @@
     "_site/assets/images/Pasted image 20230308023923.png",
     "_site/assets/images/Pasted image 20230308023111.png",
     "_site/assets/images/Pasted image 20230308022747.png",
-    "_site/assets/images/Pasted image 20230308022636.png",
     "_notes/Generate Text and Use Metadata.md",
     "_notes/Considered Context.md",
     "_notes/Template File Metadata.md",
@@ -316,13 +191,10 @@
     "_notes/AI Writer.md",
     "_pages/tags.md",
     "_notes/Frontmatter Configuration.md",
-    "assets/images/Pasted image 20230308023923.png",
     "_notes/Generate Text.md",
     "_notes/Generate and Create a New File From Template.md",
     "_notes/Create a New File From Template.md",
     "_notes/Insert a Template.md",
-    "_notes/Template Package Manager.md",
-    "assets/images/Pasted image 20230308023111.png",
     "_notes/Untitled.canvas"
   ]
 }
