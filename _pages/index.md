@@ -15,6 +15,10 @@ permalink: /
 > [!tip] Support Text Generator Project
 > Please consider donating to the **Text Generator project** to help us continue developing and maintaining this software. Your support is greatly appreciated! [Buy Me a Coffee](https://www.buymeacoffee.com/haouarine)
 
+> [!success] Discord (New)
+> Exciting news! We have just launched our brand new **Discord** server for the community. Join us to connect with like-minded people, share your interests, and build a community. 
+>  Join us now: [https://discord.gg/BRYqetyjag](https://discord.gg/BRYqetyjag)
+
 ## Topics
 * ### [[Get Started]]
 * ### [[What's New]]

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_notes/What's New.md",
+                "file": "_pages/index.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 440.5,
-    "collapsed": true
+    "width": 440.5
   },
   "right": {
     "id": "56e29672c2b0272d",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/What's New.md",
+                "file": "_pages/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_notes/What's New.md",
+                "file": "_pages/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/What's New.md"
+                "file": "_pages/index.md"
               }
             }
           }
@@ -155,6 +154,7 @@
   },
   "active": "2d5bccf71bcf190f",
   "lastOpenFiles": [
+    "_notes/What's New.md",
     "_site/assets/images/Pasted image 20230311230554.png",
     "assets/images/Pasted image 20230311230554.png",
     "_site/assets/images/Pasted image 20230311230543.png",
@@ -165,7 +165,6 @@
     "_notes/Commands.md",
     "_notes/Common Errors in OpenAI API code and their Possible Causes.md",
     "_notes/Choose a model.md",
-    "_notes/What's New.md",
     "_pages/index.md",
     "_site/common-errors-in-openai-api-code-and-their-possible-causes.html",
     "_site/openai-api-code-errors.html",
@@ -180,7 +179,6 @@
     "_site/generate-copy-to-clipboard.html",
     "_site/assets/images/Pasted image 20230308023923.png",
     "_site/assets/images/Pasted image 20230308023111.png",
-    "_site/assets/images/Pasted image 20230308022747.png",
     "_notes/Generate Text and Use Metadata.md",
     "_notes/Considered Context.md",
     "_notes/Template File Metadata.md",
