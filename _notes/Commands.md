@@ -21,7 +21,8 @@ For more information about see [[Templates]].
 * ### [[Generate And Insert Template]]
 * ### [[Generate and Create a New File From Template]]
 * ### [[Generate & Copy To Clipboard]]
-
+* ### [[Estimate tokens for the current document]]
+* ### [[Estimate tokens for a template]]
 
 
 ## Prerequisites

@@ -46,3 +46,8 @@ Each array contains the paragraphs where document is mentioned.
 
 ### highlights
 It is an array that includes obsidian ==highlights== .  You can access it through `highlights`.
+
+### extractions (v0.3.0-beta)
+`extractions` is an object that includes two arrays: **PDFExtractor** and **WebPageExtractor**.  
+* **PDFExtractor** is an array that contains the embeded pdf documents in the note in text format.
+* **WebPageExtractor** is an array that contains the content of all the external links in the note.

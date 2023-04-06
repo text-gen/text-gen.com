@@ -3,6 +3,18 @@ title: What's New
 tags: 
 layout: note 
 ---
+## Version 0.3.0-beta
+Key features and improvements in Text Generator v0.3.0-beta include:
+* **Refactoring the code**: To ensure optimal performance and readability, the plugin's code has undergone a thorough refactoring process. This restructuring will make it easier for developers to contribute to the project, understand the codebase, and maintain the plugin.
+
+* **Add `extractions` to context**: With the new extractions feature, users can now extract the text from embedded PDF documents and the content of links within the plugin. This expands the range of use cases for the Text Generator and allows users to work more efficiently with diverse notes.
+
+* **Accurate token and cost estimation for OpenAI models**: This update introduces a precise token and cost estimation system for using OpenAI models. This will help users better manage their API usage and control their costs while working with Text Generator. 
+
+* **Better error messages**: To improve the overall user experience, the Text Generator v0.3.0-beta now provides more informative and helpful error messages. This will enable users to diagnose and resolve issues more effectively, resulting in a smoother and more productive workflow.
+
+* **Add connection timeout for requests**: By introducing connection timeouts for requests, the plugin ensures that users do not experience unexpected delays or stalls during their work. This enhancement adds an additional layer of reliability and stability to the Text Generator plugin.
+
 ## Version 0.2.20
 
 ### New Features
