@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_notes/What's New.md",
+                "file": "_notes/Commands.md",
                 "mode": "source",
                 "source": false
               }
@@ -129,7 +129,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/What's New.md",
+                "file": "_notes/Commands.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +146,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_notes/What's New.md",
+                "file": "_notes/Commands.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -169,7 +169,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/What's New.md"
+                "file": "_notes/Commands.md"
               }
             }
           }
@@ -198,17 +198,18 @@
   },
   "active": "2d5bccf71bcf190f",
   "lastOpenFiles": [
+    "_notes/Create a Template.md",
+    "_notes/Commands.md",
+    "_notes/Estimate tokens for a template.md",
+    "_notes/What's New.md",
     "_notes/Context available for templates.md",
     "_notes/Templates.md",
     "_notes/Share a New Template Package.md",
     "_notes/Considered Context.md",
     "assets/images/Pasted image 20230406074028.png",
-    "_notes/Commands.md",
     "_notes/Estimate tokens for the current document.md",
-    "_notes/Estimate tokens for a template.md",
     "assets/images/Pasted image 20230406073109.png",
     "_notes/Generate & Copy To Clipboard.md",
-    "_notes/What's New.md",
     "_pages/index.md",
     "_site/assets/images/Pasted image 20230311230554.png",
     "assets/images/Pasted image 20230311230554.png",
@@ -230,7 +231,6 @@
     "_site/generate-copy-to-clipboard.html",
     "_notes/Generate Text and Use Metadata.md",
     "_notes/Template File Metadata.md",
-    "_notes/Create a Template.md",
     "_notes/Get Started.md",
     "_notes/Bloom Configuration.md",
     "_notes/AI Writer.md",
