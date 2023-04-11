@@ -139,5 +139,9 @@ filename: [random file name]
 content: [random file content]
 ```
 
+> [!note] Note
+>  More helper functions will added in the future releases. Our [discord server](https://discord.gg/BRYqetyjag) is a great place to ask for assistance or suggest new features.
 
-write a item about helper function to include in the realses notes 
+
+>  
+> 

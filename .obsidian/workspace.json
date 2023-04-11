@@ -109,7 +109,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "helper",
+                "query": "discord server ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -224,8 +224,9 @@
   },
   "active": "add11e4219f350ee",
   "lastOpenFiles": [
-    "_notes/Context available for templates.md",
+    "_pages/index.md",
     "_notes/Helper Functions.md",
+    "_notes/Context available for templates.md",
     "_notes/Templates.md",
     "_notes/Commands.md",
     "_notes/Create a Template.md",
@@ -237,7 +238,6 @@
     "_notes/Estimate tokens for the current document.md",
     "assets/images/Pasted image 20230406073109.png",
     "_notes/Generate & Copy To Clipboard.md",
-    "_pages/index.md",
     "_site/assets/images/Pasted image 20230311230554.png",
     "assets/images/Pasted image 20230311230554.png",
     "_site/assets/images/Pasted image 20230311230543.png",
