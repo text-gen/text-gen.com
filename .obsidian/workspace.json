@@ -13,7 +13,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_notes/Commands.md",
+                "file": "_notes/Context available for templates.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8c3212bbc8d3c5d5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_notes/Templates.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "add11e4219f350ee",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_notes/Helper Functions.md",
                 "mode": "source",
                 "source": false
               }
@@ -55,7 +79,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -84,7 +109,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Set Max Content Size",
+                "query": "helper",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -109,7 +134,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -129,7 +155,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Commands.md",
+                "file": "_notes/Helper Functions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +172,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_notes/Commands.md",
+                "file": "_notes/Helper Functions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -169,7 +195,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Commands.md"
+                "file": "_notes/Helper Functions.md"
               }
             }
           }
@@ -196,14 +222,15 @@
       "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false
     }
   },
-  "active": "2d5bccf71bcf190f",
+  "active": "add11e4219f350ee",
   "lastOpenFiles": [
-    "_notes/Create a Template.md",
+    "_notes/Context available for templates.md",
+    "_notes/Helper Functions.md",
+    "_notes/Templates.md",
     "_notes/Commands.md",
+    "_notes/Create a Template.md",
     "_notes/Estimate tokens for a template.md",
     "_notes/What's New.md",
-    "_notes/Context available for templates.md",
-    "_notes/Templates.md",
     "_notes/Share a New Template Package.md",
     "_notes/Considered Context.md",
     "assets/images/Pasted image 20230406074028.png",
@@ -237,7 +264,6 @@
     "_pages/tags.md",
     "_notes/Frontmatter Configuration.md",
     "_notes/Generate Text.md",
-    "_notes/Generate and Create a New File From Template.md",
     "_notes/Untitled.canvas"
   ]
 }

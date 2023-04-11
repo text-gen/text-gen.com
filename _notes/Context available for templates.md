@@ -36,7 +36,7 @@ It is an object that contains all the headings with their content.
 ![[HeadingsTemplate.excalidraw.svg]]
 
 ### children
-It is an array that includes the cited notes. You can access it through `children`.
+It is an array that includes the cited notes. You can access it through `children`.  
 
 ![[childrenNotes.excalidraw.svg]]
 
@@ -47,7 +47,9 @@ Each array contains the paragraphs where document is mentioned.
 ### highlights
 It is an array that includes obsidian ==highlights== .  You can access it through `highlights`.
 
-### extractions (v0.3.0-beta)
-`extractions` is an object that includes two arrays: **PDFExtractor** and **WebPageExtractor**.  
-* **PDFExtractor** is an array that contains the embeded pdf documents in the note in text format.
+### extractions (v0.3.1)
+`extractions` is an object that includes three arrays: **PDFExtractor**, **WebPageExtractor**,**YoutubeExtractor**, and **AudioExtractor**.  
+* **PDFExtractor** is an array that contains the embedded PDF documents in the note in text format.
 * **WebPageExtractor** is an array that contains the content of all the external links in the note.
+* **YoutubeExtractor** is an array that contains the content of all transcriptions of YouTube videos.
+* **AudioExtractor** is an array that contains the content of all transcriptions of audio notes processed through Whisper OpenAI (file size limit: 25MB).
