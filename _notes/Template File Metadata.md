@@ -5,7 +5,7 @@ layout: note
 ---
 ## Template File Metadata 
 
-```ymal
+```yaml
 ---
 PromptInfo:
  promptId: getParagraph
