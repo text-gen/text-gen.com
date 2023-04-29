@@ -11,4 +11,4 @@ There are many benefits to using a **Text Generator Plugin**, including the foll
 * **Template Engine**: You can create [[Templates]] to make repetitive tasks more manageable. 
 * **Code Blocks**: You can use [[Code Blocks]] for dynamic content generation
 * [[Share a New Template Package|Community Templates]]: Through this option you can discover new use cases of [[Generative Artificial Intelligence]] using the shared templates and you can share your use cases easier. 
-* **Highly Flexible Configuration**:  Using [[Frontmatter Configuration]], it is possible to use different services such as [[Get OpenAI Access Token|OpenAI]], [[HugginFace]]. 
+* **Highly Flexible Configuration**:  Using [[Frontmatter Configuration]], it is possible to use different services such as [[Get OpenAI Access Token|OpenAI]], [[HuggingFace]]. 
