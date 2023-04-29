@@ -3,7 +3,7 @@ title: Frontmatter Configuration
 tags: doc
 layout: note 
 ---
-## YMAL configuration 
+## YAML configuration 
 
 Frontmatter configuration is very flexible and can work with many services such as [[Get OpenAI Access Token|OpenAI]] and [[HugginFace]].
 
