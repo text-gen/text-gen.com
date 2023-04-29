@@ -43,7 +43,7 @@ We would like to thank **[pheelwell](https://github.com/pheelwell)** for their
 
 -   Updated OpenAI API URL to [https://api.openai.com/v1/completions](https://api.openai.com/v1/completions).
 -   Added multiselect to the context "selections" as array for use in templates ([[Context available for templates]])
--   Fixed bug in sent prompt with YMAL.
+-   Fixed bug in sent prompt with YAML.
 
 If you encounter any issues, please don't hesitate to open an issue.
 
