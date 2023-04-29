@@ -38,7 +38,7 @@ write introduction
 ## Adding Metadata Variables 
 You can add any information you want in the metadata or frontmatter variables (This will be considered in `Generate Text (with Metadata).` You must avoid [[YAML keywords]] used by the plugin. 
 For example: 
-```YMAL
+```YAML
 ---
 title: Considered Context
 tags: doc
