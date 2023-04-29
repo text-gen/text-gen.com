@@ -24,7 +24,7 @@ The `title` of the document.
 It is an array that includes the all selections. You can access it through `selections`.
 
 ### context 
-includes YAML Varaibles, Title*, StaredHeadings*, Selection {{}}
+includes YAML Variables, Title*, StaredHeadings*, Selection {{}}
 
 ![[context.excalidraw.svg]]
 ### frontmatter
