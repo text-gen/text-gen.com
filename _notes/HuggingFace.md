@@ -1,5 +1,5 @@
 ---
-title: HugginFace
+title: HuggingFace
 tags: 
 layout: note 
 ---

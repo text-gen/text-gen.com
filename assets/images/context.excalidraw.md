@@ -8,7 +8,7 @@ tags: [excalidraw]
 
 
 # Text Elements
-YAML Varaibles ^I9gkGrWx
+YAML Variables ^I9gkGrWx
 
 Title:... ^R6FOaywG
 
