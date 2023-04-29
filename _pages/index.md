@@ -24,6 +24,7 @@ permalink: /
 * ### [[What's New]]
 * ### [[FAQ]]
 * ### [[Text Generator Features]]
+* ### [[Code Blocks]]
 * ### [[Considered Context]]
 * ### [[Commands]]
 * ### [[Frontmatter Configuration]]
