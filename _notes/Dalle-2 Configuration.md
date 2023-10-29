@@ -8,17 +8,15 @@ layout: note
 
 ```
 ---
-config:
- append:
-  bodyParams: false
-  reqParams: true
- context: "prompt"
- output: '`\n![](${requestResults.data[0].url})`'
-bodyParams:
- n: 1
- size: "1024x1024"
-reqParams:
- url: "https://api.openai.com/v1/images/generations"
+name: Dalle-2
+description: generate images using dalle-2
+provider: Default (Custom)
+endpoint: https://api.openai.com/v1/images/generations
+body: '{"n": 1, "size": "512x512", "prompt": "{{escp2 prompt}}"}'
+output: '`\n![](${requestResults.data[0].url})`'
+commands:
+  - generate
+stream: false
 ---
 ```
 

@@ -10,24 +10,24 @@ These are functions that help in dealing with the variables. in addition to [Bui
 Runs another template and passes context to it.
 
 **Example:**
-```handlebars
+```js
 {{run "summary" selection}}
 ```
 - The simplest form is to pass the `selection` to the next template.
 
-```handlebars
+```js
 {{run "summary" "text to be summarized"}}
 ```
 - You can also pass a string directly as the `selection`.
 
-```handlebars
+```yaml
 {{#run "summary"}}
   text to be summarized
 {{/run}}
 ```
 - To do more processing before sending the `selection`, you can enclose the content within the `run` block.
 
-```handlebars
+```yaml
 {{#run "summary"}}
 {
   "selection": "text to be summarized",
@@ -37,7 +37,7 @@ Runs another template and passes context to it.
 ```
 - You can pass additional variables or context by wrapping them in a `run` block. Ensure that the context is JSON-serializable.
 
-```handlebars
+```yaml
 {{run "summary" selection "customName"}}
 
 {{#run "summary" "customName"}}
@@ -56,7 +56,7 @@ lorem
 Gets the result from running another template.
 
 **Example:**
-```handlebars
+```js
 {{get "summary"}}
 ```
 
@@ -69,14 +69,14 @@ lorem
 Executes extractors to retrieve content from various sources like web, images, YouTube, PDFs, and audio.
 
 **Example:**
-```handlebars
+```js
 {{extract "web" weburl}}
 ```
 - This example executes the web extractor, using the `weburl` context variable set by the user.
 
 You can also use other extractors:
 
-```handlebars
+```js
 {{extract "youtube" ytUrl}}
 {{extract "pdf" pdfPath}}
 {{extract "image" imgPath}}
@@ -85,14 +85,14 @@ You can also use other extractors:
 
 You can pass values directly as well:
 
-```handlebars
+```js
 {{extract "web" "http://..."}}
 {{extract "web" selection}}
 ```
 
 To process input before sending it to the extractor, you can use a block:
 
-```handlebars
+```yaml
 {{#extract "web"}}
  {{weburl}}
 {{/extract}}
@@ -103,11 +103,39 @@ To process input before sending it to the extractor, you can use a block:
 lorem
 ```
 
+
+### `script`
+Gets the result from running another template.
+
+**Example:**
+```js
+{{#script}}
+// run any javascript code here
+// anything that returns will be where the script is at
+// you can access context variables with the this keyword
+// ex: this.selection, this.title ...etc
+// you can change/add varible and use it in the context
+// ex:
+this.test = "hello world";
+return "returned hello world";
+{{/script}}
+
+{{test}}
+```
+
+**Output:**
+```
+returned hello world
+
+hello world
+```
+
+
 ### `escp`
 Removes newlines from text.
 
 **Example:**
-```handlebars
+```js
 {{escp "hello \n world"}}
 ```
 
@@ -120,7 +148,7 @@ hello  world
 Removes newlines and trims text.
 
 **Example:**
-```handlebars
+```js
 {{escp2 "     hello \n world      "}}
 ```
 
@@ -133,7 +161,7 @@ hello world
 Shows a notice to the user.
 
 **Example:**
-```handlebars
+```js
 {{notice "Working on something..."}}
 ```
 
@@ -143,12 +171,12 @@ Shows a notice to the user.
 Shows an error message and stops the template from continuing.
 
 **Example:**
-```handlebars
+```js
 {{error "Sorry, this template won't work without a note"}}
 ```
 - In this example, it checks if there's a `selection`, otherwise, it shows an error message.
 
-```handlebars
+```yaml
 {{#unless selection}}
 	{{error "You need to provide selection first"}}
 {{/unless}}
@@ -160,7 +188,7 @@ Shows an error message and stops the template from continuing.
 Get the length of a string.
 ##### Example 
 ###### Code
-```handlebars
+```js
 {{length "hello"}}
 ```
 ###### Output
@@ -172,7 +200,7 @@ Get the length of a string.
 Get a substring from a string between the start and end indices.
 ##### Example 
 ###### Code
-```handlebars
+```js
 {{substring "hello world" 0 5}}
 ```
 ###### Output
@@ -184,7 +212,7 @@ hello
 Replace all occurrences of a search string with a replace string in the given string.
 ##### Example 
 ###### Code
-```handlebars
+```js
 {{replace "hello world" "world" "there"}}
 ```
 ###### Output
@@ -196,7 +224,7 @@ hello there
 Get the current date and time as a string.
 ##### Example 
 ###### Code
-```handlebars
+```js
 {{date}}
 ```
 ###### Output
@@ -208,7 +236,7 @@ Get the current date and time as a string.
 Truncate a string to a specified length and append '...'.
 ##### Example 
 ###### Code
-```handlebars
+```js
 {{truncate "This is a long text." 10}}
 ```
 ###### Output
@@ -220,7 +248,7 @@ This is a ...
 Get the last specified number of characters from a string, prepending '...'.
 ##### Example 
 ###### Code
-```handlebars
+```js
 {{tail "This is a long text." 10}}
 ``` 
 ###### Output  
@@ -232,7 +260,7 @@ Get the last specified number of characters from a string, prepending '...'.
 Split a string into an array using the given separator.  
 ##### Example   
 ###### Code  
-```handlebars
+```js
 {{split "apple,banana,orange" ","}}  
 ```   
 ###### Output   
@@ -244,7 +272,7 @@ Split a string into an array using the given separator.
 Join an array of strings using the given separator.   
 ##### Example    
 ###### Code    
-```handlebars
+```js
 {{join ["apple","banana","orange"] ", "}}    
 ```    
 ###### Output    
@@ -256,7 +284,7 @@ apple, banana, orange
 Return an array containing only unique elements from the input array.     
 ##### Example     
 ###### Code     
-```handlebars
+```js
 {{unique ["apple", "banana", "apple", "orange", "banana"]}}     
 ```     
 ###### Output     
@@ -268,7 +296,7 @@ Return an array containing only unique elements from the input array.
 Trim whitespace from both ends of a string.    
 ##### Example     
 ###### Code    
-```handlebars
+```js
 {{trim "    hello world    "}}    
 ```    
 ###### Output    
@@ -280,7 +308,7 @@ hello world
 Get a random file matching the given pattern with content length within the specified range.   
 ##### Example   
 ###### Code   
-```handlebars
+```js
 {{getRandomFile "pattern" 100 1500}}
 ```
 ###### Output   
@@ -291,7 +319,3 @@ content: [random file content]
 
 > [!note] Note
 >  More helper functions will added in the future releases. Our [discord server](https://discord.gg/BRYqetyjag) is a great place to ask for assistance or suggest new features.
-
-
->  
-> 

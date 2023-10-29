@@ -7,77 +7,69 @@ layout: note
 > This is a **draft**. This section of the documentation will be written in more details at a later date.
 
 ## Links 
-* [Default package repo](https://github.com/text-gen/gpt-3-prompt-templates) 
-* The [main repo](https://github.com/text-gen/text-generator-packages) where template packages are indexed . 
+- [template repo](https://github.com/text-gen/templates-package)
+* [community-packages](https://github.com/text-gen/text-generator-packages/edit/main/community-packages.json)
+* [database repo](https://github.com/text-gen/text-generator-packages)
+## Step 1: Prepare template package repo
 
-# Steps
+![](step1.mkv)
 
-## Step 01: Prepare template package repo
-### 01- Fork default [package repo](<[Default package repo](https://github.com/text-gen/gpt-3-prompt-templates)>) or create a repo with same structure
-### 02- Put the prompts in the "prompts folder" respecting template format ([[Templates]]).  
-### 03- Put the promptids in data.json
+### 1- Use [template repo](<[template repo](https://github.com/text-gen/templates-package)>), and make a new repo.
+
+### 2- head over to settings>actions>general>scrolldown>workflow permissions> check on `read and write permissions` and save
+### 3- Put the prompts in the "prompts" folder respecting template format ([[Templates]]).  
+> make sure the `packageId` in the templates matches the `packageId` 
+### 4- Update manifest file with your information
 ```json
 {
-
-"prompts":[
-
-"promptId01",
-
-"promptId02",
-...
-]
-}
-
-```
-### 04- Update manifest file 
-```json
-{
-"packageId": "default",
-"name": "Default Prompts Package",
-"version": "0.0.6",
-"minTextGeneratorVersion": "0.1.0",
-"description": "...",
-"author": "...",
-"tags" : "writing, brainstorming",
-"authorUrl": "...",
-"repo":"username/repo"
+	"packageId": "default", // package id has to be unique from the other packages
+	"name": "Default Prompts Package", // name of the package
+	"version": "0.0.6", // version of the package if you're planning to update it later
+	"minTextGeneratorVersion": "0.1.0", // minimum version of text generator that can work with it (use your current version)
+	"description": "...", // description of the package
+	"author": "...", // author name
+	"tags" : "writing, brainstorming", // tags for the package
+	"authorUrl": "...", // author page, or funding page
+	"repo":"username/repo" // get it from the repo url
 }
 ```
-## 05- Push the changes
-## 06- Publish a relases with title of the version 
-![[publshing a release.svg]]
 
-## Step 02: Adding your package to Text Generator Database
-### 01-Fork  [main repo](https://github.com/text-gen/text-generator-packages)
-### 02- Add your package to the end of `community-packages.json`, ### 03- Make that your packageId is unique. 
+## 5- head to source-control section, and put the same version as the one in `manifest` (0.0.1) in the input field.
+
+### 6- Commit & push
+
+
+## Step 2: Adding your package to Text Generator Database
+
+![](step2.mkv)
+### 1- Go [here](https://github.com/text-gen/text-generator-packages/edit/main/community-packages.json) and Add your package's `manifest` to the end of `community-packages.json`, 
+> if it asks you to fork the repo, then do so
+
+
+> Make sure your `packageId` is unique
 ```json
-[
-
 {
-
-"packageId": "default",
-
-"name": "Default Prompts Package",
-
-"version": "0.0.5",
-
-"minTextGeneratorVersion": "0.1.0",
-
-"description": "This is the main package that comes with Text Generator plugin in Obsidian",
-
-"author": "Noureddine Haouari",
-
-"tags" : "writing, brainstorming",
-
-"authorUrl": "https://www.buymeacoffee.com/haouarine",
-
-"repo":"text-gen/gpt-3-prompt-templates"
-
-}, 
-
-... Insert your package information here (same as your manifest file)
-]
+	"packageId": "default",
+	
+	"name": "Default Prompts Package",
+	
+	"version": "0.0.5",
+	
+	"minTextGeneratorVersion": "0.5.0",
+	
+	"description": "This is the main package that comes with Text Generator plugin in Obsidian",
+	
+	"author": "Noureddine Haouari",
+	
+	"tags" : "writing, brainstorming",
+	
+	"authorUrl": "https://www.buymeacoffee.com/haouarine",
+	
+	"repo":"text-gen/gpt-3-prompt-templates"
+},
 ```
+### 2- commit and push.
+> if it asks you to fork the repo, then do so
+### 3- make pull request
 
-# 04- Push the changes 
-# 05- Pull request
+### 4- finally wait for the merge.

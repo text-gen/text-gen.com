@@ -4,35 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "32ca6f70401f89cf",
+        "id": "d79e582245f8f73f",
         "type": "tabs",
         "children": [
           {
-            "id": "2d5bccf71bcf190f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_notes/Context available for templates.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8c3212bbc8d3c5d5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_notes/Templates.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "add11e4219f350ee",
+            "id": "8780cb81e14e2299",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -42,45 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "430dcbddb15795c1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_notes/Estimate tokens for a template.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b4821f0c69de8ced",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_notes/Estimate tokens for the current document.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9e708d8611d368dc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_notes/Generate & Copy To Clipboard.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -109,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "discord server ",
+                "query": "Choose a model",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -134,12 +73,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 440.5
+    "width": 525.500732421875
   },
   "right": {
     "id": "56e29672c2b0272d",
@@ -209,61 +147,64 @@
   "left-ribbon": {
     "hiddenItems": {
       "publish:Publish changes...": false,
-      "templater-obsidian:Templater": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "templater-obsidian:Templater": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
-      "obsidian-textgenerator-plugin:Generate Text!": false,
-      "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "add11e4219f350ee",
+  "active": "8780cb81e14e2299",
   "lastOpenFiles": [
-    "_pages/index.md",
-    "_notes/Helper Functions.md",
-    "_notes/Context available for templates.md",
-    "_notes/Templates.md",
+    "_notes/Transformer.md",
+    "_notes/Untitled.md",
+    "_notes/Tool.md",
+    "assets/images/Pasted image 20231029183231.png",
+    "assets/images/Pasted image 20231029183147.png",
+    "assets/images/Pasted image 20231029183037.png",
+    "assets/images/Pasted image 20231029183023.png",
+    "_notes/What's New.md",
+    "_notes/Set Max Content Size.md",
+    "_notes/Configure API Key.md",
+    "_notes/Get OpenAI Access Token.md",
+    "_notes/Choose a LLM.md",
+    "assets/images/Pasted image 20231029182121.png",
+    "_notes/Choose a model.md",
+    "_notes/Dalle-2 Configuration.md",
+    "_notes/substring.md",
+    "_notes/copyai.md",
+    "_notes/prompt.md",
+    "_notes/Insert a Template.md",
     "_notes/Commands.md",
+    "_notes/Auto-suggest.md",
+    "_notes/FAQ.md",
+    "assets/images/Pasted image 20231029181218.png",
+    "_notes/What is the difference between using Text Generator and other AI Writers.md",
+    "_notes/Share a New Template Package.md",
+    "assets/videos/share-new-template/step1.mkv",
+    "assets/videos/share-new-template",
+    "assets/videos/share-new-template/step2.mkv",
+    "assets/videos",
+    "_notes/Templates.md",
+    "assets/jazzyfrenchy.mp3",
+    "_notes/Helper Functions.md",
+    "_pages/index.md",
+    "_notes/Context available for templates.md",
     "_notes/Create a Template.md",
     "_notes/Estimate tokens for a template.md",
-    "_notes/What's New.md",
-    "_notes/Share a New Template Package.md",
     "_notes/Considered Context.md",
     "assets/images/Pasted image 20230406074028.png",
-    "_notes/Estimate tokens for the current document.md",
     "assets/images/Pasted image 20230406073109.png",
-    "_notes/Generate & Copy To Clipboard.md",
     "_site/assets/images/Pasted image 20230311230554.png",
     "assets/images/Pasted image 20230311230554.png",
-    "_site/assets/images/Pasted image 20230311230543.png",
-    "assets/images/Pasted image 20230311230543.png",
-    "_notes/Set Max Content Size.md",
-    "_notes/Common Errors in OpenAI API code and their Possible Causes.md",
-    "_notes/Choose a model.md",
     "_site/common-errors-in-openai-api-code-and-their-possible-causes.html",
     "_site/openai-api-code-errors.html",
-    "_notes/FAQ.md",
-    "_notes/Auto-suggest.md",
-    "_notes/Generate And Insert Template.md",
     "_site/auto-suggest.html",
-    "_site/assets/images/Pasted image 20230308112116.png",
-    "_site/assets/images/Pasted image 20230308111908.png",
-    "assets/images/Pasted image 20230308112116.png",
-    "assets/images/Pasted image 20230308111908.png",
     "_site/generate-copy-to-clipboard.html",
-    "_notes/Generate Text and Use Metadata.md",
-    "_notes/Template File Metadata.md",
-    "_notes/Get Started.md",
-    "_notes/Bloom Configuration.md",
-    "_notes/AI Writer.md",
-    "_pages/tags.md",
-    "_notes/Frontmatter Configuration.md",
-    "_notes/Generate Text.md",
     "_notes/Untitled.canvas"
   ]
 }
