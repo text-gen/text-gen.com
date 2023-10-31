@@ -10,24 +10,24 @@ These are functions that help in dealing with the variables. in addition to [Bui
 Runs another template and passes context to it.
 
 **Example:**
-```js
+```handlebars
 {{run "summary" selection}}
 ```
 - The simplest form is to pass the `selection` to the next template.
 
-```js
+```handlebars
 {{run "summary" "text to be summarized"}}
 ```
 - You can also pass a string directly as the `selection`.
 
-```yaml
+```handlebars
 {{#run "summary"}}
   text to be summarized
 {{/run}}
 ```
 - To do more processing before sending the `selection`, you can enclose the content within the `run` block.
 
-```yaml
+```handlebars
 {{#run "summary"}}
 {
   "selection": "text to be summarized",
@@ -37,7 +37,7 @@ Runs another template and passes context to it.
 ```
 - You can pass additional variables or context by wrapping them in a `run` block. Ensure that the context is JSON-serializable.
 
-```yaml
+```handlebars
 {{run "summary" selection "customName"}}
 
 {{#run "summary" "customName"}}
@@ -56,7 +56,7 @@ lorem
 Gets the result from running another template.
 
 **Example:**
-```js
+```handlebars
 {{get "summary"}}
 ```
 
@@ -69,14 +69,14 @@ lorem
 Executes extractors to retrieve content from various sources like web, images, YouTube, PDFs, and audio.
 
 **Example:**
-```js
+```handlebars
 {{extract "web" weburl}}
 ```
 - This example executes the web extractor, using the `weburl` context variable set by the user.
 
 You can also use other extractors:
 
-```js
+```handlebars
 {{extract "youtube" ytUrl}}
 {{extract "pdf" pdfPath}}
 {{extract "image" imgPath}}
@@ -85,14 +85,14 @@ You can also use other extractors:
 
 You can pass values directly as well:
 
-```js
+```handlebars
 {{extract "web" "http://..."}}
 {{extract "web" selection}}
 ```
 
 To process input before sending it to the extractor, you can use a block:
 
-```yaml
+```handlebars
 {{#extract "web"}}
  {{weburl}}
 {{/extract}}
@@ -108,7 +108,7 @@ lorem
 Gets the result from running another template.
 
 **Example:**
-```js
+```handlebars
 {{#script}}
 // run any javascript code here
 // anything that returns will be where the script is at
@@ -131,11 +131,40 @@ hello world
 ```
 
 
+### `read`
+Reads files from vault using their path.
+
+**Example:**
+```handlebars
+{{read "readme.md"}}
+```
+
+**Output:**
+```
+... content of readme.md file in the document ...
+```
+
+### `save`
+Writes/Saves text to a file.
+
+**Example:**
+```handlebars
+{{#save "readme.md"}}
+	... Text or {{variable}} here ...
+{{/save}}
+```
+
+**Output:**
+```
+
+```
+
+
 ### `escp`
 Removes newlines from text.
 
 **Example:**
-```js
+```handlebars
 {{escp "hello \n world"}}
 ```
 
@@ -148,7 +177,7 @@ hello  world
 Removes newlines and trims text.
 
 **Example:**
-```js
+```handlebars
 {{escp2 "     hello \n world      "}}
 ```
 
@@ -161,7 +190,7 @@ hello world
 Shows a notice to the user.
 
 **Example:**
-```js
+```handlebars
 {{notice "Working on something..."}}
 ```
 
@@ -171,12 +200,12 @@ Shows a notice to the user.
 Shows an error message and stops the template from continuing.
 
 **Example:**
-```js
+```handlebars
 {{error "Sorry, this template won't work without a note"}}
 ```
 - In this example, it checks if there's a `selection`, otherwise, it shows an error message.
 
-```yaml
+```handlebars
 {{#unless selection}}
 	{{error "You need to provide selection first"}}
 {{/unless}}
@@ -188,7 +217,7 @@ Shows an error message and stops the template from continuing.
 Get the length of a string.
 ##### Example 
 ###### Code
-```js
+```handlebars
 {{length "hello"}}
 ```
 ###### Output
@@ -200,7 +229,7 @@ Get the length of a string.
 Get a substring from a string between the start and end indices.
 ##### Example 
 ###### Code
-```js
+```handlebars
 {{substring "hello world" 0 5}}
 ```
 ###### Output
@@ -212,7 +241,7 @@ hello
 Replace all occurrences of a search string with a replace string in the given string.
 ##### Example 
 ###### Code
-```js
+```handlebars
 {{replace "hello world" "world" "there"}}
 ```
 ###### Output
@@ -224,7 +253,7 @@ hello there
 Get the current date and time as a string.
 ##### Example 
 ###### Code
-```js
+```handlebars
 {{date}}
 ```
 ###### Output
@@ -236,7 +265,7 @@ Get the current date and time as a string.
 Truncate a string to a specified length and append '...'.
 ##### Example 
 ###### Code
-```js
+```handlebars
 {{truncate "This is a long text." 10}}
 ```
 ###### Output
@@ -248,7 +277,7 @@ This is a ...
 Get the last specified number of characters from a string, prepending '...'.
 ##### Example 
 ###### Code
-```js
+```handlebars
 {{tail "This is a long text." 10}}
 ``` 
 ###### Output  
@@ -260,7 +289,7 @@ Get the last specified number of characters from a string, prepending '...'.
 Split a string into an array using the given separator.  
 ##### Example   
 ###### Code  
-```js
+```handlebars
 {{split "apple,banana,orange" ","}}  
 ```   
 ###### Output   
@@ -272,7 +301,7 @@ Split a string into an array using the given separator.
 Join an array of strings using the given separator.   
 ##### Example    
 ###### Code    
-```js
+```handlebars
 {{join ["apple","banana","orange"] ", "}}    
 ```    
 ###### Output    
@@ -284,7 +313,7 @@ apple, banana, orange
 Return an array containing only unique elements from the input array.     
 ##### Example     
 ###### Code     
-```js
+```handlebars
 {{unique ["apple", "banana", "apple", "orange", "banana"]}}     
 ```     
 ###### Output     
@@ -296,7 +325,7 @@ Return an array containing only unique elements from the input array.
 Trim whitespace from both ends of a string.    
 ##### Example     
 ###### Code    
-```js
+```handlebars
 {{trim "    hello world    "}}    
 ```    
 ###### Output    
@@ -308,7 +337,7 @@ hello world
 Get a random file matching the given pattern with content length within the specified range.   
 ##### Example   
 ###### Code   
-```js
+```handlebars
 {{getRandomFile "pattern" 100 1500}}
 ```
 ###### Output   
