@@ -1,0 +1,1 @@
+> The [documentation](https://text-gen.github.io/) of Text Generator Plugin. 

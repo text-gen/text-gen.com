@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+
+  <link rel="canonical" href="/404.html" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Text Generator Plugin">
+
+  <meta property="og:site_name" content="Text Generator Plugin">
+
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgo=">
+
+  <link rel="stylesheet" href="/styles.css">
+
+  
+  <meta property="og:description" content="Text Generator Plugin"/>
+  
+
+  
+  <meta property="og:title" content="404">
+  <meta property="og:type" content="article">
+  
+
+  
+
+  <meta property="og:url" content="/404.html" />
+
+  
+
+  <title>
+    
+      404 &mdash; Text Generator Plugin
+    
+  </title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.css" integrity="sha384-Juol1FqnotbkyZUT5Z7gUPjQ9gzlwCENvUZTpQBAPxtusdwFLRy382PSDx5UUJ4/" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.js" integrity="sha384-97gW6UIJxnlKemYavrqDHSX3SiygeOwIZhwyOKRfSaf0JWKRVj9hLASHgFTzT+0O" crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+        <script src="https://hypothes.is/embed.js" async></script>
+</head>
+
+  <body>
+    <nav>
+<div>
+    <a class="internal-link" href="/"><b>Text Generator Plugin</b></a>
+</div>
+<script src="/assets/js/d3.min.js"></script></nav>
+    <div dir="auto" class="wrapper">
+      <main>
+        <div>
+  <h1>Oops, that's a 404. 🙈</h1>
+  <p>Looks like this page doesn't exist. <a href="/">Return home</a> to get a fresh start.</p>
+</div>
+
+      </main>
+
+      <footer>
+<h2>
+    I appreciate your comments to enrich/correct the content via <a class="internal-link" href="https://hypothes.is/">Hypothesis</a>  
+</h2>
+</footer>
+    </div>
+
+    <!-- That file is not particularly elegant. This will need a refactor at some point. -->
+
+
+<style>
+  content a.internal-link {
+    border-color: #8b88e6;
+    background-color: #efefff;
+  }
+
+  #tooltip-wrapper {
+    background: white;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    position: absolute;
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    max-height: 300px;
+    font-size: 0.8em;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    transition: opacity 100ms;
+    unicode-bidi: plaintext;
+    overflow-y: scroll;
+  }
+
+  #tooltip-wrapper:after {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		bottom: 0;
+		left: 0;
+		pointer-events: none;
+		width: 100%;
+    unicode-bidi: plaintext;
+		height: 75px;
+  }
+</style>
+
+<div style="opacity: 0; display: none;" id='tooltip-wrapper'>
+  <div id='tooltip-content'>
+  </div>
+</div>
+
+<iframe style="display: none; height: 0; width: 0;" id='link-preview-iframe' src="">
+</iframe>
+
+<script>
+  var opacityTimeout;
+  var contentTimeout;
+  var transitionDurationMs = 100;
+
+  var iframe = document.getElementById('link-preview-iframe')
+  var tooltipWrapper = document.getElementById('tooltip-wrapper')
+  var tooltipContent = document.getElementById('tooltip-content')
+
+  var linkHistories = {};
+
+  function hideTooltip() {
+    opacityTimeout = setTimeout(function() {
+      tooltipWrapper.style.opacity = 0;
+      contentTimeout = setTimeout(function() {
+        tooltipContent.innerHTML = '';
+        tooltipWrapper.style.display = 'none';
+      }, transitionDurationMs + 1);
+    }, transitionDurationMs)
+  }
+
+  function showTooltip(event) {
+    var elem = event.target;
+    var elem_props = elem.getClientRects()[elem.getClientRects().length - 1];
+    var top = window.pageYOffset || document.documentElement.scrollTop
+    if (event.target.getAttribute("href").indexOf("http")===-1 || event.target.getAttribute("href").indexOf(window.location.host)!==-1) {
+      if (!linkHistories[event.target.getAttribute("href")]) {
+       iframe.src = event.target.getAttribute("href")
+        iframe.onload = function() {
+          tooltipContentHtml = ''
+          tooltipContentHtml += '<div style="font-weight: bold; unicode-bidi: plaintext;">' + iframe.contentWindow.document.querySelector('h1').innerHTML + '</div>'
+          tooltipContentHtml += iframe.contentWindow.document.querySelector('content').innerHTML
+          tooltipContent.innerHTML = tooltipContentHtml
+          linkHistories[event.target.getAttribute("href")] = tooltipContentHtml
+          tooltipWrapper.style.display = 'block';
+          setTimeout(function() {
+            tooltipWrapper.style.opacity = 1;
+          }, 1)
+        } 
+      } else {
+        tooltipContent.innerHTML = linkHistories[event.target.getAttribute("href")]
+        tooltipWrapper.style.display = 'block';
+        setTimeout(function() {
+          tooltipWrapper.style.opacity = 1;
+        }, 1)
+      }
+
+      function getInnerWidth(elem) {
+        var style = window.getComputedStyle(elem);
+        return elem.offsetWidth - parseFloat(style.paddingLeft) - parseFloat(style.paddingRight) - parseFloat(style.borderLeft) - parseFloat(style.borderRight) - parseFloat(style.marginLeft) - parseFloat(style.marginRight);
+    }
+
+      tooltipWrapper.style.left = elem_props.left - (tooltipWrapper.offsetWidth / 2) + (elem_props.width / 2) + "px";
+     
+      if ((window.innerHeight - elem_props.top) < (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top - tooltipWrapper.offsetHeight - 10 + "px";
+      } else if ((window.innerHeight - elem_props.top) > (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top + 35 + "px";
+      }
+
+      if ((elem_props.left + (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = "10px";
+      } else if ((document.body.clientWidth - elem_props.left - (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = document.body.clientWidth - tooltipWrapper.offsetWidth - 20 + "px";
+      }
+    }
+  }
+  function loadSVG(){
+    //document.querySelectorAll("object").forEach(obj=>{fetch(obj.data).then(e=>e.text()).then(svg=>obj.outerHTML=svg)})
+    const svgImgs = document.querySelectorAll("img[src*=svg]");
+    //console.log(svgImgs);
+    if(svgImgs.length>0) {
+      Promise.all(
+        Array.from(svgImgs).map(img=> 
+        fetch(img.src)
+        .then(e=>e.text())
+        .then(text=>
+            { 
+              img.outerHTML=text.replaceAll(/href="\[\[(.*?)\]\]"/g,function(match, offset, str) {
+                  //console.log(" - "+img.src,text)
+                  //console.log({match,offset,str})
+                return `href="${offset.toLowerCase().replaceAll(" ","-")}"`;
+              });
+          
+            }
+          ) 
+        )
+      )
+        .then(() => {
+          //console.log("***")
+          document.querySelectorAll('content a,#localgraph circle,#mentions a').forEach(setupListeners);
+        });
+    } else {
+      document.querySelectorAll('content a,#localgraph circle,#mentions a').forEach(setupListeners);
+    }
+  }
+
+  //https://stackoverflow.com/a/67977146
+  function onLongPress(element, callback) {
+    var timeoutId;
+
+    element.addEventListener('touchstart', function(e) {
+        timeoutId = setTimeout(function() {
+            timeoutId = null;
+            e.stopPropagation();
+            callback(e);
+        }, 2000);
+    });
+
+    element.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+    });
+
+    /*element.addEventListener('touchend', function () {
+        if (timeoutId) clearTimeout(timeoutId);
+    });
+    */
+    /*element.addEventListener('touchmove', function () {
+        if (timeoutId) clearTimeout(timeoutId);
+    });
+    */
+}
+
+  function setupListeners(linkElement) {
+
+    linkElement.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    /*onLongPress(linkElement,(event)=>{
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+      showTooltip(event);
+    })*/
+
+    linkElement.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+      showTooltip(event);
+    });
+
+    
+    tooltipWrapper.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+    });
+  }
+  //console.log( document.querySelectorAll('content a,#localgraph circle,#mentions a'))
+
+  d3.select(window).on("load", ()=>{
+    loadSVG();
+});
+  
+</script>
+
+  </body>
+</html>

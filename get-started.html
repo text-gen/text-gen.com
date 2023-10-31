@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+
+  <link rel="canonical" href="/get-started" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Get Started![[getStarted.excalidraw.svg]]">
+
+  <meta property="og:site_name" content="Text Generator Plugin">
+
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgo=">
+
+  <link rel="stylesheet" href="/styles.css">
+
+  
+  <meta property="og:description" content="Get Started![[getStarted.excalidraw.svg]]"/>
+  
+
+  
+  <meta property="og:title" content="Get Started">
+  <meta property="og:type" content="article">
+  
+
+  
+  <meta property="article:published_time" content="2023-10-31T15:47:33+00:00">
+  <meta property="article:author" content="/">
+  
+
+  <meta property="og:url" content="/get-started" />
+
+  
+
+  <title>
+    
+      Get Started &mdash; Text Generator Plugin
+    
+  </title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.css" integrity="sha384-Juol1FqnotbkyZUT5Z7gUPjQ9gzlwCENvUZTpQBAPxtusdwFLRy382PSDx5UUJ4/" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.js" integrity="sha384-97gW6UIJxnlKemYavrqDHSX3SiygeOwIZhwyOKRfSaf0JWKRVj9hLASHgFTzT+0O" crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+        <script src="https://hypothes.is/embed.js" async></script>
+</head>
+
+  <body>
+    <nav>
+<div>
+    <a class="internal-link" href="/"><b>Text Generator Plugin</b></a>
+</div>
+<script src="/assets/js/d3.min.js"></script></nav>
+    <div dir="auto" class="wrapper">
+      <main>
+        <article>
+  <div>
+    <h1>Get Started</h1>
+    <time datetime="2023-10-31T15:45:53+00:00">
+       October 31, 2023
+      
+    </time>
+  </div>
+
+  <div id="notes-entry-container">
+    <content>
+      <div class="tags">
+        
+      </div>
+      <html><body>
+<h2 id="get-started">Get Started</h2>
+<p><img src="/assets/images/getStarted.excalidraw.svg" alt=""></p>
+
+<p>Once you have <a class="internal-link" href="/obsidian">Obsidian</a> installed,</p>
+<ol>
+  <li>Go to <a href="https://beta.openai.com/signup" target="_blank">OpenAI</a> and create an account.</li>
+  <li>
+<a class="internal-link" href="/get-openai-access-token">Get OpenAI Access Token</a>.</li>
+  <li>
+<a class="internal-link" href="/configure-api-key">Configure API Key</a> in  <strong>Text Generator Plugin</strong>.</li>
+  <li>Generate text using the basic commands <a class="internal-link" href="/generate-text">Generate Text</a> and <a class="internal-link" href="/generate-text-and-use-metadata">Generate Text and Use Metadata</a> from <a class="internal-link" href="/commands">Commands</a>.</li>
+</ol>
+</body></html>
+      <script src="https://utteranc.es/client.js"
+repo="text-gen/text-gen.com"
+issue-term="pathname"
+theme="github-light"
+crossorigin="anonymous"
+async>
+</script>
+    </content>
+
+    <side style="font-size: 0.9em">
+    <h3 style="margin-bottom: 1em">Table of contents</h3>
+      <div id="toc"></div>
+      
+      <div id="localgraph">
+        <h3 style="margin-bottom: 1em">Local Graph</h3>
+        
+<style>
+  .links line {
+    stroke: #ccc;
+    opacity: 0.5;
+  }
+
+  .nodes circle {
+    cursor: pointer;
+    fill: #8b88e6;
+    transition: all 0.15s ease-out;
+  }
+
+  .text text {
+    cursor: pointer;
+    fill: #333;
+    text-shadow: -1px -1px 0 #fafafabb, 1px -1px 0 #fafafabb, -1px 1px 0 #fafafabb, 1px 1px 0 #fafafabb;
+  }
+
+  .nodes [active],
+  .text [active] {
+    cursor: pointer;
+    fill: black;
+  }
+
+  .inactive {
+    opacity: 0.1;
+    transition: all 0.15s ease-out;
+  }
+
+  #local-graph-wrapper {
+    background: #fcfcfc;
+    border-radius: 4px;
+    height: auto;
+  }
+
+  svg {
+    height: auto;
+    max-width: 100%;
+    vertical-align: center;
+    margin: 0 auto;
+    display: block;
+  }
+</style>
+
+<div id="local-graph-wrapper">
+  <script>
+    var commentFlag = true;
+    
+    window.addEventListener("load", loadGraph);
+    window.addEventListener("scroll", loadGraph);
+
+    
+    function loadGraph() {
+
+      if (!( document.getElementById("local-graph-wrapper").getBoundingClientRect().top <
+             window.innerHeight * 1.5 &&
+          commentFlag)){
+        return;
+      }
+        const MINIMAL_NODE_SIZE = 8;
+        const MAX_NODE_SIZE = 12;
+        const ACTIVE_RADIUS_FACTOR = 1.5;
+        const STROKE = 1;
+        const FONT_SIZE = 16;
+        const TICKS = 200;
+        const FONT_BASELINE = 40;
+        const MAX_LABEL_LENGTH = 50;
+
+        const graphData = {"edges":[{"source":"6912097109112108101115321111023210211411111011610997116116101114329911111010210510311711497116105111110115","target":"66108111111109326711111010210510311711497116105111110"},{"source":"6711110910997110100115","target":"67104111111115101329732109111100101108"},{"source":"84101120116327110111010111497116111114327010197116117114101115","target":"67111100101326610811199107115"},{"source":"671111101151051001011141011003267111110116101120116","target":"6711110910997110100115"},{"source":"71101116328311697114116101100","target":"6711110910997110100115"},{"source":"8410110911210897116101115","target":"6711110910997110100115"},{"source":"7011410111311710111011610812132651151071011003281117101115116105111110115","target":"6711110910911111032691141141111141153210511032791121011106573326580733299111100101329711010032116104101105114328011111511510598108101326797117115101115"},{"source":"6711110910997110100115","target":"67111110102105103117114101326580733275101121"},{"source":"68971081081014550326711111010210510311711497116105111110","target":"67111110102105103117114101326580733275101121"},{"source":"71101116328311697114116101100","target":"67111110102105103117114101326580733275101121"},{"source":"6711110910997110100115","target":"671111101151051001011141011003267111110116101120116"},{"source":"671111101161011201163297118971051089798108101321021111143211610110911210897116101115","target":"671111101151051001011141011003267111110116101120116"},{"source":"711011101011149711610132841011201163240117115101327710111697100971169741","target":"671111101151051001011141011003267111110116101120116"},{"source":"71101110101114971161013284101120116","target":"671111101151051001011141011003267111110116101120116"},{"source":"84101120116327110111010111497116111114327010197116117114101115","target":"671111101151051001011141011003267111110116101120116"},{"source":"87104971163210511532116104101321001051021021011141011109910132981011161191011011103211711510511010332841011201163271101110101114971161111143297110100321111161041011143265733287114105116101114115","target":"671111101151051001011141011003267111110116101120116"},{"source":"67111100101326610811199107115","target":"671111101161011201163297118971051089798108101321021111143211610110911210897116101115"},{"source":"8410110911210897116101115","target":"671111101161011201163297118971051089798108101321021111143211610110911210897116101115"},{"source":"6711110910997110100115","target":"67114101971161013297327810111932701051081013270114111109328410110911210897116101"},{"source":"6711110910997110100115","target":"671141019711610132973211610110911210897116101"},{"source":"8410110911210897116101115","target":"671141019711610132973211610110911210897116101"},{"source":"6912097109112108101115321111023210211411111011610997116116101114329911111010210510311711497116105111110115","target":"68971081081014550326711111010210510311711497116105111110"},{"source":"6711110910997110100115","target":"6911511610510997116101321161111071011101153210211111432973211610110911210897116101"},{"source":"6711110910997110100115","target":"691151161051099711610132116111107101110115321021111143211610410132991171141141011101163210011199117109101110116"},{"source":"7011411111011610997116116101114326711111010210510311711497116105111110","target":"6912097109112108101115321111023210211411111011610997116116101114329911111010210510311711497116105111110115"},{"source":"84101120116327110111010111497116111114","target":"7011410111311710111011610812132651151071011003281117101115116105111110115"},{"source":"8310111632779712032671111101161011101163283105122101","target":"7011411111011610997116116101114326711111010210510311711497116105111110"},{"source":"84101120116327110111010111497116111114327010197116117114101115","target":"7011411111011610997116116101114326711111010210510311711497116105111110"},{"source":"87104971163210511532116104101321001051021021011141011109910132981011161191011011103211711510511010332841011201163271101110101114971161111143297110100321111161041011143265733287114105116101114115","target":"7011411111011610997116116101114326711111010210510311711497116105111110"},{"source":"6711110910997110100115","target":"711011101011149711610132383267111112121328411132671081051129811197114100"},{"source":"6711110910997110100115","target":"711011101011149711610132651101003273110115101114116328410110911210897116101"},{"source":"6711110910997110100115","target":"711011101011149711610132841011201163240117115101327710111697100971169741"},{"source":"71101116328311697114116101100","target":"711011101011149711610132841011201163240117115101327710111697100971169741"},{"source":"6711110910997110100115","target":"71101110101114971161013284101120116"},{"source":"71101116328311697114116101100","target":"71101110101114971161013284101120116"},{"source":"6711110910997110100115","target":"711011101011149711610132971101003267114101971161013297327810111932701051081013270114111109328410110911210897116101"},{"source":"84101120116327110111010111497116111114327010197116117114101115","target":"711011101011149711610511810132651141161051021059910597108327311011610110810810510310111099101"},{"source":"67111110102105103117114101326580733275101121","target":"711011163279112101110326573326599991011151153284111107101110"},{"source":"7011411111011610997116116101114326711111010210510311711497116105111110","target":"711011163279112101110326573326599991011151153284111107101110"},{"source":"71101116328311697114116101100","target":"711011163279112101110326573326599991011151153284111107101110"},{"source":"84101120116327110111010111497116111114327010197116117114101115","target":"711011163279112101110326573326599991011151153284111107101110"},{"source":"8410110911210897116101115","target":"72101108112101114327011711099116105111110115"},{"source":"6711110910997110100115","target":"721111161071011211153210511032799811510510010597110"},{"source":"711011101011149711610132841011201163240117115101327710111697100971169741","target":"721111161071011211153210511032799811510510010597110"},{"source":"711011101011149711610132841011201163240117115101327710111697100971169741","target":"7211111932116104101329911111511632105115329997108991171089711610110063"},{"source":"66108111111109326711111010210510311711497116105111110","target":"72117103103105110103709799101"},{"source":"7011411111011610997116116101114326711111010210510311711497116105111110","target":"72117103103105110103709799101"},{"source":"7211111932116104101329911111511632105115329997108991171089711610110063","target":"72117103103105110103709799101"},{"source":"72117103103105110103709799101","target":"72117103103105110103709799101"},{"source":"84101120116327110111010111497116111114327010197116117114101115","target":"72117103103105110103709799101"},{"source":"6711110910997110100115","target":"731101151011141163297328410110911210897116101"},{"source":"67111110102105103117114101326580733275101121","target":"799811510510010597110"},{"source":"67114101971161013297327810111932701051081013270114111109328410110911210897116101","target":"799811510510010597110"},{"source":"711011163279112101110326573326599991011151153284111107101110","target":"799811510510010597110"},{"source":"71101116328311697114116101100","target":"799811510510010597110"},{"source":"721111161071011211153210511032799811510510010597110","target":"799811510510010597110"},{"source":"799811510510010597110","target":"799811510510010597110"},{"source":"84101120116327110111010111497116111114327010197116117114101115","target":"799811510510010597110"},{"source":"84101120116327110111010111497116111114","target":"799811510510010597110"},{"source":"87104971163210511532116104101321001051021021011141011109910132981011161191011011103211711510511010332841011201163271101110101114971161111143297110100321111161041011143265733287114105116101114115","target":"799811510510010597110"},{"source":"8710497116391153278101119","target":"799811510510010597110"},{"source":"84101120116327110111010111497116111114327010197116117114101115","target":"807577"},{"source":"6711110910997110100115","target":"8310111632779712032671111101161011101163283105122101"},{"source":"711011101011149711610132841011201163240117115101327710111697100971169741","target":"8310111632779712032671111101161011101163283105122101"},{"source":"71101110101114971161013284101120116","target":"8310111632779712032671111101161011101163283105122101"},{"source":"8410110911210897116101328097991079710310132779711097103101114","target":"8310497114101329732781011193284101109112108971161013280979910797103101"},{"source":"8410110911210897116101115","target":"8310497114101329732781011193284101109112108971161013280979910797103101"},{"source":"84101120116327110111010111497116111114327010197116117114101115","target":"8310497114101329732781011193284101109112108971161013280979910797103101"},{"source":"8410110911210897116101115","target":"841011091121089711610132701051081013277101116971009711697"},{"source":"6711110910997110100115","target":"8410110911210897116101328097991079710310132779711097103101114"},{"source":"67111100101326610811199107115","target":"8410110911210897116101115"},{"source":"6711110910997110100115","target":"8410110911210897116101115"},{"source":"671111101151051001011141011003267111110116101120116","target":"8410110911210897116101115"},{"source":"671141019711610132973211610110911210897116101","target":"8410110911210897116101115"},{"source":"8310497114101329732781011193284101109112108971161013280979910797103101","target":"8410110911210897116101115"},{"source":"84101120116327110111010111497116111114327010197116117114101115","target":"8410110911210897116101115"},{"source":"87104971163210511532116104101321001051021021011141011109910132981011161191011011103211711510511010332841011201163271101110101114971161111143297110100321111161041011143265733287114105116101114115","target":"8410110911210897116101115"},{"source":"8310497114101329732781011193284101109112108971161013280979910797103101","target":"84101120116327110111010111497116111114"},{"source":"84101120116327110111010111497116111114","target":"84101120116327110111010111497116111114"},{"source":"671111101151051001011141011003267111110116101120116","target":"8411497110115102111114109101114"},{"source":"8411497110115102111114109101114","target":"8411497110115102111114109101114"},{"source":"7011410111311710111011610812132651151071011003281117101115116105111110115","target":"87104971163210511532116104101321001051021021011141011109910132981011161191011011103211711510511010332841011201163271101110101114971161111143297110100321111161041011143265733287114105116101114115"},{"source":"671111101151051001011141011003267111110116101120116","target":"8965777632107101121119111114100115"},{"source":"67111110102105103117114101326580733275101121","target":"105110115116971081081051101033211610410132841011201163271101110101114971161111143280108117103105110"},{"source":"671111101151051001011141011003267111110116101120116","target":"112114111109112116"},{"source":"8410110911210897116101115","target":"112114111109112116"},{"source":"84101120116327110111010111497116111114327010197116117114101115","target":"112114111109112116"},{"source":"114121116114","target":"114121116114"}],"nodes":[{"id":"65733287114105116101114","path":"/ai-writer","label":"AI Writer"},{"id":"6511711611145115117103103101115116","path":"/auto-suggest","label":"Auto-suggest"},{"id":"66108111111109326711111010210510311711497116105111110","path":"/bloom-configuration","label":"Bloom Configuration"},{"id":"67104111111115101329732767677","path":"/choose-a-llm","label":"Choose a LLM"},{"id":"67104111111115101329732109111100101108","path":"/choose-a-model","label":"Choose a model"},{"id":"67111100101326610811199107115","path":"/code-blocks","label":"Code Blocks"},{"id":"6711110910997110100115","path":"/commands","label":"Commands"},{"id":"6711110910911111032691141141111141153210511032791121011106573326580733299111100101329711010032116104101105114328011111511510598108101326797117115101115","path":"/common-errors-in-openai-api-code-and-their-possible-causes","label":"Common Errors in OpenAI API code and their Possible Causes"},{"id":"67111110102105103117114101326580733275101121","path":"/configure-api-key","label":"Configure API Key"},{"id":"671111101151051001011141011003267111110116101120116","path":"/considered-context","label":"Considered Context"},{"id":"671111101161011201163297118971051089798108101321021111143211610110911210897116101115","path":"/context-available-for-templates","label":"Context available for templates"},{"id":"67114101971161013297327810111932701051081013270114111109328410110911210897116101","path":"/create-a-new-file-from-template","label":"Create a New File From Template"},{"id":"671141019711610132973211610110911210897116101","path":"/create-a-template","label":"Create a template"},{"id":"68971081081014550326711111010210510311711497116105111110","path":"/dalle-2-configuration","label":"Dalle-2 Configuration"},{"id":"6911511610510997116101321161111071011101153210211111432973211610110911210897116101","path":"/estimate-tokens-for-a-template","label":"Estimate tokens for a template"},{"id":"691151161051099711610132116111107101110115321021111143211610410132991171141141011101163210011199117109101110116","path":"/estimate-tokens-for-the-current-document","label":"Estimate tokens for the current document"},{"id":"6912097109112108101115321111023210211411111011610997116116101114329911111010210510311711497116105111110115","path":"/examples-of-frontmatter-configurations","label":"Examples of frontmatter configurations"},{"id":"7011410111311710111011610812132651151071011003281117101115116105111110115","path":"/faq","label":"Frequently Asked Questions"},{"id":"701051101011161171101011003277111100101108115","path":"/finetuned-models","label":"Finetuned Models"},{"id":"7011411111011610997116116101114326711111010210510311711497116105111110","path":"/frontmatter-configuration","label":"Frontmatter Configuration"},{"id":"711011101011149711610132383267111112121328411132671081051129811197114100","path":"/generate-copy-to-clipboard","label":"Generate & Copy To Clipboard"},{"id":"711011101011149711610132651101003273110115101114116328410110911210897116101","path":"/generate-and-insert-template","label":"Generate And Insert Template"},{"id":"711011101011149711610132841011201163240117115101327710111697100971169741","path":"/generate-text-and-use-metadata","label":"Generate Text (use Metadata)"},{"id":"71101110101114971161013284101120116","path":"/generate-text","label":"Generate Text"},{"id":"711011101011149711610132971101003267114101971161013297327810111932701051081013270114111109328410110911210897116101","path":"/generate-and-create-a-new-file-from-template","label":"Generate and Create a New File From Template"},{"id":"711011101011149711610511810132651141161051021059910597108327311011610110810810510310111099101","path":"/generative-artificial-intelligence","label":"Generative Artificial Intelligence"},{"id":"711011163279112101110326573326599991011151153284111107101110","path":"/get-openai-access-token","label":"Get Open AI Access Token"},{"id":"71101116328311697114116101100","path":"/get-started","label":"Get Started"},{"id":"7210197100105110103115841011091121089711610110112099971081051001149711946115118103","path":"/headingstemplateexcalidraw-svg","label":"HeadingsTemplateexcalidraw.svg"},{"id":"72101108112101114327011711099116105111110115","path":"/helper-functions","label":"Helper Functions"},{"id":"721111161071011211153210511032799811510510010597110","path":"/hotkeys-in-obsidian","label":"Hotkeys in Obsidian"},{"id":"7211111932116104101329911111511632105115329997108991171089711610110063","path":"/how-the-cost-is-calculated","label":"How the cost is calculated?"},{"id":"72117103103105110103709799101","path":"/huggingface","label":"HuggingFace"},{"id":"731101151011141163297328410110911210897116101","path":"/insert-a-template","label":"Insert a Template"},{"id":"7497115112101114","path":"/jasper","label":"Jasper"},{"id":"799811510510010597110","path":"/obsidian","label":"Obsidian"},{"id":"807577","path":"/pkm","label":"PKM"},{"id":"8310111632779712032671111101161011101163283105122101","path":"/set-max-content-size","label":"Set Max Content Size"},{"id":"8310497114101329732781011193284101109112108971161013280979910797103101","path":"/share-a-new-template-package","label":"Share a New Template Package"},{"id":"841011091121089711610132701051081013277101116971009711697","path":"/template-file-metadata","label":"Template File Metadata"},{"id":"8410110911210897116101328097991079710310132779711097103101114","path":"/template-package-manager","label":"Template Package Manager"},{"id":"8410110911210897116101115","path":"/templates","label":"Templates"},{"id":"84101120116327110111010111497116111114327010197116117114101115","path":"/text-generator-features","label":"Text Generator Features"},{"id":"84101120116327110111010111497116111114","path":"/text-generator","label":"Text Generator"},{"id":"85110116105116108101100","path":"/tool","label":"Untitled"},{"id":"8411497110115102111114109101114","path":"/transformer","label":"Transformer"},{"id":"87104971163210511532116104101321001051021021011141011109910132981011161191011011103211711510511010332841011201163271101110101114971161111143297110100321111161041011143265733287114105116101114115","path":"/what-is-the-difference-between-using-text-generator-and-other-ai-writers","label":"What is the difference between using Text Generator and other AI Writers"},{"id":"8710497116391153278101119","path":"/what-s-new","label":"What's New"},{"id":"8965777632107101121119111114100115","path":"/yaml-keywords","label":"YAML keywords"},{"id":"9911111212197105","path":"/copyai","label":"copyai"},{"id":"105110115116971081081051101033211610410132841011201163271101110101114971161111143280108117103105110","path":"/installing-text-generator-plugin","label":"installing the Text Generator Plugin"},{"id":"112114111109112116","path":"/prompt","label":"prompt"},{"id":"114121116114","path":"/rytr","label":"rytr"},{"id":"11511798115116114105110103","path":"/substring","label":"substring"}]}
+        let nodesData = graphData.nodes;
+        let linksData = graphData.edges;
+        //console.log({nodesData,linksData})
+        currentNodeid=nodesData.find(e=> window.location.pathname.includes(e.path)).id;
+        
+        linksData=linksData.filter(e=>e.source === currentNodeid ||e.target === currentNodeid);
+        nodesData=nodesData.filter(n=>linksData.findIndex(e=>(e.source ===n.id || e.target===n.id))!==-1 )
+        //console.log({nodesData,linksData})
+
+        const nodeSize = {};
+
+        const updateNodeSize = () => {
+          nodesData.forEach((el) => {
+            let weight =
+              3 *
+              Math.sqrt(
+                linksData.filter((l) => l.source.id === el.id || l.target.id === el.id)
+                  .length + 1
+              );
+            if (weight < MINIMAL_NODE_SIZE) {
+              weight = MINIMAL_NODE_SIZE;
+            } else if (weight > MAX_NODE_SIZE) {
+              weight = MAX_NODE_SIZE;
+            }
+            nodeSize[el.id] = weight;
+          });
+        };
+
+        const onClick = (d) => {
+          window.location = d.path
+        };
+
+        const onMouseover = function (d) {
+          const relatedNodesSet = new Set();
+          linksData
+            .filter((n) => n.target.id == d.id || n.source.id == d.id)
+            .forEach((n) => {
+              relatedNodesSet.add(n.target.id);
+              relatedNodesSet.add(n.source.id);
+            });
+
+          node.attr("class", (node_d) => {
+            if (node_d.id !== d.id && !relatedNodesSet.has(node_d.id)) {
+              return "inactive";
+            }
+            return "";
+          });
+
+          link.attr("class", (link_d) => {
+            if (link_d.source.id !== d.id && link_d.target.id !== d.id) {
+              return "inactive";
+            }
+            return "";
+          });
+
+          link.attr("stroke-width", (link_d) => {
+            if (link_d.source.id === d.id || link_d.target.id === d.id) {
+              return STROKE * 4;
+            }
+            return STROKE;
+          });
+          text.attr("class", (text_d) => {
+            if (text_d.id !== d.id && !relatedNodesSet.has(text_d.id)) {
+              return "inactive";
+            }
+            return "";
+          });
+        };
+
+        const onMouseout = function (d) {
+          node.attr("class", "");
+          link.attr("class", "");
+          text.attr("class", "");
+          link.attr("stroke-width", STROKE);
+        };
+
+        const sameNodes = (previous, next) => {
+          if (next.length !== previous.length) {
+            return false;
+          }
+
+          const map = new Map();
+          for (const node of previous) {
+            map.set(node.id, node.label);
+          }
+
+          for (const node of next) {
+            const found = map.get(node.id);
+            if (!found || found !== node.title) {
+              return false;
+            }
+          }
+
+          return true;
+        };
+
+        const sameEdges = (previous, next) => {
+          if (next.length !== previous.length) {
+            return false;
+          }
+
+          const set = new Set();
+          for (const edge of previous) {
+            set.add(`${edge.source.id}-${edge.target.id}`);
+          }
+
+          for (const edge of next) {
+            if (!set.has(`${edge.source.id}-${edge.target.id}`)) {
+              return false;
+            }
+          }
+
+          return true;
+        };
+
+        const graphWrapper = document.getElementById('local-graph-wrapper')
+        const element = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+        element.setAttribute("width", graphWrapper.getBoundingClientRect().width);
+        element.setAttribute("height",graphWrapper.getBoundingClientRect().width);
+        element.setAttribute("id","localgraph-svg");
+        graphWrapper.appendChild(element);
+
+        const reportWindowSize = () => {
+          element.setAttribute("width", window.innerWidth);
+          element.setAttribute("height", window.innerHeight);
+        };
+
+        window.onresize = reportWindowSize;
+
+        const svg = d3.select("#localgraph-svg");
+        const width = Number(svg.attr("width"));
+        const height = Number(svg.attr("height"));
+        let zoomLevel = 1;
+
+        const simulation = d3
+          .forceSimulation(nodesData)
+          .force("forceX", d3.forceX().x(width / 2))
+          .force("forceY", d3.forceY().y(height / 2))
+          .force("charge", d3.forceManyBody())
+          .force(
+            "link",
+            d3
+              .forceLink(linksData)
+              .id((d) => d.id)
+              .distance(70)
+          )
+          .force("center", d3.forceCenter(width / 2, height / 2))
+          .force("collision", d3.forceCollide().radius(50))
+          .stop();
+
+        const g = svg.append("g");
+        let link = g.append("g").attr("class", "links").selectAll(".link");
+        let node = g.append("g").attr("class", "nodes").selectAll(".node");
+        let text = g.append("g").attr("class", "text").selectAll(".text");
+
+        const resize = () => {
+          if (d3.event) {
+            const scale = d3.event.transform;
+            zoomLevel = scale.k;
+            g.attr("transform", scale);
+          }
+
+          const zoomOrKeep = (value) => (zoomLevel >= 1 ? value / zoomLevel : value);
+
+          const font = Math.max(Math.round(zoomOrKeep(FONT_SIZE)), 1);
+
+          text.attr("font-size", (d) => font);
+          text.attr("y", (d) => d.y - zoomOrKeep(FONT_BASELINE) + 8);
+          link.attr("stroke-width", zoomOrKeep(STROKE));
+          node.attr("r", (d) => {
+            return zoomOrKeep(nodeSize[d.id]);
+          });
+          svg
+            .selectAll("circle")
+            .filter((_d, i, nodes) => d3.select(nodes[i]).attr("active"))
+            .attr("r", (d) => zoomOrKeep(ACTIVE_RADIUS_FACTOR * nodeSize[d.id]));
+        };
+
+        const ticked = () => {
+          node.attr("cx", (d) => d.x).attr("cy", (d) => d.y);
+          text
+            .attr("x", (d) => d.x)
+            .attr("y", (d) => d.y - (FONT_BASELINE - nodeSize[d.id]) / zoomLevel);
+          link
+            .attr("x1", (d) => d.source.x)
+            .attr("y1", (d) => d.source.y)
+            .attr("x2", (d) => d.target.x)
+            .attr("y2", (d) => d.target.y);
+        };
+
+        const restart = () => {
+          updateNodeSize();
+          node = node.data(nodesData, (d) => d.id);
+          node.exit().remove();
+          node = node
+            .enter()
+            .append("circle")
+            .attr("r", (d) => {
+              return nodeSize[d.id];
+            })
+            .attr("xlink:href", (d)=>d.path) 
+            .on("click", onClick)
+            .on("mouseover", onMouseover)
+            .on("mouseout", onMouseout)
+            .merge(node);
+
+          link = link.data(linksData, (d) => `${d.source.id}-${d.target.id}`);
+          link.exit().remove();
+          link = link.enter().append("line").attr("stroke-width", STROKE).merge(link);
+
+          text = text.data(nodesData, (d) => d.label);
+          text.exit().remove();
+          text = text
+            .enter()
+            .append("text")
+            .text((d) => shorten(d.label.replace(/_*/g, ""), MAX_LABEL_LENGTH))
+            .attr("font-size", `${FONT_SIZE}px`)
+            .attr("xlink:href", (d)=>d.path) 
+            .attr("text-anchor", "middle")
+            .attr("alignment-baseline", "central")
+            .on("click", onClick)
+            .on("mouseover", onMouseover)
+            .on("mouseout", onMouseout)
+            .merge(text);
+
+          node.attr("active", (d) => isCurrentPath(d.path) ? true : null);
+          text.attr("active", (d) => isCurrentPath(d.path) ? true : null);
+
+          simulation.nodes(nodesData);
+          simulation.force("link").links(linksData);
+          simulation.alpha(1).restart();
+          simulation.stop();
+
+          for (let i = 0; i < TICKS; i++) {
+            simulation.tick();
+          }
+
+          ticked();
+        };
+
+        const zoomHandler = d3.zoom().scaleExtent([0.2, 3]).on("zoom", resize);
+
+        zoomHandler(svg);
+        
+       
+        restart();
+
+        function isCurrentPath(notePath) {
+          return window.location.pathname.includes(notePath)
+        }
+
+        function shorten(str, maxLen, separator = ' ') {
+          if (str.length <= maxLen) return str;
+          return str.substr(0, str.lastIndexOf(separator, maxLen)) + '...';
+        }
+        commentFlag = false;
+    }
+  </script>
+</div>
+
+      </div>
+
+      <div id="mentions">
+        <h3 style="margin-bottom: 1em">Mentions</h3>
+        
+  
+        <div style="font-size: 0.9em">
+          <p>
+            There are no notes linking to this note.
+          </p>
+        </div>
+        
+      </div>
+ 
+      
+    </side>
+  </div>
+</article>
+
+
+<!-- <style>
+  .links line {
+    stroke: #ccc;
+    opacity: 0.5;
+  }
+
+  .nodes circle {
+    cursor: pointer;
+    fill: #8b88e6;
+    transition: all 0.15s ease-out;
+  }
+
+  .text text {
+    cursor: pointer;
+    fill: #333;
+    text-shadow: -1px -1px 0 #fafafabb, 1px -1px 0 #fafafabb, -1px 1px 0 #fafafabb, 1px 1px 0 #fafafabb;
+  }
+
+  .nodes [active],
+  .text [active] {
+    cursor: pointer;
+    fill: black;
+  }
+
+  .inactive {
+    opacity: 0.1;
+    transition: all 0.15s ease-out;
+  }
+
+  #graph-wrapper {
+    background: #fcfcfc;
+    border-radius: 4px;
+    height: auto;
+  }
+</style>
+
+<div id="graph-wrapper">
+  <script>
+    var commentFlag = true;
+    
+    window.addEventListener("load", loadGraph);
+    window.addEventListener("scroll", loadGraph);
+
+    function loadGraph() {
+      if (!( document.getElementById("graph-wrapper").getBoundingClientRect().top <
+             window.innerHeight * 1.5 &&
+          commentFlag)){
+        return;
+      }
+        const MINIMAL_NODE_SIZE = 8;
+        const MAX_NODE_SIZE = 12;
+        const ACTIVE_RADIUS_FACTOR = 1.5;
+        const STROKE = 1;
+        const FONT_SIZE = 16;
+        const TICKS = 200;
+        const FONT_BASELINE = 40;
+        const MAX_LABEL_LENGTH = 50;
+
+        const graphData = {"edges":[{"source":"6912097109112108101115321111023210211411111011610997116116101114329911111010210510311711497116105111110115","target":"66108111111109326711111010210510311711497116105111110"},{"source":"6711110910997110100115","target":"67104111111115101329732109111100101108"},{"source":"84101120116327110111010111497116111114327010197116117114101115","target":"67111100101326610811199107115"},{"source":"671111101151051001011141011003267111110116101120116","target":"6711110910997110100115"},{"source":"71101116328311697114116101100","target":"6711110910997110100115"},{"source":"8410110911210897116101115","target":"6711110910997110100115"},{"source":"7011410111311710111011610812132651151071011003281117101115116105111110115","target":"6711110910911111032691141141111141153210511032791121011106573326580733299111100101329711010032116104101105114328011111511510598108101326797117115101115"},{"source":"6711110910997110100115","target":"67111110102105103117114101326580733275101121"},{"source":"68971081081014550326711111010210510311711497116105111110","target":"67111110102105103117114101326580733275101121"},{"source":"71101116328311697114116101100","target":"67111110102105103117114101326580733275101121"},{"source":"6711110910997110100115","target":"671111101151051001011141011003267111110116101120116"},{"source":"671111101161011201163297118971051089798108101321021111143211610110911210897116101115","target":"671111101151051001011141011003267111110116101120116"},{"source":"711011101011149711610132841011201163240117115101327710111697100971169741","target":"671111101151051001011141011003267111110116101120116"},{"source":"71101110101114971161013284101120116","target":"671111101151051001011141011003267111110116101120116"},{"source":"84101120116327110111010111497116111114327010197116117114101115","target":"671111101151051001011141011003267111110116101120116"},{"source":"87104971163210511532116104101321001051021021011141011109910132981011161191011011103211711510511010332841011201163271101110101114971161111143297110100321111161041011143265733287114105116101114115","target":"671111101151051001011141011003267111110116101120116"},{"source":"67111100101326610811199107115","target":"671111101161011201163297118971051089798108101321021111143211610110911210897116101115"},{"source":"8410110911210897116101115","target":"671111101161011201163297118971051089798108101321021111143211610110911210897116101115"},{"source":"6711110910997110100115","target":"67114101971161013297327810111932701051081013270114111109328410110911210897116101"},{"source":"6711110910997110100115","target":"671141019711610132973211610110911210897116101"},{"source":"8410110911210897116101115","target":"671141019711610132973211610110911210897116101"},{"source":"6912097109112108101115321111023210211411111011610997116116101114329911111010210510311711497116105111110115","target":"68971081081014550326711111010210510311711497116105111110"},{"source":"6711110910997110100115","target":"6911511610510997116101321161111071011101153210211111432973211610110911210897116101"},{"source":"6711110910997110100115","target":"691151161051099711610132116111107101110115321021111143211610410132991171141141011101163210011199117109101110116"},{"source":"7011411111011610997116116101114326711111010210510311711497116105111110","target":"6912097109112108101115321111023210211411111011610997116116101114329911111010210510311711497116105111110115"},{"source":"84101120116327110111010111497116111114","target":"7011410111311710111011610812132651151071011003281117101115116105111110115"},{"source":"8310111632779712032671111101161011101163283105122101","target":"7011411111011610997116116101114326711111010210510311711497116105111110"},{"source":"84101120116327110111010111497116111114327010197116117114101115","target":"7011411111011610997116116101114326711111010210510311711497116105111110"},{"source":"87104971163210511532116104101321001051021021011141011109910132981011161191011011103211711510511010332841011201163271101110101114971161111143297110100321111161041011143265733287114105116101114115","target":"7011411111011610997116116101114326711111010210510311711497116105111110"},{"source":"6711110910997110100115","target":"711011101011149711610132383267111112121328411132671081051129811197114100"},{"source":"6711110910997110100115","target":"711011101011149711610132651101003273110115101114116328410110911210897116101"},{"source":"6711110910997110100115","target":"711011101011149711610132841011201163240117115101327710111697100971169741"},{"source":"71101116328311697114116101100","target":"711011101011149711610132841011201163240117115101327710111697100971169741"},{"source":"6711110910997110100115","target":"71101110101114971161013284101120116"},{"source":"71101116328311697114116101100","target":"71101110101114971161013284101120116"},{"source":"6711110910997110100115","target":"711011101011149711610132971101003267114101971161013297327810111932701051081013270114111109328410110911210897116101"},{"source":"84101120116327110111010111497116111114327010197116117114101115","target":"711011101011149711610511810132651141161051021059910597108327311011610110810810510310111099101"},{"source":"67111110102105103117114101326580733275101121","target":"711011163279112101110326573326599991011151153284111107101110"},{"source":"7011411111011610997116116101114326711111010210510311711497116105111110","target":"711011163279112101110326573326599991011151153284111107101110"},{"source":"71101116328311697114116101100","target":"711011163279112101110326573326599991011151153284111107101110"},{"source":"84101120116327110111010111497116111114327010197116117114101115","target":"711011163279112101110326573326599991011151153284111107101110"},{"source":"8410110911210897116101115","target":"72101108112101114327011711099116105111110115"},{"source":"6711110910997110100115","target":"721111161071011211153210511032799811510510010597110"},{"source":"711011101011149711610132841011201163240117115101327710111697100971169741","target":"721111161071011211153210511032799811510510010597110"},{"source":"711011101011149711610132841011201163240117115101327710111697100971169741","target":"7211111932116104101329911111511632105115329997108991171089711610110063"},{"source":"66108111111109326711111010210510311711497116105111110","target":"72117103103105110103709799101"},{"source":"7011411111011610997116116101114326711111010210510311711497116105111110","target":"72117103103105110103709799101"},{"source":"7211111932116104101329911111511632105115329997108991171089711610110063","target":"72117103103105110103709799101"},{"source":"72117103103105110103709799101","target":"72117103103105110103709799101"},{"source":"84101120116327110111010111497116111114327010197116117114101115","target":"72117103103105110103709799101"},{"source":"6711110910997110100115","target":"731101151011141163297328410110911210897116101"},{"source":"67111110102105103117114101326580733275101121","target":"799811510510010597110"},{"source":"67114101971161013297327810111932701051081013270114111109328410110911210897116101","target":"799811510510010597110"},{"source":"711011163279112101110326573326599991011151153284111107101110","target":"799811510510010597110"},{"source":"71101116328311697114116101100","target":"799811510510010597110"},{"source":"721111161071011211153210511032799811510510010597110","target":"799811510510010597110"},{"source":"799811510510010597110","target":"799811510510010597110"},{"source":"84101120116327110111010111497116111114327010197116117114101115","target":"799811510510010597110"},{"source":"84101120116327110111010111497116111114","target":"799811510510010597110"},{"source":"87104971163210511532116104101321001051021021011141011109910132981011161191011011103211711510511010332841011201163271101110101114971161111143297110100321111161041011143265733287114105116101114115","target":"799811510510010597110"},{"source":"8710497116391153278101119","target":"799811510510010597110"},{"source":"84101120116327110111010111497116111114327010197116117114101115","target":"807577"},{"source":"6711110910997110100115","target":"8310111632779712032671111101161011101163283105122101"},{"source":"711011101011149711610132841011201163240117115101327710111697100971169741","target":"8310111632779712032671111101161011101163283105122101"},{"source":"71101110101114971161013284101120116","target":"8310111632779712032671111101161011101163283105122101"},{"source":"8410110911210897116101328097991079710310132779711097103101114","target":"8310497114101329732781011193284101109112108971161013280979910797103101"},{"source":"8410110911210897116101115","target":"8310497114101329732781011193284101109112108971161013280979910797103101"},{"source":"84101120116327110111010111497116111114327010197116117114101115","target":"8310497114101329732781011193284101109112108971161013280979910797103101"},{"source":"8410110911210897116101115","target":"841011091121089711610132701051081013277101116971009711697"},{"source":"6711110910997110100115","target":"8410110911210897116101328097991079710310132779711097103101114"},{"source":"67111100101326610811199107115","target":"8410110911210897116101115"},{"source":"6711110910997110100115","target":"8410110911210897116101115"},{"source":"671111101151051001011141011003267111110116101120116","target":"8410110911210897116101115"},{"source":"671141019711610132973211610110911210897116101","target":"8410110911210897116101115"},{"source":"8310497114101329732781011193284101109112108971161013280979910797103101","target":"8410110911210897116101115"},{"source":"84101120116327110111010111497116111114327010197116117114101115","target":"8410110911210897116101115"},{"source":"87104971163210511532116104101321001051021021011141011109910132981011161191011011103211711510511010332841011201163271101110101114971161111143297110100321111161041011143265733287114105116101114115","target":"8410110911210897116101115"},{"source":"8310497114101329732781011193284101109112108971161013280979910797103101","target":"84101120116327110111010111497116111114"},{"source":"84101120116327110111010111497116111114","target":"84101120116327110111010111497116111114"},{"source":"671111101151051001011141011003267111110116101120116","target":"8411497110115102111114109101114"},{"source":"8411497110115102111114109101114","target":"8411497110115102111114109101114"},{"source":"7011410111311710111011610812132651151071011003281117101115116105111110115","target":"87104971163210511532116104101321001051021021011141011109910132981011161191011011103211711510511010332841011201163271101110101114971161111143297110100321111161041011143265733287114105116101114115"},{"source":"671111101151051001011141011003267111110116101120116","target":"8965777632107101121119111114100115"},{"source":"67111110102105103117114101326580733275101121","target":"105110115116971081081051101033211610410132841011201163271101110101114971161111143280108117103105110"},{"source":"671111101151051001011141011003267111110116101120116","target":"112114111109112116"},{"source":"8410110911210897116101115","target":"112114111109112116"},{"source":"84101120116327110111010111497116111114327010197116117114101115","target":"112114111109112116"},{"source":"114121116114","target":"114121116114"}],"nodes":[{"id":"65733287114105116101114","path":"/ai-writer","label":"AI Writer"},{"id":"6511711611145115117103103101115116","path":"/auto-suggest","label":"Auto-suggest"},{"id":"66108111111109326711111010210510311711497116105111110","path":"/bloom-configuration","label":"Bloom Configuration"},{"id":"67104111111115101329732767677","path":"/choose-a-llm","label":"Choose a LLM"},{"id":"67104111111115101329732109111100101108","path":"/choose-a-model","label":"Choose a model"},{"id":"67111100101326610811199107115","path":"/code-blocks","label":"Code Blocks"},{"id":"6711110910997110100115","path":"/commands","label":"Commands"},{"id":"6711110910911111032691141141111141153210511032791121011106573326580733299111100101329711010032116104101105114328011111511510598108101326797117115101115","path":"/common-errors-in-openai-api-code-and-their-possible-causes","label":"Common Errors in OpenAI API code and their Possible Causes"},{"id":"67111110102105103117114101326580733275101121","path":"/configure-api-key","label":"Configure API Key"},{"id":"671111101151051001011141011003267111110116101120116","path":"/considered-context","label":"Considered Context"},{"id":"671111101161011201163297118971051089798108101321021111143211610110911210897116101115","path":"/context-available-for-templates","label":"Context available for templates"},{"id":"67114101971161013297327810111932701051081013270114111109328410110911210897116101","path":"/create-a-new-file-from-template","label":"Create a New File From Template"},{"id":"671141019711610132973211610110911210897116101","path":"/create-a-template","label":"Create a template"},{"id":"68971081081014550326711111010210510311711497116105111110","path":"/dalle-2-configuration","label":"Dalle-2 Configuration"},{"id":"6911511610510997116101321161111071011101153210211111432973211610110911210897116101","path":"/estimate-tokens-for-a-template","label":"Estimate tokens for a template"},{"id":"691151161051099711610132116111107101110115321021111143211610410132991171141141011101163210011199117109101110116","path":"/estimate-tokens-for-the-current-document","label":"Estimate tokens for the current document"},{"id":"6912097109112108101115321111023210211411111011610997116116101114329911111010210510311711497116105111110115","path":"/examples-of-frontmatter-configurations","label":"Examples of frontmatter configurations"},{"id":"7011410111311710111011610812132651151071011003281117101115116105111110115","path":"/faq","label":"Frequently Asked Questions"},{"id":"701051101011161171101011003277111100101108115","path":"/finetuned-models","label":"Finetuned Models"},{"id":"7011411111011610997116116101114326711111010210510311711497116105111110","path":"/frontmatter-configuration","label":"Frontmatter Configuration"},{"id":"711011101011149711610132383267111112121328411132671081051129811197114100","path":"/generate-copy-to-clipboard","label":"Generate & Copy To Clipboard"},{"id":"711011101011149711610132651101003273110115101114116328410110911210897116101","path":"/generate-and-insert-template","label":"Generate And Insert Template"},{"id":"711011101011149711610132841011201163240117115101327710111697100971169741","path":"/generate-text-and-use-metadata","label":"Generate Text (use Metadata)"},{"id":"71101110101114971161013284101120116","path":"/generate-text","label":"Generate Text"},{"id":"711011101011149711610132971101003267114101971161013297327810111932701051081013270114111109328410110911210897116101","path":"/generate-and-create-a-new-file-from-template","label":"Generate and Create a New File From Template"},{"id":"711011101011149711610511810132651141161051021059910597108327311011610110810810510310111099101","path":"/generative-artificial-intelligence","label":"Generative Artificial Intelligence"},{"id":"711011163279112101110326573326599991011151153284111107101110","path":"/get-openai-access-token","label":"Get Open AI Access Token"},{"id":"71101116328311697114116101100","path":"/get-started","label":"Get Started"},{"id":"7210197100105110103115841011091121089711610110112099971081051001149711946115118103","path":"/headingstemplateexcalidraw-svg","label":"HeadingsTemplateexcalidraw.svg"},{"id":"72101108112101114327011711099116105111110115","path":"/helper-functions","label":"Helper Functions"},{"id":"721111161071011211153210511032799811510510010597110","path":"/hotkeys-in-obsidian","label":"Hotkeys in Obsidian"},{"id":"7211111932116104101329911111511632105115329997108991171089711610110063","path":"/how-the-cost-is-calculated","label":"How the cost is calculated?"},{"id":"72117103103105110103709799101","path":"/huggingface","label":"HuggingFace"},{"id":"731101151011141163297328410110911210897116101","path":"/insert-a-template","label":"Insert a Template"},{"id":"7497115112101114","path":"/jasper","label":"Jasper"},{"id":"799811510510010597110","path":"/obsidian","label":"Obsidian"},{"id":"807577","path":"/pkm","label":"PKM"},{"id":"8310111632779712032671111101161011101163283105122101","path":"/set-max-content-size","label":"Set Max Content Size"},{"id":"8310497114101329732781011193284101109112108971161013280979910797103101","path":"/share-a-new-template-package","label":"Share a New Template Package"},{"id":"841011091121089711610132701051081013277101116971009711697","path":"/template-file-metadata","label":"Template File Metadata"},{"id":"8410110911210897116101328097991079710310132779711097103101114","path":"/template-package-manager","label":"Template Package Manager"},{"id":"8410110911210897116101115","path":"/templates","label":"Templates"},{"id":"84101120116327110111010111497116111114327010197116117114101115","path":"/text-generator-features","label":"Text Generator Features"},{"id":"84101120116327110111010111497116111114","path":"/text-generator","label":"Text Generator"},{"id":"85110116105116108101100","path":"/tool","label":"Untitled"},{"id":"8411497110115102111114109101114","path":"/transformer","label":"Transformer"},{"id":"87104971163210511532116104101321001051021021011141011109910132981011161191011011103211711510511010332841011201163271101110101114971161111143297110100321111161041011143265733287114105116101114115","path":"/what-is-the-difference-between-using-text-generator-and-other-ai-writers","label":"What is the difference between using Text Generator and other AI Writers"},{"id":"8710497116391153278101119","path":"/what-s-new","label":"What's New"},{"id":"8965777632107101121119111114100115","path":"/yaml-keywords","label":"YAML keywords"},{"id":"9911111212197105","path":"/copyai","label":"copyai"},{"id":"105110115116971081081051101033211610410132841011201163271101110101114971161111143280108117103105110","path":"/installing-text-generator-plugin","label":"installing the Text Generator Plugin"},{"id":"112114111109112116","path":"/prompt","label":"prompt"},{"id":"114121116114","path":"/rytr","label":"rytr"},{"id":"11511798115116114105110103","path":"/substring","label":"substring"}]}
+        let nodesData = graphData.nodes;
+        let linksData = graphData.edges;
+
+        const nodeSize = {};
+
+        const updateNodeSize = () => {
+          nodesData.forEach((el) => {
+            let weight =
+              3 *
+              Math.sqrt(
+                linksData.filter((l) => l.source.id === el.id || l.target.id === el.id)
+                  .length + 1
+              );
+            if (weight < MINIMAL_NODE_SIZE) {
+              weight = MINIMAL_NODE_SIZE;
+            } else if (weight > MAX_NODE_SIZE) {
+              weight = MAX_NODE_SIZE;
+            }
+            nodeSize[el.id] = weight;
+          });
+        };
+
+        const onClick = (d) => {
+          window.location = d.path
+        };
+
+        const onMouseover = function (d) {
+          const relatedNodesSet = new Set();
+          linksData
+            .filter((n) => n.target.id == d.id || n.source.id == d.id)
+            .forEach((n) => {
+              relatedNodesSet.add(n.target.id);
+              relatedNodesSet.add(n.source.id);
+            });
+
+          node.attr("class", (node_d) => {
+            if (node_d.id !== d.id && !relatedNodesSet.has(node_d.id)) {
+              return "inactive";
+            }
+            return "";
+          });
+
+          link.attr("class", (link_d) => {
+            if (link_d.source.id !== d.id && link_d.target.id !== d.id) {
+              return "inactive";
+            }
+            return "";
+          });
+
+          link.attr("stroke-width", (link_d) => {
+            if (link_d.source.id === d.id || link_d.target.id === d.id) {
+              return STROKE * 4;
+            }
+            return STROKE;
+          });
+          text.attr("class", (text_d) => {
+            if (text_d.id !== d.id && !relatedNodesSet.has(text_d.id)) {
+              return "inactive";
+            }
+            return "";
+          });
+        };
+
+        const onMouseout = function (d) {
+          node.attr("class", "");
+          link.attr("class", "");
+          text.attr("class", "");
+          link.attr("stroke-width", STROKE);
+        };
+
+        const sameNodes = (previous, next) => {
+          if (next.length !== previous.length) {
+            return false;
+          }
+
+          const map = new Map();
+          for (const node of previous) {
+            map.set(node.id, node.label);
+          }
+
+          for (const node of next) {
+            const found = map.get(node.id);
+            if (!found || found !== node.title) {
+              return false;
+            }
+          }
+
+          return true;
+        };
+
+        const sameEdges = (previous, next) => {
+          if (next.length !== previous.length) {
+            return false;
+          }
+
+          const set = new Set();
+          for (const edge of previous) {
+            set.add(`${edge.source.id}-${edge.target.id}`);
+          }
+
+          for (const edge of next) {
+            if (!set.has(`${edge.source.id}-${edge.target.id}`)) {
+              return false;
+            }
+          }
+
+          return true;
+        };
+
+        const graphWrapper = document.getElementById('graph-wrapper')
+        const element = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+        element.setAttribute("width", graphWrapper.getBoundingClientRect().width);
+        element.setAttribute("height", window.innerHeight * 0.8);
+        element.setAttribute("id","globalgraph");
+        graphWrapper.appendChild(element);
+
+        const reportWindowSize = () => {
+          element.setAttribute("width", window.innerWidth);
+          element.setAttribute("height", window.innerHeight);
+        };
+
+        window.onresize = reportWindowSize;
+
+        const svg = d3.select("#globalgraph");
+        const width = Number(svg.attr("width"));
+        const height = Number(svg.attr("height"));
+        let zoomLevel = 1;
+
+        const simulation = d3
+          .forceSimulation(nodesData)
+          .force("forceX", d3.forceX().x(width / 2))
+          .force("forceY", d3.forceY().y(height / 2))
+          .force("charge", d3.forceManyBody())
+          .force(
+            "link",
+            d3
+              .forceLink(linksData)
+              .id((d) => d.id)
+              .distance(70)
+          )
+          .force("center", d3.forceCenter(width / 2, height / 2))
+          .force("collision", d3.forceCollide().radius(80))
+          .stop();
+
+        const g = svg.append("g");
+        let link = g.append("g").attr("class", "links").selectAll(".link");
+        let node = g.append("g").attr("class", "nodes").selectAll(".node");
+        let text = g.append("g").attr("class", "text").selectAll(".text");
+
+        const resize = () => {
+          if (d3.event) {
+            const scale = d3.event.transform;
+            zoomLevel = scale.k;
+            g.attr("transform", scale);
+          }
+
+          const zoomOrKeep = (value) => (zoomLevel >= 1 ? value / zoomLevel : value);
+
+          const font = Math.max(Math.round(zoomOrKeep(FONT_SIZE)), 1);
+
+          text.attr("font-size", (d) => font);
+          text.attr("y", (d) => d.y - zoomOrKeep(FONT_BASELINE) + 8);
+          link.attr("stroke-width", zoomOrKeep(STROKE));
+          node.attr("r", (d) => {
+            return zoomOrKeep(nodeSize[d.id]);
+          });
+          svg
+            .selectAll("circle")
+            .filter((_d, i, nodes) => d3.select(nodes[i]).attr("active"))
+            .attr("r", (d) => zoomOrKeep(ACTIVE_RADIUS_FACTOR * nodeSize[d.id]));
+        };
+
+        const ticked = () => {
+          node.attr("cx", (d) => d.x).attr("cy", (d) => d.y);
+          text
+            .attr("x", (d) => d.x)
+            .attr("y", (d) => d.y - (FONT_BASELINE - nodeSize[d.id]) / zoomLevel);
+          link
+            .attr("x1", (d) => d.source.x)
+            .attr("y1", (d) => d.source.y)
+            .attr("x2", (d) => d.target.x)
+            .attr("y2", (d) => d.target.y);
+        };
+
+        const restart = () => {
+          updateNodeSize();
+          node = node.data(nodesData, (d) => d.id);
+          node.exit().remove();
+          node = node
+            .enter()
+            .append("circle")
+            .attr("r", (d) => {
+              return nodeSize[d.id];
+            })
+            .on("click", onClick)
+            .on("mouseover", onMouseover)
+            .on("mouseout", onMouseout)
+            .merge(node);
+
+          link = link.data(linksData, (d) => `${d.source.id}-${d.target.id}`);
+          link.exit().remove();
+          link = link.enter().append("line").attr("stroke-width", STROKE).merge(link);
+
+          text = text.data(nodesData, (d) => d.label);
+          text.exit().remove();
+          text = text
+            .enter()
+            .append("text")
+            .text((d) => shorten(d.label.replace(/_*/g, ""), MAX_LABEL_LENGTH))
+            .attr("font-size", `${FONT_SIZE}px`)
+            .attr("text-anchor", "middle")
+            .attr("alignment-baseline", "central")
+            .on("click", onClick)
+            .on("mouseover", onMouseover)
+            .on("mouseout", onMouseout)
+            .merge(text);
+
+          node.attr("active", (d) => isCurrentPath(d.path) ? true : null);
+          text.attr("active", (d) => isCurrentPath(d.path) ? true : null);
+
+          simulation.nodes(nodesData);
+          simulation.force("link").links(linksData);
+          simulation.alpha(1).restart();
+          simulation.stop();
+
+          for (let i = 0; i < TICKS; i++) {
+            simulation.tick();
+          }
+
+          ticked();
+        };
+
+        const zoomHandler = d3.zoom().scaleExtent([0.2, 3]).on("zoom", resize);
+
+        zoomHandler(svg);
+        restart();
+
+        function isCurrentPath(notePath) {
+          return window.location.pathname.includes(notePath)
+        }
+
+        function shorten(str, maxLen, separator = ' ') {
+          if (str.length <= maxLen) return str;
+          return str.substr(0, str.lastIndexOf(separator, maxLen)) + '...';
+        }
+        commentFlag = false;
+    }
+  </script>
+</div>
+ -->
+<script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"></script>
+<script src="/assets/js/toc.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+      $('#toc').toc();
+  });
+</script>
+      </main>
+
+      <footer>
+<h2>
+    I appreciate your comments to enrich/correct the content via <a class="internal-link" href="https://hypothes.is/">Hypothesis</a>  
+</h2>
+</footer>
+    </div>
+
+    <!-- That file is not particularly elegant. This will need a refactor at some point. -->
+
+
+<style>
+  content a.internal-link {
+    border-color: #8b88e6;
+    background-color: #efefff;
+  }
+
+  #tooltip-wrapper {
+    background: white;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    position: absolute;
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    max-height: 300px;
+    font-size: 0.8em;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    transition: opacity 100ms;
+    unicode-bidi: plaintext;
+    overflow-y: scroll;
+  }
+
+  #tooltip-wrapper:after {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		bottom: 0;
+		left: 0;
+		pointer-events: none;
+		width: 100%;
+    unicode-bidi: plaintext;
+		height: 75px;
+  }
+</style>
+
+<div style="opacity: 0; display: none;" id='tooltip-wrapper'>
+  <div id='tooltip-content'>
+  </div>
+</div>
+
+<iframe style="display: none; height: 0; width: 0;" id='link-preview-iframe' src="">
+</iframe>
+
+<script>
+  var opacityTimeout;
+  var contentTimeout;
+  var transitionDurationMs = 100;
+
+  var iframe = document.getElementById('link-preview-iframe')
+  var tooltipWrapper = document.getElementById('tooltip-wrapper')
+  var tooltipContent = document.getElementById('tooltip-content')
+
+  var linkHistories = {};
+
+  function hideTooltip() {
+    opacityTimeout = setTimeout(function() {
+      tooltipWrapper.style.opacity = 0;
+      contentTimeout = setTimeout(function() {
+        tooltipContent.innerHTML = '';
+        tooltipWrapper.style.display = 'none';
+      }, transitionDurationMs + 1);
+    }, transitionDurationMs)
+  }
+
+  function showTooltip(event) {
+    var elem = event.target;
+    var elem_props = elem.getClientRects()[elem.getClientRects().length - 1];
+    var top = window.pageYOffset || document.documentElement.scrollTop
+    if (event.target.getAttribute("href").indexOf("http")===-1 || event.target.getAttribute("href").indexOf(window.location.host)!==-1) {
+      if (!linkHistories[event.target.getAttribute("href")]) {
+       iframe.src = event.target.getAttribute("href")
+        iframe.onload = function() {
+          tooltipContentHtml = ''
+          tooltipContentHtml += '<div style="font-weight: bold; unicode-bidi: plaintext;">' + iframe.contentWindow.document.querySelector('h1').innerHTML + '</div>'
+          tooltipContentHtml += iframe.contentWindow.document.querySelector('content').innerHTML
+          tooltipContent.innerHTML = tooltipContentHtml
+          linkHistories[event.target.getAttribute("href")] = tooltipContentHtml
+          tooltipWrapper.style.display = 'block';
+          setTimeout(function() {
+            tooltipWrapper.style.opacity = 1;
+          }, 1)
+        } 
+      } else {
+        tooltipContent.innerHTML = linkHistories[event.target.getAttribute("href")]
+        tooltipWrapper.style.display = 'block';
+        setTimeout(function() {
+          tooltipWrapper.style.opacity = 1;
+        }, 1)
+      }
+
+      function getInnerWidth(elem) {
+        var style = window.getComputedStyle(elem);
+        return elem.offsetWidth - parseFloat(style.paddingLeft) - parseFloat(style.paddingRight) - parseFloat(style.borderLeft) - parseFloat(style.borderRight) - parseFloat(style.marginLeft) - parseFloat(style.marginRight);
+    }
+
+      tooltipWrapper.style.left = elem_props.left - (tooltipWrapper.offsetWidth / 2) + (elem_props.width / 2) + "px";
+     
+      if ((window.innerHeight - elem_props.top) < (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top - tooltipWrapper.offsetHeight - 10 + "px";
+      } else if ((window.innerHeight - elem_props.top) > (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top + 35 + "px";
+      }
+
+      if ((elem_props.left + (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = "10px";
+      } else if ((document.body.clientWidth - elem_props.left - (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = document.body.clientWidth - tooltipWrapper.offsetWidth - 20 + "px";
+      }
+    }
+  }
+  function loadSVG(){
+    //document.querySelectorAll("object").forEach(obj=>{fetch(obj.data).then(e=>e.text()).then(svg=>obj.outerHTML=svg)})
+    const svgImgs = document.querySelectorAll("img[src*=svg]");
+    //console.log(svgImgs);
+    if(svgImgs.length>0) {
+      Promise.all(
+        Array.from(svgImgs).map(img=> 
+        fetch(img.src)
+        .then(e=>e.text())
+        .then(text=>
+            { 
+              img.outerHTML=text.replaceAll(/href="\[\[(.*?)\]\]"/g,function(match, offset, str) {
+                  //console.log(" - "+img.src,text)
+                  //console.log({match,offset,str})
+                return `href="${offset.toLowerCase().replaceAll(" ","-")}"`;
+              });
+          
+            }
+          ) 
+        )
+      )
+        .then(() => {
+          //console.log("***")
+          document.querySelectorAll('content a,#localgraph circle,#mentions a').forEach(setupListeners);
+        });
+    } else {
+      document.querySelectorAll('content a,#localgraph circle,#mentions a').forEach(setupListeners);
+    }
+  }
+
+  //https://stackoverflow.com/a/67977146
+  function onLongPress(element, callback) {
+    var timeoutId;
+
+    element.addEventListener('touchstart', function(e) {
+        timeoutId = setTimeout(function() {
+            timeoutId = null;
+            e.stopPropagation();
+            callback(e);
+        }, 2000);
+    });
+
+    element.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+    });
+
+    /*element.addEventListener('touchend', function () {
+        if (timeoutId) clearTimeout(timeoutId);
+    });
+    */
+    /*element.addEventListener('touchmove', function () {
+        if (timeoutId) clearTimeout(timeoutId);
+    });
+    */
+}
+
+  function setupListeners(linkElement) {
+
+    linkElement.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    /*onLongPress(linkElement,(event)=>{
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+      showTooltip(event);
+    })*/
+
+    linkElement.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+      showTooltip(event);
+    });
+
+    
+    tooltipWrapper.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+    });
+  }
+  //console.log( document.querySelectorAll('content a,#localgraph circle,#mentions a'))
+
+  d3.select(window).on("load", ()=>{
+    loadSVG();
+});
+  
+</script>
+
+  </body>
+</html>
