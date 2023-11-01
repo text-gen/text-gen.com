@@ -13,4 +13,5 @@ Once you have [[Obsidian]] installed,
 4. Generate text using the basic commands [[Generate Text]] and [[Generate Text and Use Metadata]] from [[Commands]]. 
 
 > [!note]
-> 
+> **ChatGPT Plus** and the **OpenAI API** payment subscription are billed separately.
+

@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_notes/Getting Started/Get Started.md",
+                "file": "_notes/Getting Started/Configure API Key.md",
                 "mode": "source",
                 "source": false
               }
@@ -142,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Getting Started/Get Started.md",
+                "file": "_notes/Getting Started/Configure API Key.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_notes/Getting Started/Get Started.md",
+                "file": "_notes/Getting Started/Configure API Key.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Getting Started/Get Started.md"
+                "file": "_notes/Getting Started/Configure API Key.md"
               }
             }
           }
@@ -212,10 +212,22 @@
   },
   "active": "8c3212bbc8d3c5d5",
   "lastOpenFiles": [
+    "_notes/Getting Started/Considered Context.md",
+    "_notes/Commands/Choose a LLM.md",
     "_notes/Getting Started/Get OpenAI Access Token.md",
+    "_notes/Getting Started/Configure API Key.md",
     "_notes/Getting Started/Get Started.md",
+    "assets/images/Pasted image 20231101075643.png",
+    "_notes/Templates/Context available for templates.md",
+    "_notes/Templates/Template File Metadata.md",
     "_notes/What's New/What's New.md",
+    "_notes/Templates/Template Package Manager.md",
+    "_notes/Templates/Create a Template.md",
+    "_notes/Templates/Insert a Template.md",
+    "_notes/Templates/Estimate tokens for a template.md",
     "_notes/Templates/Templates.md",
+    "_notes/Templates/Helper Functions.md",
+    "_notes/Templates/Share a New Template Package.md",
     "_notes/What's New/Untitled.md",
     "_notes/What's New/sdafadsf.md",
     "_notes/Home.md",
@@ -228,17 +240,6 @@
     "_notes/Other notes/prompt.md",
     "_notes/Other notes/Transformer.md",
     "_notes/Other notes/Finetuned Models.md",
-    "_notes/Other notes/Generative Artificial Intelligence.md",
-    "_notes/Other notes/AI Writer.md",
-    "_notes/Other notes/PKM.md",
-    "_notes/Commands/Create a New File From Template.md",
-    "_notes/Commands/Generate Text.md",
-    "_notes/Getting Started/Text Generator.md",
-    "_notes/Getting Started/installing Text Generator Plugin.md",
-    "_notes/Options/Auto-suggest.md",
-    "_notes/Other notes/substring.md",
-    "_notes/Other notes/Common Errors in OpenAI API code and their Possible Causes.md",
-    "_notes/Commands/Set Max Content Size.md",
     "_notes/Options",
     "Untitled",
     "_notes/Commands",
@@ -257,7 +258,6 @@
     "assets/images/Pasted image 20231029182121.png",
     "assets/images/Pasted image 20231029181218.png",
     "assets/images/Pasted image 20230406073109.png",
-    "_site/assets/images/Pasted image 20230311230554.png",
     "_notes/Untitled.canvas"
   ]
 }
