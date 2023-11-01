@@ -74,5 +74,61 @@ To create a professional and clear Template File Metadata, follow these best pra
 By documenting your Template File Metadata comprehensively and adhering to these best practices, you can enhance the usability and clarity of your templates. This, in turn, will improve the overall user experience and efficiency when sharing it with the community.
 
 
+
+
+## DRAFT
+  system: string,
+
+  messages: string[],
+
+  max_tokens: number,
+
+
+  stream: boolean,
+
+  provider: "custom" | "openAIChat" | "openAIInstruct" | "azureOpenaiChat" | "azureOpenaiInstruct" | "palm" | "anthropic" | "ollama" | "hf",
+
+  disableProvider: boolean,
+
+  endpoint: string,
+
+  output: string, 
+  >dalle-2 example:
+  ```
+   '\n![]({{requestResults.data.0.url}})'
+  ```
+
+  // objects
+
+  body: string | object,
+> incase of provider is custom
+> example of dalle-2 body
+```
+'{"n": 1, "size": "1024x1024", "prompt": "{{escp prompt}}"}'
+```
+
+ headers: string | object,
+> incase of provider is custom
+> example of huggingface headers
+```
+{ "Authorization": "Bearer {{keys.hf}}" }'
+```
+
+  // langchain stuff
+
+chain.loader?: "loadSummarizationChain" ... (check in chains object for more)
+>  default value is loadSummarizationChain
+
+
+  chain.type: "map_reduce" | "refine"
+> if chain.type has value it will use langchain chains
+
+chain.verbose?: boolean
+
+splitter.chunkSize: number;
+splitter.chunkOverlap: number;
+
+
+
 ## References 
 * old documentation: [[Template File Metadata]]
