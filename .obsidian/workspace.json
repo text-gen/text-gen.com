@@ -25,7 +25,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_notes/Getting Started/Configure API Key.md",
+                "file": "_notes/What's New/v0.5.1-beta.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7fb858e7c51efddc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_notes/What's New/v0.5.0-beta.md",
                 "mode": "source",
                 "source": false
               }
@@ -142,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Getting Started/Configure API Key.md",
+                "file": "_notes/What's New/v0.5.1-beta.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_notes/Getting Started/Configure API Key.md",
+                "file": "_notes/What's New/v0.5.1-beta.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +194,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Getting Started/Configure API Key.md"
+                "file": "_notes/What's New/v0.5.1-beta.md"
               }
             }
           }
@@ -212,15 +224,25 @@
   },
   "active": "8c3212bbc8d3c5d5",
   "lastOpenFiles": [
+    "_notes/What's New/v0.5.7-beta.md",
+    "_notes/What's New/v0.5.6-beta.md",
+    "_notes/What's New/v0.5.5-beta.md",
+    "_notes/What's New/v0.5.4-beta.md",
+    "_notes/What's New/v0.5.3-beta.md",
+    "_notes/What's New/v0.5.2-beta.md",
+    "_notes/What's New/v0.5.1-beta.md",
+    "_notes/What's New/v0.5.0-beta.md",
+    "_notes/What's New/v0.4.9-beta.md",
+    "_notes/What's New/v0.4.8-beta.md",
+    "_notes/What's New/What's New.md",
+    "_notes/Getting Started/Configure API Key.md",
     "_notes/Getting Started/Considered Context.md",
     "_notes/Commands/Choose a LLM.md",
     "_notes/Getting Started/Get OpenAI Access Token.md",
-    "_notes/Getting Started/Configure API Key.md",
     "_notes/Getting Started/Get Started.md",
     "assets/images/Pasted image 20231101075643.png",
     "_notes/Templates/Context available for templates.md",
     "_notes/Templates/Template File Metadata.md",
-    "_notes/What's New/What's New.md",
     "_notes/Templates/Template Package Manager.md",
     "_notes/Templates/Create a Template.md",
     "_notes/Templates/Insert a Template.md",
@@ -229,17 +251,7 @@
     "_notes/Templates/Helper Functions.md",
     "_notes/Templates/Share a New Template Package.md",
     "_notes/What's New/Untitled.md",
-    "_notes/What's New/sdafadsf.md",
-    "_notes/Home.md",
     "_notes/What's New",
-    "_notes/Other notes/FAQ.md",
-    "_notes/Other notes/Bloom Configuration.md",
-    "_notes/Other notes/HeadingsTemplateexcalidraw.svg.md",
-    "_notes/Other notes/Hotkeys in Obsidian.md",
-    "_notes/Getting Started/How the cost is calculated.md",
-    "_notes/Other notes/prompt.md",
-    "_notes/Other notes/Transformer.md",
-    "_notes/Other notes/Finetuned Models.md",
     "_notes/Options",
     "Untitled",
     "_notes/Commands",

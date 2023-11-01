@@ -6,7 +6,7 @@ layout: note
 # Check all the changes in the [releases page](https://github.com/nhaouari/obsidian-textgenerator-plugin/releases)
 
 
-# Release v0.5.7-beta 🚀
+# Release [[v0.5.7-beta]] 🚀
 
 ## Changes:
 
@@ -28,7 +28,7 @@ layout: note
 
 **Full Changelog**: [0.5.6-beta...0.5.7-beta](https://github.com/nhaouari/obsidian-textgenerator-plugin/compare/0.5.6-beta...0.5.7-beta)
 
-# Release v0.5.6-beta 🚀
+# Release [[v0.5.6-beta]] 🚀
 
 ## Changes:
 
@@ -50,7 +50,7 @@ layout: note
     
 
 **Full Changelog**: [0.5.5-beta...0.5.6-beta](https://github.com/nhaouari/obsidian-textgenerator-plugin/compare/0.5.5-beta...0.5.6-beta)
-# Release v0.5.5-beta 🚀
+# Release [[v0.5.5-beta]] 🚀
 
 ## Changes:
 
@@ -61,7 +61,7 @@ layout: note
 
 **Full Changelog**: [0.5.4-beta...0.5.5-beta](https://github.com/nhaouari/obsidian-textgenerator-plugin/compare/0.5.4-beta...0.5.5-beta)
 
-# Release v0.5.4-beta 🚀
+# Release [[v0.5.4-beta]] 🚀
 
 ## Changes:
 
@@ -86,7 +86,7 @@ Plugin.tg.gen("hello").then(console.log)
 
 **Full Changelog**: [0.5.3-beta...0.5.4-beta](https://github.com/nhaouari/obsidian-textgenerator-plugin/compare/0.5.3-beta...0.5.4-beta)
 
-# Release v0.5.3-beta 🚀
+# Release [[v0.5.3-beta]] 🚀
 
 ## Changes:
 
@@ -96,7 +96,7 @@ Plugin.tg.gen("hello").then(console.log)
 
 **Full Changelog**: [0.5.2-beta...0.5.3-beta](https://github.com/nhaouari/obsidian-textgenerator-plugin/compare/0.5.2-beta...0.5.3-beta)
 
-# Release v0.5.2 🚀
+# Release [[v0.5.2-beta]] 🚀
 
 ## Changes:
 
@@ -104,13 +104,13 @@ Plugin.tg.gen("hello").then(console.log)
 - Added "open as tool" functionality to templates, along with new commands "open template as tool" and "tool" which can be set in any template 🧰
 - Added a popout and "always on top" feature to the tool 🪄
 - Numerous bug fixes 🐞
-# Release v0.5.1-beta
+# Release [[v0.5.1-beta]]
 # changes:
 
 - Fixed mobile support, by forking library `handlebars-async-helpers` and removing readable call
 
 ## 0.5.0-beta
-# Release v0.5.0-beta
+# Release [[v0.5.0-beta]]
 
 ## Changes:
 
@@ -125,13 +125,13 @@ Plugin.tg.gen("hello").then(console.log)
 
 - Examples of templates are attached as `examples.zip`. These examples showcase the power of calling templates from other templates.
 
-# Release v0.4.9-beta
+# Release [[v0.4.9-beta]]
 
 ## Bug Fix
 
 - **Fixed Models List Not Showing Up**: This release addresses a critical issue where the models list was not displaying as expected.
 
-# Release v0.4.8-beta
+# Release [[v0.4.8-beta]]
 
 ## New Features
 
