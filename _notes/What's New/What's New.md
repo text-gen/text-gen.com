@@ -135,7 +135,7 @@ Plugin.tg.gen("hello").then(console.log)
 
 ## New Features
 
-- **Added Summary Funtionality with langchain**:
+- **Added Summary Functionality with langchain**:
 
 template:
 

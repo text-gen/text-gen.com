@@ -11,3 +11,6 @@ Once you have [[Obsidian]] installed,
 2. [[Get OpenAI Access Token]]. 
 3. [[Configure API Key]] in  **Text Generator Plugin**. 
 4. Generate text using the basic commands [[Generate Text]] and [[Generate Text and Use Metadata]] from [[Commands]]. 
+
+> [!note]
+> 

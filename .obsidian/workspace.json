@@ -4,22 +4,71 @@
     "type": "split",
     "children": [
       {
-        "id": "d79e582245f8f73f",
+        "id": "32ca6f70401f89cf",
         "type": "tabs",
         "children": [
           {
-            "id": "8780cb81e14e2299",
+            "id": "2d5bccf71bcf190f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_notes/Helper Functions.md",
+                "file": "_notes/Templates/Context available for templates.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8c3212bbc8d3c5d5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_notes/Getting Started/Get Started.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "430dcbddb15795c1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_notes/Templates/Estimate tokens for a template.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b4821f0c69de8ced",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_notes/Commands/Estimate tokens for the current document.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9e708d8611d368dc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_notes/Commands/Generate & Copy To Clipboard.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -48,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Choose a model",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -77,7 +126,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 294.500732421875
+    "width": 440.5
   },
   "right": {
     "id": "56e29672c2b0272d",
@@ -93,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Helper Functions.md",
+                "file": "_notes/Getting Started/Get Started.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_notes/Helper Functions.md",
+                "file": "_notes/Getting Started/Get Started.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Helper Functions.md"
+                "file": "_notes/Getting Started/Get Started.md"
               }
             }
           }
@@ -155,56 +204,60 @@
       "command-palette:Open command palette": false,
       "templater-obsidian:Templater": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-textgenerator-plugin:Generate Text!": false,
+      "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false,
+      "obsidian42-brat:BRAT": false
     }
   },
-  "active": "8780cb81e14e2299",
+  "active": "8c3212bbc8d3c5d5",
   "lastOpenFiles": [
-    "_notes/Commands.md",
-    "_notes/Choose a LLM.md",
-    "_notes/What's New.md",
-    "_notes/Helper Functions.md",
-    "_notes/Transformer.md",
-    "_notes/Untitled.md",
-    "_notes/Tool.md",
+    "_notes/Getting Started/Get OpenAI Access Token.md",
+    "_notes/Getting Started/Get Started.md",
+    "_notes/What's New/What's New.md",
+    "_notes/Templates/Templates.md",
+    "_notes/What's New/Untitled.md",
+    "_notes/What's New/sdafadsf.md",
+    "_notes/Home.md",
+    "_notes/What's New",
+    "_notes/Other notes/FAQ.md",
+    "_notes/Other notes/Bloom Configuration.md",
+    "_notes/Other notes/HeadingsTemplateexcalidraw.svg.md",
+    "_notes/Other notes/Hotkeys in Obsidian.md",
+    "_notes/Getting Started/How the cost is calculated.md",
+    "_notes/Other notes/prompt.md",
+    "_notes/Other notes/Transformer.md",
+    "_notes/Other notes/Finetuned Models.md",
+    "_notes/Other notes/Generative Artificial Intelligence.md",
+    "_notes/Other notes/AI Writer.md",
+    "_notes/Other notes/PKM.md",
+    "_notes/Commands/Create a New File From Template.md",
+    "_notes/Commands/Generate Text.md",
+    "_notes/Getting Started/Text Generator.md",
+    "_notes/Getting Started/installing Text Generator Plugin.md",
+    "_notes/Options/Auto-suggest.md",
+    "_notes/Other notes/substring.md",
+    "_notes/Other notes/Common Errors in OpenAI API code and their Possible Causes.md",
+    "_notes/Commands/Set Max Content Size.md",
+    "_notes/Options",
+    "Untitled",
+    "_notes/Commands",
+    "_notes/Other notes",
+    "Commands",
+    "_notes/Getting Started",
+    "_notes/Templates",
+    "assets/images/Pasted image 20230311230543.png",
+    "assets/images/Pasted image 20230406074028.png",
     "assets/images/Pasted image 20231029183231.png",
     "assets/images/Pasted image 20231029183147.png",
+    "assets/videos/share-new-template/step2.mp4",
+    "assets/videos/share-new-template/step1.mp4",
     "assets/images/Pasted image 20231029183037.png",
     "assets/images/Pasted image 20231029183023.png",
-    "_notes/Set Max Content Size.md",
-    "_notes/Configure API Key.md",
-    "_notes/Get OpenAI Access Token.md",
     "assets/images/Pasted image 20231029182121.png",
-    "_notes/Choose a model.md",
-    "_notes/Dalle-2 Configuration.md",
-    "_notes/substring.md",
-    "_notes/copyai.md",
-    "_notes/prompt.md",
-    "_notes/Insert a Template.md",
-    "_notes/Auto-suggest.md",
-    "_notes/FAQ.md",
     "assets/images/Pasted image 20231029181218.png",
-    "_notes/What is the difference between using Text Generator and other AI Writers.md",
-    "_notes/Share a New Template Package.md",
-    "assets/videos/share-new-template/step1.mkv",
-    "assets/videos/share-new-template",
-    "assets/videos/share-new-template/step2.mkv",
-    "assets/videos",
-    "_notes/Templates.md",
-    "assets/jazzyfrenchy.mp3",
-    "_pages/index.md",
-    "_notes/Context available for templates.md",
-    "_notes/Create a Template.md",
-    "_notes/Estimate tokens for a template.md",
-    "_notes/Considered Context.md",
-    "assets/images/Pasted image 20230406074028.png",
     "assets/images/Pasted image 20230406073109.png",
     "_site/assets/images/Pasted image 20230311230554.png",
-    "assets/images/Pasted image 20230311230554.png",
-    "_site/common-errors-in-openai-api-code-and-their-possible-causes.html",
-    "_site/openai-api-code-errors.html",
-    "_site/auto-suggest.html",
-    "_site/generate-copy-to-clipboard.html",
     "_notes/Untitled.canvas"
   ]
 }
