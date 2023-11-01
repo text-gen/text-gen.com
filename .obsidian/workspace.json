@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_notes/Templates/Context available for templates.md",
+                "file": "_notes/Templates/old/Context available for templates.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_notes/What's New/v0.5.1-beta.md",
+                "file": "_notes/Templates/Templates.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2ff03ca137afc532",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_notes/Templates/old/Helper Functions.md",
                 "mode": "source",
                 "source": false
               }
@@ -49,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_notes/Templates/Estimate tokens for a template.md",
+                "file": "_notes/Templates/old/Estimate tokens for a template.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +73,67 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_notes/Commands/Estimate tokens for the current document.md",
+                "file": "_notes/Commands/old/Estimate tokens for the current document.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "48cd41e99fd54938",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_notes/Templates/Text Generator Templates Guide.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6e94617eccf41d96",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_notes/Templates/Template Metadata.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a83a3bd62cd6be61",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_notes/Templates/old/Create a Template.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ad3393d21801e590",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_notes/Commands/old/Generate Text and Use Metadata.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "20291189925b41cb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_notes/Getting Started/old/Considered Context.md",
                 "mode": "source",
                 "source": false
               }
@@ -73,14 +145,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_notes/Commands/Generate & Copy To Clipboard.md",
+                "file": "_notes/Commands/old/Generate & Copy To Clipboard.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -109,7 +181,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "helper",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -154,7 +226,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/What's New/v0.5.1-beta.md",
+                "file": "_notes/Commands/old/Generate Text and Use Metadata.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +243,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_notes/What's New/v0.5.1-beta.md",
+                "file": "_notes/Commands/old/Generate Text and Use Metadata.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -194,7 +266,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/What's New/v0.5.1-beta.md"
+                "file": "_notes/Commands/old/Generate Text and Use Metadata.md"
               }
             }
           }
@@ -214,62 +286,62 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
+      "obsidian42-brat:BRAT": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "templater-obsidian:Templater": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-textgenerator-plugin:Generate Text!": false,
-      "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false,
-      "obsidian42-brat:BRAT": false
+      "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false
     }
   },
-  "active": "8c3212bbc8d3c5d5",
+  "active": "ad3393d21801e590",
   "lastOpenFiles": [
-    "_notes/What's New/v0.5.7-beta.md",
-    "_notes/What's New/v0.5.6-beta.md",
-    "_notes/What's New/v0.5.5-beta.md",
-    "_notes/What's New/v0.5.4-beta.md",
-    "_notes/What's New/v0.5.3-beta.md",
-    "_notes/What's New/v0.5.2-beta.md",
-    "_notes/What's New/v0.5.1-beta.md",
-    "_notes/What's New/v0.5.0-beta.md",
-    "_notes/What's New/v0.4.9-beta.md",
-    "_notes/What's New/v0.4.8-beta.md",
-    "_notes/What's New/What's New.md",
+    "_notes/Commands/old/Generate & Copy To Clipboard.md",
+    "_notes/Commands/old/Generate Text.md",
+    "_notes/Commands/old/Create a New File From Template.md",
+    "_notes/Commands/old/Choose a LLM.md",
+    "_notes/Commands/old/Commands.md",
     "_notes/Getting Started/Configure API Key.md",
-    "_notes/Getting Started/Considered Context.md",
-    "_notes/Commands/Choose a LLM.md",
-    "_notes/Getting Started/Get OpenAI Access Token.md",
     "_notes/Getting Started/Get Started.md",
+    "_notes/Getting Started/old/Considered Context.md",
+    "_notes/Getting Started/old/Text Generator.md",
+    "_notes/Getting Started/old/Text Generator Features.md",
+    "_notes/Getting Started/old/Frontmatter Configuration.md",
+    "_notes/Getting Started/old/Get OpenAI Access Token.md",
+    "_notes/Getting Started/old/Install Text Generator Plugin.md",
+    "_notes/Other notes/old/Dalle-2 Configuration.md",
+    "_notes/Getting Started/old",
+    "_notes/Other notes/old/Bloom Configuration.md",
+    "_notes/Other notes/old",
+    "_notes/Options/old",
+    "_notes/Templates/old/Helper Functions.md",
+    "_notes/Commands/old",
+    "_notes/Templates/Running Templates.md",
+    "_notes/Templates/old/Template Package Manager.md",
+    "_notes/Templates/old/Create a Template.md",
+    "_notes/Templates/old/Insert a Template.md",
+    "_notes/Templates/old",
+    "_notes/Templates/Text Generator Templates Guide.md",
+    "_notes/Templates/Template Metadata.md",
+    "_notes/Templates/old/Template File Metadata.md",
+    "_notes/Templates/Template Creation.md",
+    "_notes/Templates/old/Context available for templates.md",
+    "_notes/Templates/Sharing and Publishing.md",
+    "assets/images/templateguide.excalidraw",
+    "assets/images/templateguide.svg",
+    "assets/images/Context available for templates 2023-11-01 10.50.58.excalidraw",
+    "assets/images/Context available for templates 2023-11-01 10.50.58.svg",
+    "_notes/Blogs",
     "assets/images/Pasted image 20231101075643.png",
-    "_notes/Templates/Context available for templates.md",
-    "_notes/Templates/Template File Metadata.md",
-    "_notes/Templates/Template Package Manager.md",
-    "_notes/Templates/Create a Template.md",
-    "_notes/Templates/Insert a Template.md",
-    "_notes/Templates/Estimate tokens for a template.md",
-    "_notes/Templates/Templates.md",
-    "_notes/Templates/Helper Functions.md",
-    "_notes/Templates/Share a New Template Package.md",
-    "_notes/What's New/Untitled.md",
     "_notes/What's New",
     "_notes/Options",
-    "Untitled",
-    "_notes/Commands",
-    "_notes/Other notes",
-    "Commands",
-    "_notes/Getting Started",
-    "_notes/Templates",
     "assets/images/Pasted image 20230311230543.png",
     "assets/images/Pasted image 20230406074028.png",
     "assets/images/Pasted image 20231029183231.png",
     "assets/images/Pasted image 20231029183147.png",
-    "assets/videos/share-new-template/step2.mp4",
-    "assets/videos/share-new-template/step1.mp4",
     "assets/images/Pasted image 20231029183037.png",
     "assets/images/Pasted image 20231029183023.png",
     "assets/images/Pasted image 20231029182121.png",
-    "assets/images/Pasted image 20231029181218.png",
-    "assets/images/Pasted image 20230406073109.png",
     "_notes/Untitled.canvas"
   ]
 }
