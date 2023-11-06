@@ -16,10 +16,9 @@ layout: note
 
 ### 1- Use [template repo](<[template repo](https://github.com/text-gen/templates-package)>), and make a new repo.
 
-### 2- head over to settings>actions>general>scrolldown>workflow permissions> check on `read and write permissions` and save
-### 3- Put the prompts in the "prompts" folder respecting template format ([[Templates]]).  
+### 2- Put the prompts in the "prompts" folder respecting template format ([[Templates]]).  
 > make sure the `packageId` in the templates matches the `packageId` 
-### 4- Update manifest file with your information
+### 3- Update manifest file with your information
 ```json
 {
 	"packageId": "default", // package id has to be unique from the other packages
