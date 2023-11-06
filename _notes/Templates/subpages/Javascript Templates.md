@@ -45,10 +45,10 @@ await tts.say("This is a test"); // Language is optional, use an ISO 639-1 code
 
 ```js
 {{#script}}
-this.highlights.push("this is a new highlight");
-// This will **return** the title of the active note
-return this.highlights.join("\n *");
+	this.highlights.push("this is a new highlight");
 {{/script}}
+
+{{highlights}}
 ```
 
 ### Langchain (Partial)
@@ -56,15 +56,16 @@ return this.highlights.join("\n *");
 
 ```js
 {{#script}}
-const youtubeScript = await extract("yt", "https://www.youtube.com/watch?v=tNAsLbGdM6A");
-
-const splitter = new RecursiveCharacterTextSplitter({
-  chunkSize: 4000,
-  chunkOverlap: 1,
-});
-const output = await splitter.createDocuments([youtubeScript]);
-console.log(output);
-return output.join("***/n");
+	const youtubeScript = await extract("yt", "https://www.youtube.com/watch?v=tNAsLbGdM6A");
+	
+	const splitter = new RecursiveCharacterTextSplitter({
+	  chunkSize: 4000,
+	  chunkOverlap: 1,
+	});
+	
+	const output = await splitter.createDocuments([youtubeScript]);
+	
+	return output.join("***/n");
 {{/script}}
 ```
 
@@ -77,8 +78,8 @@ The following function helpers can be used within scripts to **perform actions**
 
 ```js
 {{#script}}
-const youtubeScript = await extract("youtube", "https://www.youtube.com/watch?v=tNAsLbGdM6A");
-return youtubeScript;
+	const youtubeScript = await extract("youtube", "https://www.youtube.com/watch?v=tNAsLbGdM6A");
+	return youtubeScript;
 {{/script}}
 ```
 
@@ -87,11 +88,11 @@ return youtubeScript;
 
 ```js
 {{#script}}
-const youtubeScript = await extract("youtube", "https://www.youtube.com/watch?v=tNAsLbGdM6A");
-
-const summary = await run("default/summary", {tg_selection: youtubeScript});
-
-return summary;
+	const youtubeScript = await extract("youtube", "https://www.youtube.com/watch?v=tNAsLbGdM6A");
+	
+	const summary = await run("default/summary", {tg_selection: youtubeScript});
+	
+	return summary;
 {{/script}}
 ```
 
@@ -100,16 +101,16 @@ return summary;
 
 ```js
 {{#script}}
-const youtubeScript = await extract("youtube", "https://www.youtube.com/watch?v=tNAsLbGdM6A");
-
-let truncatedString = youtubeScript.length > 1000 ? youtubeScript.substring(0, 1000) : youtubeScript;
-
-const summary = await gen(`summarize the following content : {{content}}
-Summary :
+	const youtubeScript = await extract("youtube", "https://www.youtube.com/watch?v=tNAsLbGdM6A");
+	
+	const truncatedString = youtubeScript.length > 1000 ? youtubeScript.substring(0, 1000) : youtubeScript;
+	
+	const summary = await gen(`summarize the following content : {{content}}
+Summary:
 `,
-{content: truncatedString});
-
-return summary;
+	{ content: truncatedString });
+	
+	return summary;
 {{/script}}
 ```
 
@@ -118,11 +119,11 @@ return summary;
 
 ```js
 {{#script}}
-const youtubeScript = await extract("youtube", "https://www.youtube.com/watch?v=tNAsLbGdM6A");
-const summary = await run("default/summary", {tg_selection: youtubeScript});
-
-await write("summary.md", summary);
-return summary;
+	const youtubeScript = await extract("youtube", "https://www.youtube.com/watch?v=tNAsLbGdM6A");
+	const summary = await run("default/summary", {tg_selection: youtubeScript});
+	
+	await write("summary.md", summary);
+	return summary;
 {{/script}}
 ```
 
@@ -131,8 +132,8 @@ return summary;
 
 ```js
 {{#script}}
-await append("summary.md", summary);
-return read("summary.md");
+	await append("summary.md", summary);
+	return read("summary.md");
 {{/script}}
 ```
 
@@ -141,8 +142,8 @@ return read("summary.md");
 
 ```js
 {{#script}}
-const text = read("summary.md");
-return text;
+	const text = read("summary.md");
+	return text;
 {{/script}}
 ```
 
@@ -151,7 +152,7 @@ return text;
 
 ```js
 {{#script}}
-notice("this is a notice");
+	notice("this is a notice");
 {{/script}}
 ```
 
@@ -160,7 +161,7 @@ notice("this is a notice");
 
 ```js
 {{#script}}
-error("this is an error");
+	error("this is an error");
 {{/script}}
 ```
 
@@ -168,16 +169,16 @@ error("this is an error");
 
 Here is an example of how to **utilize** the script within a template:
 
-```handlebars
+```js
 {{#script}}
-// Run any JavaScript code here.
-// Any returned value will be where the script tag is at.
-// Access context variables with the 'this' keyword.
-// Example: this.selection, this.title, etc.
-// You can change or add a variable and use it in the context.
-// Example:
-this.test = "hello world";
-return "return hello world";
+	// Run any JavaScript code here.
+	// Any returned value will be where the script tag is at.
+	// Access context variables with the 'this' keyword.
+	// Example: this.selection, this.title, etc.
+	// You can change or add a variable and use it in the context.
+	// Example:
+	this.test = "hello world";
+	return "return hello world";
 {{/script}}
 
 {{test}}
