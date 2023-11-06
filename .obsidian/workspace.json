@@ -4,155 +4,59 @@
     "type": "split",
     "children": [
       {
-        "id": "32ca6f70401f89cf",
+        "id": "54bcd218b6555363",
         "type": "tabs",
         "children": [
           {
-            "id": "2d5bccf71bcf190f",
+            "id": "70b479cdadc0b9b3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_notes/Templates/old/Context available for templates.md",
+                "file": "_notes/Options/Setting Up Hotkeys for Templates.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "8c3212bbc8d3c5d5",
+            "id": "1876a55667a13d06",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_notes/Templates/Templates.md",
+                "file": "_notes/Getting Started/old/Text Generator Features.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "2ff03ca137afc532",
+            "id": "fc569be700ea7a87",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_notes/Templates/old/Helper Functions.md",
+                "file": "_notes/Getting Started/old/Text Generator Features.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "7fb858e7c51efddc",
+            "id": "560459a8ec39f24c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_notes/What's New/v0.5.0-beta.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "430dcbddb15795c1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_notes/Templates/old/Estimate tokens for a template.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b4821f0c69de8ced",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_notes/Commands/old/Estimate tokens for the current document.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "48cd41e99fd54938",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_notes/Templates/Text Generator Templates Guide.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6e94617eccf41d96",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_notes/Templates/Template Metadata.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a83a3bd62cd6be61",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_notes/Templates/old/Create a Template.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ad3393d21801e590",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_notes/Commands/old/Generate Text and Use Metadata.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "20291189925b41cb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_notes/Getting Started/old/Considered Context.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9e708d8611d368dc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_notes/Commands/old/Generate & Copy To Clipboard.md",
+                "file": "_notes/Templates/Guide/01 Understanding Context.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 9
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -181,7 +85,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "helper",
+                "query": "features",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -206,11 +110,12 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 440.5
+    "width": 454.504695892334
   },
   "right": {
     "id": "56e29672c2b0272d",
@@ -226,7 +131,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Commands/old/Generate Text and Use Metadata.md",
+                "file": "_notes/Getting Started/old/Text Generator Features.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -243,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_notes/Commands/old/Generate Text and Use Metadata.md",
+                "file": "_notes/Getting Started/old/Text Generator Features.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -266,7 +171,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Commands/old/Generate Text and Use Metadata.md"
+                "file": "_notes/Getting Started/old/Text Generator Features.md"
               }
             }
           }
@@ -286,62 +191,61 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian42-brat:BRAT": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "templater-obsidian:Templater": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
       "obsidian-textgenerator-plugin:Generate Text!": false,
-      "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false
+      "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "ad3393d21801e590",
+  "active": "1876a55667a13d06",
   "lastOpenFiles": [
-    "_notes/Commands/old/Generate & Copy To Clipboard.md",
-    "_notes/Commands/old/Generate Text.md",
-    "_notes/Commands/old/Create a New File From Template.md",
-    "_notes/Commands/old/Choose a LLM.md",
-    "_notes/Commands/old/Commands.md",
-    "_notes/Getting Started/Configure API Key.md",
-    "_notes/Getting Started/Get Started.md",
-    "_notes/Getting Started/old/Considered Context.md",
+    "_notes/Home.md",
     "_notes/Getting Started/old/Text Generator.md",
+    "_notes/FAQ.md",
+    "_notes/Text Generator API.md",
+    "_notes/Other notes/old/Common Errors in OpenAI API code and their Possible Causes.md",
+    "_notes/Other notes/old/What is the difference between using Text Generator and other AI Writers.md",
     "_notes/Getting Started/old/Text Generator Features.md",
-    "_notes/Getting Started/old/Frontmatter Configuration.md",
-    "_notes/Getting Started/old/Get OpenAI Access Token.md",
-    "_notes/Getting Started/old/Install Text Generator Plugin.md",
-    "_notes/Other notes/old/Dalle-2 Configuration.md",
-    "_notes/Getting Started/old",
+    "_notes/Options/Template As A Tool.md",
+    "_notes/Other notes/old/Obsidian.md",
+    "_notes/Options/Template Playground.md",
+    "_notes/Options/Auto-suggest.md",
+    "_pages/index.md",
+    "_notes/Getting Started/old/Considered Context.md",
+    "_notes/Options/Setting Up Hotkeys for Templates.md",
+    "_notes/Other notes/old/Generative Artificial Intelligence.md",
+    "_pages/tags.md",
+    "_notes/Options/Slash Commands.md",
+    "_notes/Options/Batch Template Running.md",
+    "_notes/Getting Started/Get Started.md",
+    "_notes/Getting Started/Configure API Key.md",
     "_notes/Other notes/old/Bloom Configuration.md",
+    "_notes/Other notes/old/Hotkeys in Obsidian.md",
+    "_notes/Other notes/old/prompt.md",
+    "_notes/Options/Commands/old/substring.md",
+    "_notes/Options/Commands/old/Estimate tokens for the current document.md",
+    "_notes/Options/Commands/old/Code Blocks.md",
+    "assets/images/Pasted image 20231105161900.png",
+    "assets/images/Pasted image 20231105161849.png",
+    "assets/images/Pasted image 20231105161847.png",
+    "assets/images/02 Template Creation 2023-11-03 09.21.02.excalidraw",
+    "assets/images/Pasted image 20231105113334.png",
+    "assets/images/Pasted image 20231104190506.png",
+    "_notes/Templates/subpages",
+    "assets/images/02 Template Creation 2023-11-03 09.21.02.svg",
+    "assets/images/Context available for templates 2023-11-03 09.20.43.excalidraw",
+    "assets/images/Context available for templates 2023-11-03 09.20.43.svg",
+    "_notes/Templates/Guide",
+    "_notes/Getting Started/old",
     "_notes/Other notes/old",
     "_notes/Options/old",
-    "_notes/Templates/old/Helper Functions.md",
-    "_notes/Commands/old",
-    "_notes/Templates/Running Templates.md",
-    "_notes/Templates/old/Template Package Manager.md",
-    "_notes/Templates/old/Create a Template.md",
-    "_notes/Templates/old/Insert a Template.md",
+    "_notes/Options/Commands/old",
     "_notes/Templates/old",
-    "_notes/Templates/Text Generator Templates Guide.md",
-    "_notes/Templates/Template Metadata.md",
-    "_notes/Templates/old/Template File Metadata.md",
-    "_notes/Templates/Template Creation.md",
-    "_notes/Templates/old/Context available for templates.md",
-    "_notes/Templates/Sharing and Publishing.md",
     "assets/images/templateguide.excalidraw",
     "assets/images/templateguide.svg",
-    "assets/images/Context available for templates 2023-11-01 10.50.58.excalidraw",
     "assets/images/Context available for templates 2023-11-01 10.50.58.svg",
-    "_notes/Blogs",
     "assets/images/Pasted image 20231101075643.png",
-    "_notes/What's New",
-    "_notes/Options",
-    "assets/images/Pasted image 20230311230543.png",
-    "assets/images/Pasted image 20230406074028.png",
-    "assets/images/Pasted image 20231029183231.png",
-    "assets/images/Pasted image 20231029183147.png",
-    "assets/images/Pasted image 20231029183037.png",
-    "assets/images/Pasted image 20231029183023.png",
-    "assets/images/Pasted image 20231029182121.png",
     "_notes/Untitled.canvas"
   ]
 }

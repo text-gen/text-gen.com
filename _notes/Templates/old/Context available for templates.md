@@ -3,7 +3,8 @@ title: Context available for templates
 tags: doc
 layout: note 
 ---
-
+![[Context available for templates 2023-11-03 09.20.43.svg]]
+%%[[Context available for templates 2023-11-03 09.20.43.excalidraw|🖋 Edit in Excalidraw]], and the [[Context available for templates 2023-11-03 09.20.43.dark.svg|dark exported image]]%%
 ## Context available for templates 
 
 
