@@ -5,6 +5,8 @@ layout: note
 ---
 In your note-taking and text manipulation endeavors, you may find yourself **working** with a variety of context variables. These context variables **serve** as placeholders or dynamic references within your notes and **play** a crucial role in organizing and automating your workflow. They **enable** you to **access** and **manipulate** different aspects of your notes, making your note-taking experience more versatile and efficient. In this documentation, we will **explore** various context variables, their purpose, and examples of how to use them effectively.
 
+> [!important]
+> The [[Template Playground]] is a dynamic environment designed to enhance your understanding and proficiency with templates. It serves as a practical learning center where you can explore, experiment, and craft templates in real-time.
 ## title
 The `{{title}}` context variable represents the title of the note. You can use it to reference and manipulate the note's title dynamically.
 

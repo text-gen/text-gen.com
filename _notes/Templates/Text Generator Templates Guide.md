@@ -7,6 +7,12 @@ Welcome to the **Text Generator Template Guide**. This document is structured to
 
 Upon completion of this guide, you will have a thorough understanding of the complete process involved in handling templates within **Text Generator**. For detailed instructions and additional information, refer to the linked pages provided for each segment. Embark on your path to becoming proficient in the realm of template management.
 
+> [!note]
+> 
+Connect with our [Discord community](https://discord.gg/BRYqetyjag) to access a variety of templates and receive assistance in creating your own. You have an idea of template you want implement you can post your request in the following [channel](https://discord.com/channels/1083485983879741572/1171398025944506430) .
+
+
+
 
 ![[templateguide.svg|500]]
 

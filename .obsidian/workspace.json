@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_notes/Home.md",
+                "file": "_notes/Templates/Text Generator Templates Guide.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "features",
+                "query": "extract",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -130,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Home.md",
+                "file": "_notes/Templates/Text Generator Templates Guide.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_notes/Home.md",
+                "file": "_notes/Templates/Text Generator Templates Guide.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Home.md"
+                "file": "_notes/Templates/Text Generator Templates Guide.md"
               }
             }
           }
@@ -197,34 +197,36 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "e7fa6499734bb0e1",
+  "active": "1876a55667a13d06",
   "lastOpenFiles": [
+    "_notes/Options/Template Playground.md",
+    "_notes/Options/Template As A Tool.md",
+    "_notes/Options/Setting Up Hotkeys for Templates.md",
+    "_notes/Options/Slash Commands.md",
+    "_notes/Options/Auto-suggest.md",
+    "_notes/Options/Text Extractor Tool.md",
+    "_notes/Options/Batch Template Running.md",
+    "_notes/Templates/02 Template Writing.md",
+    "_notes/Templates/01 Understanding Context.md",
+    "_notes/Templates/00 Introduction To Templates.md",
+    "_notes/Templates/04 Sharing and Publishing.md",
+    "_notes/Templates/subpages/Handlebar Templates.md",
+    "_notes/Templates/Text Generator Templates Guide.md",
+    "_notes/Home.md",
+    "_notes/Templates/subpages/extract helper function.md",
+    "assets/images/Pasted image 20231107112624.png",
+    "assets/images/Pasted image 20231107112617.png",
     "_notes/What's New/v0.5.9-beta.md",
     "_notes/What's New/v0.5.8-beta.md",
     "_notes/Other notes/old/Obsidian.md",
-    "_notes/Home.md",
-    "_notes/Templates/01 Understanding Context.md",
     "_notes/Other notes/old/Generative Artificial Intelligence.md",
     "_notes/Text Generator API.md",
-    "_notes/Templates/Text Generator Templates Guide.md",
-    "_notes/Templates/00 Introduction To Templates.md",
-    "_notes/Templates/02 Template Writing.md",
-    "_notes/Templates/04 Sharing and Publishing.md",
     "_notes/Getting Started/old/Text Generator Features.md",
     "_notes/Getting Started/old/Text Generator.md",
     "_notes/FAQ.md",
     "_notes/Other notes/old/Common Errors in OpenAI API code and their Possible Causes.md",
     "_notes/Other notes/old/What is the difference between using Text Generator and other AI Writers.md",
-    "_notes/Options/Template As A Tool.md",
-    "_notes/Options/Template Playground.md",
-    "_notes/Options/Auto-suggest.md",
     "_pages/index.md",
-    "_notes/Getting Started/old/Considered Context.md",
-    "_notes/Options/Setting Up Hotkeys for Templates.md",
-    "_pages/tags.md",
-    "_notes/Options/Slash Commands.md",
-    "_notes/Options/Batch Template Running.md",
-    "_notes/Getting Started/Get Started.md",
     "assets/images/Pasted image 20231105161900.png",
     "assets/images/Pasted image 20231105161849.png",
     "assets/images/Pasted image 20231105161847.png",
@@ -243,8 +245,6 @@
     "_notes/Templates/old",
     "assets/images/templateguide.excalidraw",
     "assets/images/templateguide.svg",
-    "assets/images/Context available for templates 2023-11-01 10.50.58.svg",
-    "assets/images/Pasted image 20231101075643.png",
     "_notes/Untitled.canvas"
   ]
 }

@@ -47,3 +47,8 @@ The default command is `preview` where you can see the compiled version of the t
 
 > [!note] 
 > The **`Template Playground`** is an evolving space; new features, examples, and enhancements may be added periodically to enrich user experience and capabilities.
+
+
+> [!important]
+> If you don't see **`Template Playground`** command, you need to enable it in the settings of Text Generator plugin.  
+

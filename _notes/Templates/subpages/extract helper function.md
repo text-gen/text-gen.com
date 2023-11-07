@@ -3,7 +3,7 @@ title: extract helper function
 tags: 
 layout: note 
 ---
-The `extract` command is utilized to retrieve content from a variety of sources such as web pages, images, YouTube videos, PDFs, and audio files. It is a versatile command that allows for data acquisition from different media types for further processing or analysis.
+The `extract` command is utilized to retrieve content from a variety of sources such as web pages, images, YouTube videos, PDFs, RSS and audio files. It is a versatile command that allows for data acquisition from different media types for further processing or analysis.
 
 ## Usage
 
@@ -15,7 +15,7 @@ The `extract` command is utilized to retrieve content from a variety of sources 
 {{extract "extractorType" source}}
 ```
 
-- `"extractorType"`: The type of extractor to be used (e.g., "web", "youtube", "pdf", "image", "audio").
+- `"extractorType"`: The type of extractor to be used (e.g., "web", "youtube", "pdf", "image", "audio", "rss").
 - `source`: The variable or direct URL/path that points to the content source.
 
 #### Examples

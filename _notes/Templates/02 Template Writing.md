@@ -5,6 +5,8 @@ layout: note
 ---
 Creating templates is a powerful way to streamline your note creation process and maintain consistency. In this section, we'll walk you through the steps to create effective templates.
 
+> [!important]
+> The [[Template Playground]] is a dynamic environment designed to enhance your understanding and proficiency with templates. It serves as a practical learning center where you can explore, experiment, and craft templates in real-time.
 ## Selecting the Starting Point for Your Template
 
 To begin, you have multiple starting points:
