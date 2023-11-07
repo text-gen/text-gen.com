@@ -9,5 +9,5 @@ layout: note
 > **Default Hotkey**:  `Alt + C`.
 > 
 
-*  The template will be created in the folder `local` in `Templates Folder` ([[Templates]]) by default (You can change the path on the fly). 
+*  The template will be created in the folder `local` in `Templates Folder` ([[00 Introduction To Templates]]) by default (You can change the path on the fly). 
 *  The Template must be in  `Templates Folder`. 

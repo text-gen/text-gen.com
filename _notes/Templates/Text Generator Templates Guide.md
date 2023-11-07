@@ -9,8 +9,12 @@ Upon completion of this guide, you will have a thorough understanding of the com
 
 
 ![[templateguide.svg|500]]
+
+### [[00 Introduction To Templates]]
+**Unlock** the essentials of using **Text Generator Templates** in Obsidian. Access a variety of templates, manage your collection, and get tips for creating your own. This section is your first step towards a more dynamic and personalized writing experience in Obsidian.
+
 ### [[01 Understanding Context]]
-In this section, **explore** the context you'll have at your disposal when crafting templates. You'll **learn** about the different context variables and the specific fields each one contains that can be utilized within your templates.
+**Explore** the context you'll have at your disposal when crafting templates. You'll **learn** about the different context variables and the specific fields each one contains that can be utilized within your templates.
 
 ### [[02 Template Writing]]
 **Dive into** template creation with a focus on the syntax and functions of Handlebars. **Discover** how to incorporate logic within your templates and **utilize** JavaScript for advanced scripting capabilities.

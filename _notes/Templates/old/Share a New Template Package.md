@@ -16,7 +16,7 @@ layout: note
 
 ### 1- Use [template repo](<[template repo](https://github.com/text-gen/templates-package)>), and make a new repo.
 
-### 2- Put the prompts in the "prompts" folder respecting template format ([[Templates]]).  
+### 2- Put the prompts in the "prompts" folder respecting template format ([[00 Introduction To Templates]]).  
 > make sure the `packageId` in the templates matches the `packageId` 
 ### 3- Update manifest file with your information
 ```json

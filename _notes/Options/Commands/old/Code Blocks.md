@@ -7,7 +7,7 @@ layout: note
 
 > [!note] Code Blocks
 > **Code Blocks** allow you to dynamically generate content and create templates quickly. They act as on-page templates that you can run with the push of a button. 
-> Syntax used inside is exactly the same as normal [[Templates]].  
+> Syntax used inside is exactly the same as normal [[00 Introduction To Templates]].  
 > 
 > 
 

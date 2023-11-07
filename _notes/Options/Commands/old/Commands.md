@@ -14,7 +14,7 @@ The simplest commands are : **"Generate Text!"** and **"Generate Text (use Metad
 * ### [[Estimate tokens for the current document]]
 
 ## Template commands
-For more information about see [[Templates]].
+For more information about see [[00 Introduction To Templates]].
 * ### [[Template Package Manager]]
 * ### [[Create a Template]]
 * ### [[Insert a Template]]

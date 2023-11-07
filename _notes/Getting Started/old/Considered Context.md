@@ -48,9 +48,9 @@ layout: note
 ```
 
 # With Template Commands
-Starting from version 0.1.0, [[Templates]] are supported in **Text Generator Plugin**.
+Starting from version 0.1.0, [[00 Introduction To Templates]] are supported in **Text Generator Plugin**.
 
 Ensure the information is available on the template for you to use in the Plugin's settings.
 
 ![[Pasted image 20230406074028.png]]
-More information about their usage is in [[Templates]]. 
+More information about their usage is in [[00 Introduction To Templates]]. 

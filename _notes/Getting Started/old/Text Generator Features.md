@@ -13,7 +13,7 @@ Immerse yourself in the enhanced knowledge management experience within Obsidian
 
 - **Adaptable Prompting System**: Utilize the full potential of your [[Template Metadata]] to craft precise prompts, ensuring that the generated text is highly relevant and context-aware.
 
-- **Robust Template Creation**: Accelerate your workflow with customizable [[Templates]], turning repetitive note-taking into a more streamlined and efficient process.
+- **Robust Template Creation**: Accelerate your workflow with customizable [[00 Introduction To Templates]], turning repetitive note-taking into a more streamlined and efficient process.
 
 - **Community Template Exchange ([[Share a New Template Package|Community Templates]]):** Connect with other users by sharing and exploring new templates, leveraging the collective intelligence to explore the boundaries of Generative AI within note-taking.
 
