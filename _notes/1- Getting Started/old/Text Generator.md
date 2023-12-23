@@ -17,6 +17,6 @@ layout: note
 > [!example] Links
 > * [Github](https://github.com/nhaouari/obsidian-textgenerator-plugin)
 > *  [[What's New]]
-> * [[FAQ]]
+> * [[4- FAQ]]
 
 

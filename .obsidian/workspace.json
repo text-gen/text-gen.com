@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_notes/Home.md",
+                "file": "_notes/5- What's New/What's New.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 348.5086555480957
+    "width": 447.5086555480957
   },
   "right": {
     "id": "56e29672c2b0272d",
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Home.md",
+                "file": "_notes/5- What's New/What's New.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_notes/Home.md",
+                "file": "_notes/5- What's New/What's New.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Home.md"
+                "file": "_notes/5- What's New/What's New.md"
               }
             }
           }
@@ -160,52 +160,52 @@
   },
   "active": "560459a8ec39f24c",
   "lastOpenFiles": [
-    "_notes/Templates/01 Understanding Context.md",
-    "_notes/Getting Started/Get Started.md",
-    "_notes/Home.md",
-    "_notes/Getting Started/Text Generator Features.md",
-    "_notes/Options/Setting Up Hotkeys for Templates.md",
-    "_notes/[[Get.md",
-    "_notes/Text Generator API.md",
-    "_notes/FAQ.md",
-    "_notes/Templates/00 Introduction To Templates.md",
-    "_notes/Templates/Text Generator Templates Guide.md",
-    "_notes/Get.md",
-    "_notes/Get_Started.md",
-    "_notes/[.md",
-    "README.md",
-    "_notes/Getting Started/old/Frontmatter Configuration.md",
-    "_notes/Getting Started/old/Considered Context.md",
-    "_notes/Options/Template Playground.md",
-    "_notes/Options/Template As A Tool.md",
-    "_notes/Options/Slash Commands.md",
-    "_notes/Options/Auto-suggest.md",
-    "_notes/Options/Text Extractor Tool.md",
-    "_notes/Options/Batch Template Running.md",
-    "_notes/Templates/02 Template Writing.md",
-    "_notes/Templates/04 Sharing and Publishing.md",
-    "_notes/Templates/subpages/Handlebar Templates.md",
-    "_notes/Templates/subpages/extract helper function.md",
+    "_notes/5- What's New/v0.5.25-beta.md",
+    "_notes/5- What's New/v0.5.8-beta.md",
+    "_notes/5- What's New/What's New.md",
+    "_notes/2- Options/Text Extractor Tool.md",
+    "_notes/2- Options/Commands/Tool.md",
+    "_notes/3- Templates/subpages/Handlebar Templates.md",
+    "_notes/3- Templates/subpages/Javascript Templates.md",
+    "_notes/3- Templates/subpages/Custom Form.md",
+    "_notes/3- Templates/subpages/run helper function.md",
+    "_notes/3- Templates/subpages/extract helper function.md",
+    "_notes/3- Templates/subpages/Template Metadata.md",
+    "assets/images/Pasted image 20231223212338.png",
+    "_notes/3- Templates/04 Sharing and Publishing.md",
+    "_notes/3- Templates/00 Introduction To Templates.md",
+    "_notes/3- Templates/Text Generator Templates Guide.md",
+    "_notes/3- Templates/01 Understanding Context.md",
+    "_notes/3- Templates/03 Running Templates.md",
+    "_notes/3- Templates/02 Template Writing.md",
+    "_notes/3- Templates/subpages/Untitled.md",
+    "assets/images/Pasted image 20231223211341.png",
+    "assets/images/Pasted image 20231223211305.png",
+    "_notes/3- Templates/subpages/Pasted image 20231223211144.png.md",
+    "assets/images/Pasted image 20231223211144.png",
+    "assets/images/Pasted image 20231223210608.png",
+    "_notes/0- Introduction.md",
+    "_notes/1- Getting Started/0- Get Started.md",
+    "_notes/2- Options/Commands/Estimate tokens for the current document.md",
+    "_notes/2- Options/Commands/Create a New File From Template.md",
+    "_notes/2- Options/Commands/old/Commands.md",
+    "_notes/2- Options/Commands/old/substring.md",
+    "_notes/2- Options/Commands/old/Set Max Content Size.md",
+    "_notes/0- Introduction",
+    "_notes/1- Getting Started/3- LLM Providers/providers",
+    "_notes/1- Getting Started/3- LLM Providers",
+    "assets/images/getStarted.excalidraw.svg",
     "assets/images/Pasted image 20231107112624.png",
     "assets/images/Pasted image 20231107112617.png",
     "assets/images/Pasted image 20231105161900.png",
     "assets/images/Pasted image 20231105161849.png",
-    "assets/images/Pasted image 20231105161847.png",
     "assets/images/02 Template Creation 2023-11-03 09.21.02.excalidraw",
-    "assets/images/Pasted image 20231105113334.png",
-    "assets/images/Pasted image 20231104190506.png",
-    "_notes/Templates/subpages",
-    "assets/images/02 Template Creation 2023-11-03 09.21.02.svg",
+    "_notes/3- Templates/subpages",
     "assets/images/Context available for templates 2023-11-03 09.20.43.excalidraw",
-    "assets/images/Context available for templates 2023-11-03 09.20.43.svg",
     "_notes/Templates/Guide",
-    "_notes/Getting Started/old",
-    "_notes/Other notes/old",
+    "_notes/1- Getting Started/old",
+    "_notes/6- Other notes/old",
     "_notes/Options/old",
-    "_notes/Options/Commands/old",
-    "_notes/Templates/old",
-    "assets/images/templateguide.excalidraw",
-    "assets/images/templateguide.svg",
     "_notes/Untitled.canvas"
   ]
 }

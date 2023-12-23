@@ -13,7 +13,7 @@ Text Generator Plugin! Enhance Your Obsidian Experience with AI
 Leverage AI-driven templates and smart content generation for effortless note-taking and streamlined content creation.
 
 ## Get Started:
-[[Get Started|here's]] how to install Text-gen, set up your environment, and start building.
+[[0- Get Started|here's]] how to Get started with Text Generator.
 
 > [!tip] Support Text Generator Project
 > Please consider donating to the **Text Generator project** to help us continue developing and maintaining this software. Your support is greatly appreciated! [Buy Me a Coffee](https://www.buymeacoffee.com/haouarine)

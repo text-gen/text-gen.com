@@ -4,7 +4,7 @@ tags:
 layout: note 
 ---
 > [!warning]
-> You need first to configure the [[Configure API Key]]. 
+> You need first to configure the [[2- Configure API Key]]. 
 
 ```
 ---

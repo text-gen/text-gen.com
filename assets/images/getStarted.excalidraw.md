@@ -10,7 +10,7 @@ tags: [excalidraw]
 # Text Elements
 04- [[Generate Text]] ^XkSUnUv0
 
-03- [[Configure API Key]] ^wOIsLSTH
+03- [[2- Configure API Key]] ^wOIsLSTH
 
 01- [Create an OpenAI Account](https://beta.openai.com/signup) ^yqUKWOHP
 

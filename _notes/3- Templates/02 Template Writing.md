@@ -36,6 +36,7 @@ Templates consist of four integral parts: Metadata, Initialization, Prompt, and 
 This section will not be included in the template's prompt and can be used to:
 - **Gather** and **prepare** any required data before the main logic of the template is executed in the `prompt` section.
 - **Declare** variables that will be used in later sections.
+- **Define** [[Custom Form]] for better customization.
 - **Enhance** readability by using code blocks, such as:
 ![[Pasted image 20231105113334.png|200]]
 

@@ -12,7 +12,7 @@ Templates involve two distinct phases:
 ## How I can run Templates ? 
 ### [[Template Playground]]
 ### [[Template As A Tool]]
-### [[Slash commands]] 
+### [[Slash Commands]] 
 
 ### [[Batch Template Running]]
 ### [[Commands|Template commands]] 

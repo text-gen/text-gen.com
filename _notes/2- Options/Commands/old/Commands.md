@@ -27,7 +27,7 @@ For more information about see [[00 Introduction To Templates]].
 
 
 ## Prerequisites
-* [[Configure API Key]] (if you're using OpenAI). 
+* [[2- Configure API Key]] (if you're using OpenAI). 
 * [[Considered Context]].  
 * [[Hotkeys in Obsidian]]
 ![[Commands.svg]]

@@ -8,7 +8,7 @@ permalink: /
 
 > [!note] What is Text-Generator ?
 > [[Text Generator]] is an open-source **AI Assistant Tool** that brings the power of [[Generative Artificial Intelligence]] to the power of  knowledge creation and organization in [[Obsidian]].
->  For example, use [[Text Generator]] to generate ideas, attractive titles, summaries, outlines, and whole paragraphs based on your **knowledge database**.  Check the full list of Text Generator features in [[Text Generator Features]].
+>  For example, use [[Text Generator]] to generate ideas, attractive titles, summaries, outlines, and whole paragraphs based on your **knowledge database**.  Check the full list of Text Generator features in [[4- Text Generator Features]].
 >  
 >  *The possibilities are endless!*
 
