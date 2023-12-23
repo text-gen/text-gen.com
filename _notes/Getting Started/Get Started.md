@@ -7,6 +7,7 @@ layout: note
 ![[getStarted.excalidraw.svg]]
 
 Once you have [[Obsidian]] installed,
+0. [[Install Text Generator Plugin]]
 1. Go to [OpenAI](https://beta.openai.com/signup) and create an account.
 2. [[Get OpenAI Access Token]]. 
 3. [[Configure API Key]] in  **Text Generator Plugin**. 

@@ -8,55 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "70b479cdadc0b9b3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_notes/Options/Setting Up Hotkeys for Templates.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1876a55667a13d06",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_notes/Templates/Text Generator Templates Guide.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fc569be700ea7a87",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_notes/Getting Started/old/Text Generator Features.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "560459a8ec39f24c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_notes/Templates/01 Understanding Context.md",
+                "file": "_notes/Home.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -114,7 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 454.504695892334
+    "width": 348.5086555480957
   },
   "right": {
     "id": "56e29672c2b0272d",
@@ -130,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Templates/Text Generator Templates Guide.md",
+                "file": "_notes/Home.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_notes/Templates/Text Generator Templates Guide.md",
+                "file": "_notes/Home.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Templates/Text Generator Templates Guide.md"
+                "file": "_notes/Home.md"
               }
             }
           }
@@ -192,41 +155,39 @@
       "command-palette:Open command palette": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "templater-obsidian:Templater": false,
-      "obsidian-textgenerator-plugin:Generate Text!": false,
-      "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false,
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "1876a55667a13d06",
+  "active": "560459a8ec39f24c",
   "lastOpenFiles": [
+    "_notes/Templates/01 Understanding Context.md",
+    "_notes/Getting Started/Get Started.md",
+    "_notes/Home.md",
+    "_notes/Getting Started/Text Generator Features.md",
+    "_notes/Options/Setting Up Hotkeys for Templates.md",
+    "_notes/[[Get.md",
+    "_notes/Text Generator API.md",
+    "_notes/FAQ.md",
+    "_notes/Templates/00 Introduction To Templates.md",
+    "_notes/Templates/Text Generator Templates Guide.md",
+    "_notes/Get.md",
+    "_notes/Get_Started.md",
+    "_notes/[.md",
+    "README.md",
+    "_notes/Getting Started/old/Frontmatter Configuration.md",
+    "_notes/Getting Started/old/Considered Context.md",
     "_notes/Options/Template Playground.md",
     "_notes/Options/Template As A Tool.md",
-    "_notes/Options/Setting Up Hotkeys for Templates.md",
     "_notes/Options/Slash Commands.md",
     "_notes/Options/Auto-suggest.md",
     "_notes/Options/Text Extractor Tool.md",
     "_notes/Options/Batch Template Running.md",
     "_notes/Templates/02 Template Writing.md",
-    "_notes/Templates/01 Understanding Context.md",
-    "_notes/Templates/00 Introduction To Templates.md",
     "_notes/Templates/04 Sharing and Publishing.md",
     "_notes/Templates/subpages/Handlebar Templates.md",
-    "_notes/Templates/Text Generator Templates Guide.md",
-    "_notes/Home.md",
     "_notes/Templates/subpages/extract helper function.md",
     "assets/images/Pasted image 20231107112624.png",
     "assets/images/Pasted image 20231107112617.png",
-    "_notes/What's New/v0.5.9-beta.md",
-    "_notes/What's New/v0.5.8-beta.md",
-    "_notes/Other notes/old/Obsidian.md",
-    "_notes/Other notes/old/Generative Artificial Intelligence.md",
-    "_notes/Text Generator API.md",
-    "_notes/Getting Started/old/Text Generator Features.md",
-    "_notes/Getting Started/old/Text Generator.md",
-    "_notes/FAQ.md",
-    "_notes/Other notes/old/Common Errors in OpenAI API code and their Possible Causes.md",
-    "_notes/Other notes/old/What is the difference between using Text Generator and other AI Writers.md",
-    "_pages/index.md",
     "assets/images/Pasted image 20231105161900.png",
     "assets/images/Pasted image 20231105161849.png",
     "assets/images/Pasted image 20231105161847.png",
