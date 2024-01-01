@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "54bcd218b6555363",
+        "id": "9bc68880cf048b30",
         "type": "tabs",
         "children": [
           {
-            "id": "560459a8ec39f24c",
+            "id": "c06393cd207f3924",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_notes/5- What's New/What's New.md",
+                "file": "_notes/3- Templates/01 Understanding Context.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/5- What's New/What's New.md",
+                "file": "_notes/3- Templates/01 Understanding Context.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_notes/5- What's New/What's New.md",
+                "file": "_notes/3- Templates/01 Understanding Context.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/5- What's New/What's New.md"
+                "file": "_notes/3- Templates/01 Understanding Context.md"
               }
             }
           }
@@ -158,11 +158,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "560459a8ec39f24c",
+  "active": "c06393cd207f3924",
   "lastOpenFiles": [
+    "_notes/3- Templates/old/Template Package Manager.md",
+    "_notes/5- What's New/What's New.md",
     "_notes/5- What's New/v0.5.25-beta.md",
     "_notes/5- What's New/v0.5.8-beta.md",
-    "_notes/5- What's New/What's New.md",
     "_notes/2- Options/Text Extractor Tool.md",
     "_notes/2- Options/Commands/Tool.md",
     "_notes/3- Templates/subpages/Handlebar Templates.md",
@@ -190,7 +191,6 @@
     "_notes/2- Options/Commands/Create a New File From Template.md",
     "_notes/2- Options/Commands/old/Commands.md",
     "_notes/2- Options/Commands/old/substring.md",
-    "_notes/2- Options/Commands/old/Set Max Content Size.md",
     "_notes/0- Introduction",
     "_notes/1- Getting Started/3- LLM Providers/providers",
     "_notes/1- Getting Started/3- LLM Providers",

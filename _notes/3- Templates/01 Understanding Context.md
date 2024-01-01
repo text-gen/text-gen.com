@@ -129,5 +129,50 @@ The `{{metadata}}` context variable contains the metadata of the note, often pro
 
 For one variable you can use `{{yaml.variable}}`. 
 
+## BeforeCursor
+This context variable could select all the text before the cursor's current position, regardless of the structure or formatting of the text. Useful for quickly referencing or manipulating content leading up to a certain point. 
+Example:
+```handlebars
+{{beforeCursor}}
+``` 
+
+## AfterCursor
+The opposite of `BeforeCursor`, this would select all text after the cursor's current position. It would be especially useful for editing or reviewing the remaining part of a document. 
+
+Example:
+```handlebars
+{{afterCursor}}
+```
+## CursorParagraph
+This would select the entire paragraph where the cursor is currently located. It could be helpful for operations that focus on paragraph-level editing or formatting. 
+
+Example:
+```handlebars
+{{cursorParagraph}}
+```
+## CursorSentence
+This would select the sentence immediately surrounding the cursor, including sentences that the cursor is in the middle of. Ideal for sentence-level editing. 
+
+Example: 
+```handlebars
+{{cursorSentence}}
+```
+
+## NextWord/PreviousWord
+These would select the next or previous word relative to the cursor's position, making it easier to navigate and edit text on a word-by-word basis. 
+
+Example:
+```handlebars
+{{NextWord}}
+{{PreviousWord}}
+```
+## InverseSelection
+Selects everything except the currently selected text. This could be useful in cases where you want to apply formatting or changes to every part of the document except a specific section. 1 
+
+Example:
+```handlebars
+{{InverseSelection}}
+```
+
 
 These context variables play a pivotal role in enhancing your note-taking and text manipulation capabilities within your note-taking software or system. By understanding how to use them effectively, you can streamline your workflow and make the most of your text generator templates.
