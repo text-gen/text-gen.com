@@ -5,6 +5,34 @@ This document provides detailed information on the use of the `script` within a 
 > [!warning]
 > Executing unverified scripts can be extremely hazardous. Always ensure that the scripts you are running come from a trusted source to avoid security risks.
 
+
+## Example Usage
+
+Here is an example of how to **utilize** the script within a template:
+
+```js
+// make sure to mention the variables used so that text-generator adds them to the available context
+// like so {{tg_selection}} {{test}}
+
+{{#script}}
+	// Run any JavaScript code here.
+	// Any returned value will be where the script tag is at.
+	// Access context variables with the 'this' keyword.
+	// Example: this.selection, this.title, etc.
+	// You can change or add a variable and use it in the context.
+	// Example:
+	this.test = "hello world";
+	return "return hello world";
+{{/script}}
+
+{{test}}
+```
+**output**
+```
+return hello world
+hello world
+```
+
 ## Contexts for Script Execution
 
 The following contexts are available for running scripts within the template:
@@ -113,7 +141,21 @@ Summary:
 	return summary;
 {{/script}}
 ```
+### Generate Template Content (JSON response)
+**Use generate** to run a prompt template directly from the code:
 
+```js
+{{#script}}
+	const countings = await genJSON(
+		`Give me a JSON Record Object counting from 1 to 5 Key is name of the number, and value is the number`, 
+		{ max_tokens: 200 }
+	);
+	
+	return JSON.stringify(countings);
+{{/script}}
+```
+> - The prompt needs to contain the word `JSON`
+> - This tool only works with OpenAI, (it could work with other providers but highly unlikely).
 ### Write to File
 **Write content** to a file in your system it will create the path if it does not exist:
 
@@ -165,26 +207,16 @@ Summary:
 {{/script}}
 ```
 
-## Example Usage
-
-Here is an example of how to **utilize** the script within a template:
-
+### `JSON5` Instead of `JSON`
+Use this instead of `JSON` for parsing `JSON` code, 
+its alot more lenient and forgiving when it comes to the `JSON` format
 ```js
 {{#script}}
-	// Run any JavaScript code here.
-	// Any returned value will be where the script tag is at.
-	// Access context variables with the 'this' keyword.
-	// Example: this.selection, this.title, etc.
-	// You can change or add a variable and use it in the context.
-	// Example:
-	this.test = "hello world";
-	return "return hello world";
+	const Object = JSON5.parse(`
+		{
+			a: c,
+			"b": "d",
+		}
+	`)
 {{/script}}
-
-{{test}}
-```
-**output**
-```
-return hello world
-hello world
 ```
