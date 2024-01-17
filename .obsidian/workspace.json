@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_notes/3- Templates/subpages/Javascript Templates.md",
+                "file": "_notes/3- Templates/subpages/Handlebar Templates.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/3- Templates/subpages/Javascript Templates.md",
+                "file": "_notes/3- Templates/subpages/Handlebar Templates.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_notes/3- Templates/subpages/Javascript Templates.md",
+                "file": "_notes/3- Templates/subpages/Handlebar Templates.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/3- Templates/subpages/Javascript Templates.md"
+                "file": "_notes/3- Templates/subpages/Handlebar Templates.md"
               }
             }
           }
@@ -160,6 +160,10 @@
   },
   "active": "c06393cd207f3924",
   "lastOpenFiles": [
+    "_notes/3- Templates/subpages/extract helper function.md",
+    "_notes/3- Templates/subpages/Handlebar Templates.md",
+    "_notes/3- Templates/subpages/run helper function.md",
+    "_notes/3- Templates/subpages/Javascript Templates.md",
     "_notes/3- Templates/01 Understanding Context.md",
     "_notes/3- Templates/03 Running Templates.md",
     "_notes/3- Templates/Text Generator Templates Guide.md",
@@ -172,11 +176,7 @@
     "_notes/5- What's New/v0.5.8-beta.md",
     "_notes/2- Options/Text Extractor Tool.md",
     "_notes/2- Options/Commands/Tool.md",
-    "_notes/3- Templates/subpages/Handlebar Templates.md",
-    "_notes/3- Templates/subpages/Javascript Templates.md",
     "_notes/3- Templates/subpages/Custom Form.md",
-    "_notes/3- Templates/subpages/run helper function.md",
-    "_notes/3- Templates/subpages/extract helper function.md",
     "_notes/3- Templates/subpages/Template Metadata.md",
     "assets/images/Pasted image 20231223212338.png",
     "_notes/3- Templates/subpages/Untitled.md",

@@ -75,7 +75,7 @@ Executes another template within the context of the current one, which can be us
 
 Information extraction helpers are designed to gather data from various sources such as web pages, images, and documents, enhancing the template's ability to interact with external content.
 
-### [[extract]]
+### [[extract helper function|extract]]
 The `extract` helper is used to obtain information from different sources, enhancing the template's capabilities in processing and analyzing content.  Additional details about its functionality can be found on the [[extract]] page.
 
 ## Text Formatting
