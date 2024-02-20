@@ -9,7 +9,7 @@ Immerse yourself in the enhanced knowledge management experience within Obsidian
 
 - **Complimentary & Open-Source**: Dive into the Text Generator Plugin without financial or licensing constraints—it’s completely free and open-source.
 
-- **Designed for Obsidian**: With its tailor-made design for [[Obsidian]], this plugin enriches your Personal Knowledge Management (PKM) by seamlessly blending with the existing features of the software.
+- **Designed for Obsidian**: With its tailor-made design for [[Obsidian Basics|Obsidian]], this plugin enriches your Personal Knowledge Management (PKM) by seamlessly blending with the existing features of the software.
 
 - **Adaptable Prompting System**: Utilize the full potential of your [[Template Metadata]] to craft precise prompts, ensuring that the generated text is highly relevant and context-aware.
 
@@ -25,4 +25,4 @@ Immerse yourself in the enhanced knowledge management experience within Obsidian
 
 - **Overlay [[Template As A Tool]]**: Increase your productivity by using templates over any application, directly injecting generated text into your workspace without needing to switch contexts.
 
-Incorporating the Text Generator Plugin within [[Obsidian]] is a game-changer for enthusiasts and power users alike, providing a sophisticated suite of tools for enhancing the already powerful capabilities of your digital knowledge management system.
+Incorporating the Text Generator Plugin within [[Obsidian Basics|Obsidian]] is a game-changer for enthusiasts and power users alike, providing a sophisticated suite of tools for enhancing the already powerful capabilities of your digital knowledge management system.

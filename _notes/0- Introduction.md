@@ -5,7 +5,7 @@ id: home
 permalink: /
 ---
 # Introduction:
-[[Text Generator]] is an open-source **AI Assistant Tool** that brings the power of [[Generative Artificial Intelligence]] to the power of  knowledge creation and organization in [[Obsidian]].
+[Text Generator](https://text-gen.com/) is an open-source **AI Assistant Tool** that brings the power of [[Artificial Intelligence Basics#Generative Artificial Intelligence|Generative Artificial Intelligence]] to the power of  knowledge creation and organization in [[Obsidian Basics|Obsidian]].
 >  *The possibilities are endless!*
 
 
