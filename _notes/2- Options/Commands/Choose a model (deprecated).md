@@ -1,11 +1,16 @@
 ---
 title: Choose a model
-tags: 
-layout: note 
+tags:
+  - deprecated
+  - rewrite
+layout: note
 ---
+> [!caution] Update Required
+> The current content is outdated and needs to be rewritten in the documentation before deletion
+
 > [!note] Choosing the model that you want
 > This command facilitates choosing OpenAI models. [More information about Open AI models](https://beta.openai.com/docs/models/overview)
-> *This value could be overwritten if it is specified in [[Frontmatter Configuration| Frontmatter]]* .
+> *This value could be overwritten if it is specified in [[Template Metadata]]* .
 > The lastest model of ChatGPT is supported.  
 
 

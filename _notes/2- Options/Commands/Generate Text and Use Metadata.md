@@ -4,7 +4,7 @@ tags:
 layout: note 
 ---
 > [!note] Generate Text (use Metadata)
-> "**Generate Text (use Metadata)**" generates a text based on *the selected text and the metadata in the frontmatter*  and insert it on the current cursor position. See  [[Considered Context]] for more details.  
+> "**Generate Text (use Metadata)**" generates a text based on *the selected text and the metadata in the frontmatter*  and insert it on the current cursor position. See [[01 Understanding Context|Considered Context]] for more details.  
 > 
 > **Default Hotkey**:  `Ctrl + Alt + j`.
 
@@ -29,8 +29,8 @@ keywords: AI Text Assistante Helper, text assistant helper, Jasper
 Write conclusion  
 ```
 
-The metadata here can be seen as global context that you can append to the selected text to get more accurate results without send the full content which optimize your cost (see [[How the cost is calculated]]).  
+The metadata here can be seen as global context that you can append to the selected text to get more accurate results without send the full content which optimize your cost (see [[Models costs and rate limits]]).  
 
 ### Tips
-* It is more practical to use [[Hotkeys in Obsidian]].
-* The generated text will have a max size of ([[Set Max Content Size|max_tokens]]) using default settings.
+* It is more practical to [[Setting Up Hotkeys for Templates]].
+* The generated text will have a max size of ([[Default model parameters#Max Tokens|max_tokens]]) using default settings.

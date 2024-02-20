@@ -98,7 +98,7 @@ mode: insert
 ### `system and messages`
 
 - **Type**: Object
-- **Purpose**: The `system` and `messages` fields in the config file allow you to configure the system's behavior and define messages for various interactions with the [[LLM]]. For example, you can configure the system to act as an English translator, spelling corrector, and improver that responds in corrected and improved English. The `system` field is a string describing the system, and the `messages` field is an array containing user and assistant messages in alternating order, defining the conversation flow.
+- **Purpose**: The `system` and `messages` fields in the config file allow you to configure the system's behavior and define messages for various interactions with the LLM. For example, you can configure the system to act as an English translator, spelling corrector, and improver that responds in corrected and improved English. The `system` field is a string describing the system, and the `messages` field is an array containing user and assistant messages in alternating order, defining the conversation flow.
 ```yaml
 system: <Your system description>
 messages:
@@ -195,7 +195,3 @@ To create a professional and clear Template File Metadata, follow these best pra
 - Add relevant tags in the `tags` field to aid in prompt filtering.
 - Follow Semantic Versioning for the `version` field.
 - Consider user convenience when assigning commands to the `commands` field.
-
-[[draft metadata]]
-## References 
-* old documentation: [[Template File Metadata]]

@@ -13,13 +13,8 @@ layout: note
 > * Estimated Price
 
 > [!warning] 
->  This command is available in the latest version of the plugin **0.3.0-beta** .
-
-> [!warning] 
->  The total tokens should not exceed the maximum limit request size defined by the model ([more information](https://platform.openai.com/docs/models/gpt-3-5)). 
+>  The total tokens should not exceed the maximum limit request size defined by the model. 
+>  [[Models costs and rate limits]]
 
 ## Example of output
 ![[Pasted image 20230406073109.png]]
-
-## Links
-* [OpenAI pricing](https://openai.com/pricing)

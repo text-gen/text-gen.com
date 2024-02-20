@@ -25,7 +25,6 @@ To begin, you have multiple starting points:
 
 Templates consist of four integral parts: Metadata, Initialization, Prompt, and Output. Each section plays a pivotal role in data handling and final presentation.
 ![[02 Template Creation 2023-11-03 09.21.02.svg]]
-%%[[02 Template Creation 2023-11-03 09.21.02.excalidraw|🖋 Edit in Excalidraw]], and the [[02 Template Creation 2023-11-03 09.21.02.dark.svg|dark exported image]]%%
 
 ### Metadata
 

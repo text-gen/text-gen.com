@@ -3,8 +3,8 @@ title: OpenAI Instruct
 tags: 
 layout: note
 ---
-It connects to [Openai](<[openai.com](platform.openai.com)>)
-uses the [[langchain]] library
+It connects to [Openai](https://openai.com/)
+uses the [langchain](https://github.com/langchain-ai/langchain) library
 
 
 # Models:
