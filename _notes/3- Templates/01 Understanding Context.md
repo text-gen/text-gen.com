@@ -7,6 +7,8 @@ In your note-taking and text manipulation endeavors, you may find yourself **wor
 
 > [!important]
 > The [[Template Playground]] is a dynamic environment designed to enhance your understanding and proficiency with templates. It serves as a practical learning center where you can explore, experiment, and craft templates in real-time.
+
+![[Context available for templates 2023-11-01 10.50.58.svg]]
 ## title
 The `{{title}}` context variable represents the title of the note. You can use it to reference and manipulate the note's title dynamically.
 
@@ -42,7 +44,17 @@ The `{{tg_selection}}` context variable does the following:
 **Example**: `{{tg_selection}}`
 
 ## starred Blocks
-`{{starredBlocks}}` context variable refers to content under headings marked with an asterisk (`*`) in the note. It helps you using specific sections in the note as context.
+`{{starredBlocks}}` context variable refers to content under headings marked with an asterisk (`*`) in the note. 
+
+**Example**: 
+```markdown
+# Title* 
+This is a title
+# Other title
+Not in starredBlocks
+```
+
+It helps you using specific sections in the note as context.
 
 **Example**: `{{starredBlocks}}`
 
@@ -74,6 +86,8 @@ The `{{clipboard}}` context variable represents the current content copied to th
 ## children
 The `{{#each children}}` context variable represents an array of notes or sub-notes that are cited or related to the primary note. It enables you to access related notes.
 
+![[childrenNotes.excalidraw.svg]]
+
 **Example**: 
 
 ```handlebars
@@ -104,6 +118,8 @@ The `{{#each children}}` context variable represents an array of notes or sub-no
 ## Headings
 `{{headings}}` context variable contains all the headings within the note and their respective content. It aids in navigating and manipulating the structure of your notes.
 
+![[HeadingsTemplate.excalidraw.svg]]
+
 **Example**: 
 ```handlebars
 {{#each headings}}
@@ -129,6 +145,8 @@ The `{{metadata}}` context variable contains the metadata of the note, often pro
 
 For one variable you can use `{{yaml.variable}}`. 
 
+## extractions
+`{{extractions}}` that contains extracted contents from [[extract helper function]]
 ## BeforeCursor
 This context variable could select all the text before the cursor's current position, regardless of the structure or formatting of the text. Useful for quickly referencing or manipulating content leading up to a certain point. 
 Example:

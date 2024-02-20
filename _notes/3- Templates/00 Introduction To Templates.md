@@ -12,14 +12,14 @@ Whether you're drafting an article, sketching a project plan, or compiling resea
 ## Navigating the World of Text Generator Templates
 
 ### Accessing Templates
-Unlock a world of possibilities with community-generated templates through the **[[Template Package Manager]]**. Here, you will find a variety of structures suited for different text-generation tasks. For even more diversity, visit our [Discord channel](https://discord.com/channels/1083485983879741572/1145601444104384604) where enthusiasts like you share and discuss their template innovations.
+Unlock a world of possibilities with community-generated templates through the **[[05 Template Package Manager]]**. Here, you will find a variety of structures suited for different text-generation tasks. For even more diversity, visit our [Discord channel](https://discord.com/channels/1083485983879741572/1145601444104384604) where enthusiasts like you share and discuss their template innovations.
 
 ### Storing Your Templates
 By default, templates are nestled in the `textgenerator/prompts` directory, a dedicated space for your templates to reside. Need a different location? No problem. The plugin settings allow you to tailor the storage directory to your liking. See how it's done in the example image below:
 ![[Pasted image 20231105161900.png]]
 
 ### Updating with Care
-Enhancements to the community packages are frequent, but caution is advised—updating a package might overwrite your existing files in its respective subfolder. Preserve your custom creations by following the guidance in [[Share a New Template Package]].
+Enhancements to the community packages are frequent, but caution is advised—updating a package might overwrite your existing files in its respective subfolder. Preserve your custom creations by following the guidance in [[04 Sharing and Publishing]].
 
 ### Crafting Your Masterpiece
 Aspire to create your very own template? Begin your journey by diving into the [[Text Generator Templates Guide]], which is rich with detailed instructions and practical tips to aid you in crafting a template that could become the community’s next go-to structure.

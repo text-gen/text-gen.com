@@ -5,6 +5,9 @@ layout: note
 ---
 Handlebars helper functions extend the capabilities of templates by providing utility functions for various tasks such as managing variables, handling files, formatting text, and more. These helpers are crucial for creating dynamic and interactive templates that can handle complex logic and data manipulation.
 
+> [!note] Template engine
+> For more information about the template engine, please see [handlebarsjs](https://handlebarsjs.com/)
+
 ## Variable Management
 
 Variable management helpers are crucial for storing and retrieving data within templates. These functions enable the setting and accessing of variables that can be used throughout the template.
@@ -76,7 +79,7 @@ Executes another template within the context of the current one, which can be us
 Information extraction helpers are designed to gather data from various sources such as web pages, images, and documents, enhancing the template's ability to interact with external content.
 
 ### [[extract helper function|extract]]
-The `extract` helper is used to obtain information from different sources, enhancing the template's capabilities in processing and analyzing content.  Additional details about its functionality can be found on the [[extract]] page.
+The `extract` helper is used to obtain information from different sources, enhancing the template's capabilities in processing and analyzing content.  Additional details about its functionality can be found on the [[extract helper function|extract]] page.
 
 ## Text Formatting
 
