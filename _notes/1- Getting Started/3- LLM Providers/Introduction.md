@@ -15,7 +15,7 @@ to generate text.
 - [[Google Generative AI]]
 - [[Google Palm]]
 - [Ollama](https://github.com/jmorganca/ollama)
-- [HuggingFace](https://huggingface.co/inference-api)
+- [[HuggingFace]]
 - Chat Anthropic (Currently not working, use Anthropic legacy in the mean time)
 - Azure OpenAI Chat (for businesses)
 - Azure OpenAI Instruct (for businesses)
