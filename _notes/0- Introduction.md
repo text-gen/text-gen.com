@@ -22,6 +22,9 @@ Leverage AI-driven templates and smart content generation for effortless note-ta
 >  Join us to connect with like-minded people, share your interests, and build a community. 
 >  Join us now: [https://discord.gg/BRYqetyjag](https://discord.gg/BRYqetyjag)
 
+> [!info] What's New
+> Check all the changes in the [releases page](https://github.com/nhaouari/obsidian-textgenerator-plugin/releases)
+
 > [!warning]
 > Documentation in **progress**.
 
