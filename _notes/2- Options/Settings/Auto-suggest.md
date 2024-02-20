@@ -8,7 +8,7 @@ layout: note
 
 
 > [!warning]
-> *Please beware that increasing the value of parameter `n` in GPT for text generation might significantly increase the cost of usage.
+> *Please beware that increasing the value of parameter `n` in GPT for text generation might significantly increase the [cost of usage](How the cost is calculated).
 > *Rate limitation in OpenAI API [rate-limits](https://platform.openai.com/docs/guides/rate-limits/overview)
 
 ![Pasted image 20230308022636.png](https://user-images.githubusercontent.com/9850722/222774001-8da26c8c-df75-4d0d-a69d-5fcac04c7f2b.gif)
@@ -23,7 +23,7 @@ You can set trigger phrase for Auto-suggest in this field by default it is doubl
 * **Delay milli-seconds for trigger** :  
 You can set the delay time in milliseconds for triggering an Auto-suggest to avoid unnecessary requests. 
 * **Number of suggestions** :  
-You can set the number of suggestions shown in the dropdown. Please beware that increasing the suggestions in GPT for text generation might significantly increase the cost of usage. 
+You can set the number of suggestions shown in the dropdown. Please beware that increasing the suggestions in GPT for text generation might significantly increase the [cost of usage](How the cost is calculated). 
 * ***Stop Phrase*** :  
 You can set stop phrase for Auto-suggest in this field. If stop phrase is found in the generated text the generated text will stop. 
 

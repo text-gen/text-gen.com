@@ -22,3 +22,9 @@ In the Text Generator plugin for Obsidian, you have the flexibility to assign ho
 3. **Navigate** to the Hotkeys panel under Obsidian Settings.
 4. **Locate** the newly added template commands.
 5. **Assign** a hotkey to each command as you would for other Obsidian commands.
+
+### Additional Resources
+
+- [Obsidian Hotkeys Documentation](https://help.obsidian.md/User+interface/Hotkeys)
+- Linking Your Thinking Youtube video on [8 important Hotkeys in Obsidian](https://youtu.be/cDcoBMVJsvk)
+

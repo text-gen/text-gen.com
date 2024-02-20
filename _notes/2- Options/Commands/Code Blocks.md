@@ -25,7 +25,7 @@ Your commands here.
 `````
 
 ## Using Text Generator Code Blocks
-- If you used any [[Context available for templates]], the code block will display it.
+- You can use any of [[01 Understanding Context|Context available for templates]], the code block will display it.
 - Click the **Create a new Template** button to convert the code block into a full-fledged Template. 
 - Click the **Generate Text** button to run the code block through Text Generator. Generated text will be added at your cursor location. 
 

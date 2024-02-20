@@ -3,7 +3,7 @@ title: Running Templates
 tags: 
 layout: note
 ---
-The template can be operated using [[Commands|Template Commands]].
+The template can be operated using [[All Commands#Template Commands|Template Commands]].
 
 Templates involve two distinct phases:
 1. **Compiling**: This involves the transformation of all variables into their corresponding values and the execution of various commands.
@@ -15,6 +15,6 @@ Templates involve two distinct phases:
 ### [[Slash Commands]] 
 
 ### [[Batch Template Running]]
-### [[Commands|Template commands]] 
+### [[All Commands#Template Commands|Template Commands]] 
 
 ### [[Setting Up Hotkeys for Templates]]
