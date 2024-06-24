@@ -22,7 +22,7 @@ The Template File Metadata is a crucial component of any template in Text Genera
 | `max_tokens`            | Number                              | Maximum tokens considered in completion.                                     |                                           |
 | `temperature`           | Number                              | Indicates randomness of model output.                                        |                                           |
 | `stream`                | Boolean                             | Controls streaming mode operation.                                           | `true`, `false`                           |
-| `provider`              | String                              | Service/platform used for processing.                                        | "openAIChat", "ollama"                    |
+| `provider`              | String                              | Service/platform used for processing.                                        | `openAIChat`, `openAIInstruct`, `azureOpenaiChat`, `azureOpenaiInstruct`, `palm`, `anthropic`, `ollama`, `hf`, `googleGenerativeAI`, `custom`                    |
 | `model`                 | String                              | Name of the model for selected provider.                                     |                                           |
 | `disableProvider`       | Boolean                             | Allows disabling of template execution (disabled by default).                | `true`, `false`                           |
 | `endpoint`              | String                              | Specific endpoint for template use.                                          |                                           |
@@ -120,7 +120,7 @@ messages:
 ### `provider`
 - **Type**: String
 - **Purpose**: Determines the service or platform to be used for processing or handling the request.
-- **Options**: "custom", "openAIChat", "openAIInstruct", "azureOpenaiChat", "azureOpenaiInstruct", "palm", "anthropic", "ollama", "hf".
+- **Options**: "custom", "openAIChat", "openAIInstruct", "azureOpenaiChat", "azureOpenaiInstruct", "palm", "anthropic", "ollama", "hf", "googleGenerativeAI".
 
 ### `model`
 
